@@ -69,3 +69,20 @@
 @import url(../blocks/form/__btn/form__btn.css);
 
 @import url(../blocks/form/__btn/_disabled/form__button_disabled.css);
+
+/* ------------- block departments ------------- */
+
+@import url(../blocks/departments/departments.css);
+@import url(../blocks/departments/__title/departments__title.css);
+@import url(../blocks/grid/grid.css);
+@import url(../blocks/grid/__item/grid__item.css);
+@import url(../blocks/grid/__item/_type/grid__item_type_analytics.css);
+@import url(../blocks/grid/__item/_type/grid__item_type_design.css);
+@import url(../blocks/grid/__item/_type/grid__item_type_english.css);
+@import url(../blocks/grid/__item/_type/grid__item_type_management.css);
+@import url(../blocks/grid/__item/_type/grid__item_type_marketing.css);
+@import url(../blocks/grid/__item/_type/grid__item_type_programming.css);
+@import url(../blocks/grid/__item-title/grid__item-title.css);
+@import url(../blocks/grid/__item-front/grid__item-front.css);
+@import url(../blocks/grid/__item-back/grid__item-back.css);
+@import url(../blocks/grid/__item-description/grid__item-description.css);

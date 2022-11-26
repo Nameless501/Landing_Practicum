@@ -1,0 +1,10 @@
+.grid__item-title {
+  margin: 0;
+  padding: 35px 30px;
+  color: var(--color-text);;
+  font-family: 'YS Text', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.6;
+}

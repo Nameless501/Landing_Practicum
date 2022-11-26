@@ -1,0 +1,10 @@
+.departments__title {
+  width: 790px;
+  margin: 0 0 40px 0;
+  color: var(--color-text);
+  font-family: 'YS Text', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+}
