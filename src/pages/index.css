@@ -1,25 +1,20 @@
-/* normilize */
+/* ------------- normilize ------------- */
 
 @import url(../vendor/normalize.css);
-@import url(../blocks/form/form.css);
-@import url(../blocks/form/__input/form__input.css);
-@import url(../blocks/form/__input/_type_error/form__input_type_error.css);
-@import url(../blocks/form/__input/_type_error-active/form__input_type_error-active.css);
 
-@import url(../blocks/form/__btn/form__btn.css);
-@import url(../blocks/form/__btn/_disabled/form__button_disabled.css);
-
-/* fonts */
+/* ------------- fonts ------------- */
 
 @import url(../vendor/fonts/fonts.css);
 
-/* design code */
+/* ------------- design code ------------- */
 
 @import url(../blocks/design-code/design-code.css);
 
-/* block page */
+/* ------------- block window ------------- */
 
+@import url(../blocks/window/window.css);
 
+/* ------------- block page ------------- */
 
 @import url(../blocks/page/page__header.css);
 
@@ -27,14 +22,50 @@
 
 @import url(../blocks/page/page__footer.css);
 
-/* block header */
+/* ------------- block header ------------- */
 
 @import url(../blocks/header/header.css);
 
-/* block content */
+@import url(../blocks/header/__logo/header__logo.css);
+
+@import url(../blocks/header/__navigation-bar/header__navigation-bar.css);
+
+@import url(../blocks/header/__navigation-links/header__navigation-links.css);
+
+@import url(../blocks/header/__navigation-link/header__navigation-link.css);
+
+/* ------------- response button ------------- */
+
+@import url(../blocks/response-button/response-button.css);
+
+/* ------------- block content ------------- */
 
 @import url(../blocks/content/content.css);
 
-/* block footer */
+@import url(../blocks/content/content__lead.css);
+
+/* ------------- block lead ------------- */
+
+@import url(../blocks/lead/lead.css);
+
+@import url(../blocks/lead/__title/lead__title.css);
+
+@import url(../blocks/lead/__title-span/lead__title-span.css);
+
+/* ------------- block footer ------------- */
 
 @import url(../blocks/footer/footer.css);
+
+/* ------------- block form ------------- */
+
+@import url(../blocks/form/form.css);
+
+@import url(../blocks/form/__input/form__input.css);
+
+@import url(../blocks/form/__input/_type_error/form__input_type_error.css);
+
+@import url(../blocks/form/__input/_type_error-active/form__input_type_error-active.css);
+
+@import url(../blocks/form/__btn/form__btn.css);
+
+@import url(../blocks/form/__btn/_disabled/form__button_disabled.css);
