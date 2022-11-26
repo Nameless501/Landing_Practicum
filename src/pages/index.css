@@ -6,9 +6,9 @@
 
 @import url(../vendor/fonts/fonts.css);
 
-/* window (переменные) */
+/* design code */
 
-@import url(../blocks/window/window.css);
+@import url(../blocks/design-code/design-code.css);
 
 /* block page */
 
