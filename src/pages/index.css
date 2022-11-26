@@ -1,6 +1,13 @@
 /* normilize */
 
 @import url(../vendor/normalize.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__input/_type_error/form__input_type_error.css);
+@import url(../blocks/form/__input/_type_error-active/form__input_type_error-active.css);
+
+@import url(../blocks/form/__btn/form__btn.css);
+@import url(../blocks/form/__btn/_disabled/form__button_disabled.css);
 
 /* fonts */
 
@@ -12,7 +19,7 @@
 
 /* block page */
 
-@import url(../blocks/page/page.css);
+
 
 @import url(../blocks/page/page__header.css);
 

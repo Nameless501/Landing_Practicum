@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
 </head>
-<body>
+<body class="window">
     <div class="page">
-        <header class="header page__header">
-        </header>
-        <main class="content page__content">
-        </main>
-        <footer class="footer page__footer">
-        </footer>
+      <header class="header page__header"></header>
+      <main class="content page__content">
+        <form action="#" class="form feedback-form" novalidate>
+          <h2 class="form__title">Не нашли себя в открытых предложениях?</h2>
+          <input
+            class="form__input"
+            type="text"
+            id="name-input"
+            name="name"
+            placeholder="ФИО"
+            autocomplete="off"
+            minlength="2"
+            maxlength="40"
+            required
+          />
+          <span class="form__error name-input-error"></span>
+
+          <input
+            class="form__input"
+            type="text"
+            name="email"
+            id="email-input"
+            placeholder="Почта"
+            autocomplete="off"
+            minlength="2"
+            maxlength="40"
+            required
+          />
+          <span class="form__error email-input-error"></span>
+          <button type="submit" class="form__btn form__btn_type_submit">
+            Отправить
+          </button>
+        </form>
+      </main>
+      <footer class="footer page__footer"></footer>
     </div>
-</body>
+  </body>
 </html>
