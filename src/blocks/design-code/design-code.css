@@ -1,9 +1,9 @@
 :root {
 /* основные цвета */
---color_background: ;
---color_block: ;
+--color_background: #FFFFFF;
+--color_block: #D9D9D9;
 --color_stroke: ;
---color_text: ;
+--color_text: #000000;
 --color_accent: ;
 /* размеры отсупов */
 --margin_XL: ;

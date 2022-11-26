@@ -7,39 +7,80 @@
 </head>
 <body class="window">
     <div class="page">
-      <header class="header page__header"></header>
-      <main class="content page__content">
-        <form action="#" class="form feedback-form" novalidate>
-          <h2 class="form__title">Не нашли себя в открытых предложениях?</h2>
-          <input
-            class="form__input"
-            type="text"
-            id="name-input"
-            name="name"
-            placeholder="ФИО"
-            autocomplete="off"
-            minlength="2"
-            maxlength="40"
-            required
-          />
-          <span class="form__error name-input-error"></span>
-
-          <input
-            class="form__input"
-            type="text"
-            name="email"
-            id="email-input"
-            placeholder="Почта"
-            autocomplete="off"
-            minlength="2"
-            maxlength="40"
-            required
-          />
-          <span class="form__error email-input-error"></span>
-          <button type="submit" class="form__btn form__btn_type_submit">
-            Отправить
-          </button>
-        </form>
+        <!----------- блок header ----------->
+        <header class="header page__header">
+          <img src="<%=require('./images/logo-short.svg')%>" alt="yandex logo" class="header__logo">
+          <nav class="header__navigation-bar">
+            <ul class="header__navigation-links">
+              <li>
+                <a href="#" class="header__navigation-link">
+                  Вакансии
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header__navigation-link">
+                  Отзывы
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header__navigation-link">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header__navigation-link">
+                  Еще что-то
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="response-button response-button_place_header">
+            Хочу делиться знаниями
+          </a>
+        </header>
+        <main class="content page__content">
+          <!----------- блок lead ----------->
+          <section class="lead content__lead">
+            <h1 class="lead__title">
+              Делись своим опытом и получай дополнительный доход
+              <span class="lead__title-span">
+                <a href="#" class="response-button response-button_place_lead">
+                  Хочу делиться знаниями
+                </a>
+              </span>
+            </h1>
+          </section>
+          <!----------- блок формы ----------->
+          <form action="#" class="form feedback-form" novalidate>
+            <h2 class="form__title">Не нашли себя в открытых предложениях?</h2>
+            <input
+              class="form__input"
+              type="text"
+              id="name-input"
+              name="name"
+              placeholder="ФИО"
+              autocomplete="off"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__error name-input-error"></span>
+            <input
+              class="form__input"
+              type="text"
+              name="email"
+              id="email-input"
+              placeholder="Почта"
+              autocomplete="off"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__error email-input-error"></span>
+            <button type="submit" class="form__btn form__btn_type_submit">
+              Отправить
+            </button>
+          </form>
       </main>
       <footer class="footer page__footer"></footer>
     </div>
