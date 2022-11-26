@@ -1,0 +1,17 @@
+.window {
+/* основные цвета */
+--color_background: ;
+--color_block: ;
+--color_stroke: ;
+--color_text: ;
+--color_accent: ;
+/* размеры отсупов */
+--margin_XL: ;
+--margin_L: ;
+--margin_M: ;
+--margin_S: ;
+/* размеры шрифотв */
+--font_L: ;
+--font_M: ;
+--font_S: ;
+}
