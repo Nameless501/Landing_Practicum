@@ -52,6 +52,14 @@
 
 @import url(../blocks/lead/__title-span/lead__title-span.css);
 
+/* ------------- block cards slider ------------- */
+
+@import url(../blocks/cards-slider/cards-slider.css);
+
+/* ------------- block how-to ------------- */
+
+@import url(../blocks/how-to/how-to.css);
+
 /* ------------- block footer ------------- */
 
 @import url(../blocks/footer/footer.css);

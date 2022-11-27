@@ -1,0 +1,33 @@
+.content__how-to {
+  margin: 175px auto 0;
+}
+
+.how-to {
+  padding: 0;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.how-to__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+}
+
+.how-to__recommendation-list {
+  margin: 40px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.how-to__recommendation {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
