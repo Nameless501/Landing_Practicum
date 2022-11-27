@@ -1,5 +1,5 @@
-.footer {
-  margin-top: 175px;
+.choose__items {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }

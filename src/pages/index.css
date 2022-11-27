@@ -37,12 +37,15 @@
 /* ------------- response button ------------- */
 
 @import url(../blocks/response-button/response-button.css);
+@import url(../blocks/response-button/_place_choose/response-button_place_choose.css);
 
 /* ------------- block content ------------- */
 
 @import url(../blocks/content/content.css);
 
 @import url(../blocks/content/content__lead.css);
+@import url(../blocks/content/__choose/content__choose.css);
+@import url(../blocks/content/__contacts/content__contacts.css);
 
 /* ------------- block lead ------------- */
 
@@ -52,9 +55,34 @@
 
 @import url(../blocks/lead/__title-span/lead__title-span.css);
 
+/* ------------- block choose ------------- */
+@import url(../blocks/choose/choose.css);
+@import url(../blocks/choose/__title/choose__title.css);
+@import url(../blocks/choose/__about/choose__about.css);
+@import url(../blocks/choose/__item/choose__item.css);
+@import url(../blocks/choose/__post/choose__post.css);
+@import url(../blocks/choose/__text/choose__text.css);
+@import url(../blocks/choose/__title/choose__title.css);
+@import url(../blocks/choose/__items/choose__items.css);
+
+/* ------------- block contacts ------------- */
+
+@import url(../blocks/contacts/contacts.css);
+@import url(../blocks/contacts/__btn/contacts__btn.css);
+@import url(../blocks/contacts/__title/contacts__title.css);
+@import url(../blocks/contacts/__items/contacts__items.css);
+
 /* ------------- block footer ------------- */
 
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/about/__text/about__text.css);
+@import url(../blocks/about/about.css);
+@import url(../blocks/add/__text/add__text.css);
+@import url(../blocks/add/add.css);
+@import url(../blocks/call/__num/call__num.css);
+@import url(../blocks/call/__text/call__text.css);
+@import url(../blocks/call/call.css);
+@import url(../blocks/footer/__items/footer__items.css);
 
 /* ------------- block form ------------- */
 

@@ -1,5 +1,4 @@
-.footer {
-  margin-top: 175px;
+.contacts__items {
   display: flex;
   justify-content: space-between;
 }
