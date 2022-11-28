@@ -30,6 +30,10 @@
   justify-content: space-between;
 }
 
+.accordion__card-header:hover {
+  cursor: pointer;
+}
+
 .accordion__card-header-title {
   margin: 0;
   padding: 0;

@@ -46,3 +46,15 @@ vacanciesFormElement.addEventListener('input', handleVacanciesRender);
 const carousel = new Carousel();
 carousel.init();
 carousel.setListeners();
+
+// ------------- test
+
+// window.addEventListener('mousewheel', (evt) => {
+//   const element = document.querySelector('.cards-slider');
+
+
+//   if(window.scrollY > 490) {
+//     document.body.style.overflow = 'hidden';
+//     element.scrollIntoView({ block: 'center' });
+//   }
+// });
