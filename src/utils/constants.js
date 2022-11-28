@@ -17,6 +17,14 @@ export const popupVideoSelector = '.popup_type_open-video';
 export const popupBtn = document.querySelector(".contacts__btn");
 export const closeBtn = document.querySelector(".popup__close");
 
+// --------------- faq and accordion selectors
+
+export const faqCardsList = document.querySelectorAll('.accordion__card-header_place_faq');
+
+export const accordionArrowButtonSelector = 'accordion__card-header-button';
+
+export const accordionExpandSelector = 'accordion__card-description';
+
 // --------------- render vacancies
 
 export const vacanciesConfig = {
@@ -26,8 +34,8 @@ export const vacanciesConfig = {
   cardDescriptionSelector: '.accordion__card-description-textarea',
   cardTextSelector: 'accordion__card-description-text',
   cardTextSizeSelector: 'text_regular',
-  cardButtonSelector: 'accordion__card-header-button',
-  cardExpandSelector: 'accordion__card-description',
+  cardButtonSelector: accordionArrowButtonSelector,
+  cardExpandSelector: accordionExpandSelector,
   roleInputSelector: 'input[name="role"]:checked',
   courseInputSelector: 'input[name="course"]:checked',
   placeholderSelector: 'vacancies__empty',
