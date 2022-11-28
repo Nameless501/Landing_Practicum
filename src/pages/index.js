@@ -1,11 +1,21 @@
 import "./index.css";
 import FormValidator from "../components/FormValidator.js";
-import { validationConfig, vacanciesConfig, vacanciesFormElement, formFeedback, popupBtn, closeBtn, popupVideoSelector } from "../utils/constants.js";
 import { vacanciesData } from "../utils/vacancies.js";
 import VacanciesRender from '../components/VacanciesRender.js';
 import Popup from "../components/Popup.js";
 import PopupWithVideo from "../components/PopupWithVideo";
 import Carousel from '../components/Carousel.js';
+import SetFAQEventListeners from '../components/FAQ.js';
+import {
+  validationConfig,
+  vacanciesConfig,
+  vacanciesFormElement,
+  formFeedback,
+  popupBtn,
+  closeBtn,
+  popupVideoSelector,
+  faqCardsList,
+} from "../utils/constants.js";
 
 // ------------- валидация формы
 
@@ -47,14 +57,6 @@ const carousel = new Carousel();
 carousel.init();
 carousel.setListeners();
 
-// ------------- test
+// ------------- faq event listeners
 
-// window.addEventListener('mousewheel', (evt) => {
-//   const element = document.querySelector('.cards-slider');
-
-
-//   if(window.scrollY > 490) {
-//     document.body.style.overflow = 'hidden';
-//     element.scrollIntoView({ block: 'center' });
-//   }
-// });
+SetFAQEventListeners(faqCardsList);
