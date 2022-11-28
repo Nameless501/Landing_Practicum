@@ -1,17 +1,52 @@
 :root {
 /* основные цвета */
---color_background: ;
---color_block: ;
+
+--color_background: #FFFFFF;
+--color_block: #D9D9D9;
 --color_stroke: ;
---color_text: ;
---color_accent: ;
+--color_text: #000000;
+--color_accent: #C7C0C0;
+
 /* размеры отсупов */
---margin_XL: ;
---margin_L: ;
---margin_M: ;
---margin_S: ;
+
+--margin_XL: 175px;
+--margin_L: 100px;
+--margin_M: 50px;
+/* --margin_S: ; */
+
 /* размеры шрифотв */
---font_L: ;
---font_M: ;
---font_S: ;
+
+--font_size_h1: 90px;
+--font_size_h2: 60px;
+--font_size_h3: 40px;
+--font_size_large: 30px;
+--font_size_regular: 25px;
+--font_size_small: 16px;
+
+/* шрифты */
+
+--font_font_h1: 'YS Text', sans-serif;
+--font_font_h2: 'YS Display', sans-serif;
+--font_font_h3: 'YS Display', sans-serif;
+--font_font_large: 'YS Display', sans-serif;
+--font_font_regular: 'YS Display', sans-serif;
+--font_font_small: 'YS Display', sans-serif;
+
+/* размер line-height */
+
+--font_line_height_h1: 80px;
+--font_line_height_h2: 70px;
+--font_line_height_h3: 47px;
+--font_line_height_large: 35px;
+--font_line_height_regular: 35px;
+--font_line_height_small: 20px;
+
+/* font weight */
+
+--font_font_weight_h1: 500;
+--font_font_weight_h2: 700;
+--font_font_weight_h3: 500;
+--font_font_weight_large: 500;
+--font_font_weight_regular: 400;
+--font_font_weight_small: 500;
 }

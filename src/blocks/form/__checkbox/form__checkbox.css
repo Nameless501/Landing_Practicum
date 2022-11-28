@@ -1,0 +1,6 @@
+.form__checkbox {
+  display: flex;
+  justify-content: space-between;
+  max-width: 384px;
+  margin: 20px auto 30px auto;
+}

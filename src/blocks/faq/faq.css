@@ -1,0 +1,9 @@
+.faq {
+  padding: 0;
+  max-width: 1200px;
+}
+
+.faq__title {
+  margin: 0;
+  padding: 0;
+}

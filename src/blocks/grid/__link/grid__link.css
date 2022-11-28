@@ -1,0 +1,5 @@
+.grid__link {
+  width: 174px;
+  align-self: end;
+  background: url(./../../../images/arrow-right.svg) no-repeat right;
+}

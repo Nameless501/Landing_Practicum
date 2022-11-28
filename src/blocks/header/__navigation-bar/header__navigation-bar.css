@@ -1,0 +1,9 @@
+.header__navigation-bar {
+  margin: 0 25px 0 0;
+  padding: 0;
+  height: 35px;
+  box-sizing: border-box;
+  justify-self: end;
+  display: flex;
+  justify-content: space-between;
+}

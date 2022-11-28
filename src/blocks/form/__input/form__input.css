@@ -1,0 +1,11 @@
+.form__input {
+  outline: none;
+  padding: 10px;;
+  margin-top: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 14px;
+  width: 384px;
+}
+.form__input:first-child{
+  margin: 0;
+}

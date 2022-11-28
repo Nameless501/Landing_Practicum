@@ -1,0 +1,12 @@
+
+.header__navigation-link {
+  margin: 0;
+  padding: 0;
+  color: var(--color_text);
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.header__navigation-link:visited {
+  color: var(--color_text);
+}

@@ -1,0 +1,7 @@
+.grid__wrapper_active {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 215px 0 155px 205px;
+  gap: 20px;
+}

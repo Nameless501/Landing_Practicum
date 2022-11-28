@@ -1,0 +1,147 @@
+.vacancies {
+  padding: 0;
+  max-width: 1200px;
+}
+
+.vacancies__title {
+  margin: 0;
+  padding: 0;
+}
+
+.vacancies__form {
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.vacancies__role-selection {
+  margin: 0;
+  padding: 0;
+  width: 252px;
+  display: flex;
+  gap: 8px;
+  border: 0;
+}
+
+.vacancies__role-radio {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.vacancies__role-button {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 129px;
+  height: 50px;
+  border: 0;
+  border-radius: 14px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.vacancies__role-radio:checked+.vacancies__role-button {
+  background-color: #262626;
+  color: #FFF;
+}
+
+.vacancies__course-selection {
+  margin: 30px 0 0;
+  padding: 0 6px;
+  width: 650px;
+  height: 62px;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vacancies__course-radio {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.vacancies__course-button {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 160px;
+  height: 36px;
+  border: 0;
+  border-radius: 14px;
+  line-height: 36px;
+  text-align: center;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.vacancies__course-radio:checked+.vacancies__course-button {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px 1px rgba(36, 36, 36, 0.07);
+}
+
+.vacancies__cards {
+  margin: 40px 0 0;
+}
+
+.vacancies__show-more-button {
+  margin: 40px 0 0;
+  padding: 0;
+  display: none;
+  width: 136px;
+  height: 50px;
+  background: #262626;
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: var(--font_font_small);
+  font-weight: var(--font_font_weight_small);
+  font-size: var(--font_size_small);
+  text-decoration: none;
+}
+
+.vacancies__show-more-button_visible {
+  display: block;
+}
+
+.vacancies__empty {
+  margin: 0;
+  padding: var(--margin_M);
+  max-width: 1200px;
+  display: none;
+  justify-content: space-between;
+  background-color: #D9D9D9;
+  border-radius: 50px;
+}
+
+.vacancies__empty_visible {
+  display: flex;
+}
+
+.vacancies__empty-description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vacancies__empty-title {
+  margin: 0;
+  padding: 0;
+}
+
+.vacancies__empty-text {
+  margin: 0;
+  padding: 0;
+  max-width: 713px;
+}

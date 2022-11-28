@@ -1,3 +1,9 @@
 .header {
-
+  padding: 0;
+  max-width: 1200px;
+  height: 130px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
