@@ -1,0 +1,25 @@
+.grid__item-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 35px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  background-color: var(--color_block);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform cubic-bezier(0.41, 0.24, 0.36, 1.45) 0.5s;
+  transform: rotateY(-180deg);
+}
+
+.grid__item:hover .grid__item-back {
+  transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 920px) {
+  .grid__item:hover .grid__item-back {
+    transform: rotateY(-180deg);
+  }
+}

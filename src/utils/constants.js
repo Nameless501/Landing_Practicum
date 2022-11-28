@@ -11,6 +11,12 @@ export const validationConfig = {
 
 export const formFeedback = document.querySelector(".feedback-form");
 
+// ---------------  popup
+
+export const popupVideoSelector = '.popup_type_open-video';
+export const popupBtn = document.querySelector(".contacts__btn");
+export const closeBtn = document.querySelector(".popup__close");
+
 // --------------- render vacancies
 
 export const vacanciesConfig = {
