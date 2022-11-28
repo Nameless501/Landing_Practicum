@@ -32,6 +32,7 @@ export const vacanciesConfig = {
   courseInputSelector: 'input[name="course"]:checked',
   placeholderSelector: 'vacancies__empty',
   containerSelector: '.vacancies__cards',
+  cardHeaderSelector: '.accordion__card-header',
   showMoreButtonSelector: 'vacancies__show-more-button',
 }
 
