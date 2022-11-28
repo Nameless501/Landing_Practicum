@@ -22,6 +22,8 @@
 
 @import url(../blocks/page/page__footer.css);
 
+@import url(../blocks/page/page.css);
+
 /* ------------- block header ------------- */
 
 @import url(../blocks/header/header.css);
@@ -38,11 +40,17 @@
 
 @import url(../blocks/response-button/response-button.css);
 
+@import url(../blocks/response-button/_place_choose/response-button_place_choose.css);
+
 /* ------------- block content ------------- */
 
 @import url(../blocks/content/content.css);
 
 @import url(../blocks/content/content__lead.css);
+
+@import url(../blocks/content/__choose/content__choose.css);
+
+@import url(../blocks/content/__contacts/content__contacts.css);
 
 /* ------------- block lead ------------- */
 
@@ -52,9 +60,52 @@
 
 @import url(../blocks/lead/__title-span/lead__title-span.css);
 
+/* ------------- block choose ------------- */
+@import url(../blocks/choose/choose.css);
+
+@import url(../blocks/choose/__title/choose__title.css);
+
+@import url(../blocks/choose/__about/choose__about.css);
+
+@import url(../blocks/choose/__item/choose__item.css);
+
+@import url(../blocks/choose/__post/choose__post.css);
+
+@import url(../blocks/choose/__text/choose__text.css);
+
+@import url(../blocks/choose/__title/choose__title.css);
+
+@import url(../blocks/choose/__items/choose__items.css);
+
+/* ------------- block contacts ------------- */
+
+@import url(../blocks/contacts/contacts.css);
+
+@import url(../blocks/contacts/__btn/contacts__btn.css);
+
+@import url(../blocks/contacts/__title/contacts__title.css);
+
+@import url(../blocks/contacts/__items/contacts__items.css);
+
 /* ------------- block footer ------------- */
 
 @import url(../blocks/footer/footer.css);
+
+@import url(../blocks/about/__text/about__text.css);
+
+@import url(../blocks/about/about.css);
+
+@import url(../blocks/add/__text/add__text.css);
+
+@import url(../blocks/add/add.css);
+
+@import url(../blocks/call/__num/call__num.css);
+
+@import url(../blocks/call/__text/call__text.css);
+
+@import url(../blocks/call/call.css);
+
+@import url(../blocks/footer/__items/footer__items.css);
 
 /* ------------- block form ------------- */
 
@@ -69,3 +120,21 @@
 @import url(../blocks/form/__btn/form__btn.css);
 
 @import url(../blocks/form/__btn/_disabled/form__button_disabled.css);
+
+@import url(../blocks/form/__textarea/form__textarea.css);
+
+@import url(../blocks/form/__select/form__select.css);
+
+@import url(../blocks/form/__checkbox/form__checkbox.css);
+
+@import url(../blocks/form/__checkbox-input/form__checkbox-input.css);
+
+@import url(../blocks/popup/popup.css);
+
+@import url(../blocks/popup/__container/popup__container.css);
+
+@import url(../blocks/popup/_opened/popup_opened.css);
+
+@import url(../blocks/link/link.css);
+
+@import url(../blocks/popup/__close/popup__close.css);

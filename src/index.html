@@ -4,85 +4,206 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
-</head>
-<body class="window">
+  </head>
+  <body class="window">
     <div class="page">
-        <!----------- блок header ----------->
-        <header class="header page__header">
-          <img src="<%=require('./images/logo-short.svg')%>" alt="yandex logo" class="header__logo">
-          <nav class="header__navigation-bar">
-            <ul class="header__navigation-links">
-              <li>
-                <a href="#" class="header__navigation-link">
-                  Вакансии
-                </a>
-              </li>
-              <li>
-                <a href="#" class="header__navigation-link">
-                  Отзывы
-                </a>
-              </li>
-              <li>
-                <a href="#" class="header__navigation-link">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#" class="header__navigation-link">
-                  Еще что-то
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a href="#" class="response-button response-button_place_header">
-            Хочу делиться знаниями
-          </a>
-        </header>
-        <main class="content page__content">
-          <!----------- блок lead ----------->
-          <section class="lead content__lead">
-            <h1 class="lead__title">
-              Делись своим опытом и получай дополнительный доход
-              <span class="lead__title-span">
-                <a href="#" class="response-button response-button_place_lead">
-                  Хочу делиться знаниями
-                </a>
-              </span>
-            </h1>
-          </section>
-          <!----------- блок формы ----------->
-          <form action="#" class="form feedback-form" novalidate>
-            <h2 class="form__title">Не нашли себя в открытых предложениях?</h2>
-            <input
-              class="form__input"
-              type="text"
-              id="name-input"
-              name="name"
-              placeholder="ФИО"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-            <span class="form__error name-input-error"></span>
-            <input
-              class="form__input"
-              type="text"
-              name="email"
-              id="email-input"
-              placeholder="Почта"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-            <span class="form__error email-input-error"></span>
-            <button type="submit" class="form__btn form__btn_type_submit">
-              Отправить
+      <!----------- блок header ----------->
+      <header class="header page__header">
+        <img
+          src="<%=require('./images/logo-short.svg')%>"
+          alt="yandex logo"
+          class="header__logo"
+        />
+        <nav class="header__navigation-bar">
+          <ul class="header__navigation-links">
+            <li>
+              <a href="#" class="header__navigation-link"> Вакансии </a>
+            </li>
+            <li>
+              <a href="#" class="header__navigation-link"> Отзывы </a>
+            </li>
+            <li>
+              <a href="#" class="header__navigation-link"> FAQ </a>
+            </li>
+            <li>
+              <a href="#" class="header__navigation-link"> Еще что-то </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="response-button response-button_place_header">
+          Хочу делиться знаниями
+        </a>
+      </header>
+      <main class="content page__content">
+        <!----------- блок lead ----------->
+        <section class="lead content__lead">
+          <h1 class="lead__title">
+            Делись своим опытом и получай дополнительный доход
+            <span class="lead__title-span">
+              <a href="#" class="response-button response-button_place_lead">
+                Хочу делиться знаниями
+              </a>
+            </span>
+          </h1>
+        </section>
+        <!----------- блок выбора профессии ----------->
+        <section class="choose content__choose">
+          <h2 class="choose__title">Выберите роль по душе</h2>
+          <div class="choose__items">
+            <div class="choose__item">
+              <div class="choose__about"></div>
+              <h3 class="choose__post">Наставник</h3>
+              <p class="choose__text">
+                потом напишут текст и будет понятно какой высоты делать блоки
+              </p>
+              <a href="#" class="response-button response-button_place_choose">
+                Хочу стать наставником
+              </a>
+            </div>
+            <div class="choose__item">
+              <div class="choose__about"></div>
+              <h3 class="choose__post">Ревьюер</h3>
+              <p class="choose__text">
+                потом напишут текст и будет понятно какой высоты делать блоки
+              </p>
+              <a href="#" class="response-button response-button_place_choose">
+                Хочу стать ревьюером
+              </a>
+            </div>
+          </div>
+        </section>
+        <!----------- блок контактов ----------->
+        <section class="contacts content__contacts">
+          <h2 class="contacts__title">Если остались вопросы, напишите нам</h2>
+          <div class="contacts__items">
+            <button class="contacts__btn">Я открываю попап</button>
+            <button class="contacts__btn">ВКонтакте</button>
+            <button class="contacts__btn">Еще что нибудь</button>
+          </div>
+        </section>
+        <!----------- блок формы ----------->
+        <div class="popup popup__form">
+          <div class="popup__container">
+            <form action="#" class="form feedback-form" novalidate>
+              <h2 class="form__title">
+                Расскажите нам о себе и мы сохраним вашу анкету в базе данных
+              </h2>
+              <input
+                class="form__input"
+                type="text"
+                id="name-input"
+                name="name"
+                placeholder="ФИО"
+                autocomplete="off"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <span class="form__error name-input-error"></span>
+              <input
+                class="form__input"
+                type="text"
+                name="email"
+                id="email-input"
+                placeholder="Почта"
+                autocomplete="off"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <span class="form__error email-input-error"></span>
+              <input
+                class="form__input"
+                type="text"
+                id="tel-input"
+                name="tel"
+                placeholder="Telegram"
+                autocomplete="off"
+                minlength="2"
+                maxlength="20"
+                required
+              />
+              <span class="form__error tel-input-error"></span>
+
+              <select name="roles" id="roles" class="form__select">
+                <option value="1"></option>
+                <option value="2">Наставник</option>
+                <option value="3">Ревьюер</option>
+              </select>
+
+              <select name="direction" id="direction" class="form__select">
+                <option value="1"></option>
+                <option value="2">Программирование</option>
+                <option value="3">Анализ данных</option>
+                <option value="4">Менеджмент</option>
+                <option value="5">Дизайн</option>
+                <option value="6">Маркетинг</option>
+              </select>
+
+              <!--<textarea
+                name="about"
+                id="about"
+                cols="30"
+                rows="10"
+                placeholder="Перечислите набор технологий, которыми вы владеете и уровень владения каждой"
+                class="form__textarea"
+              ></textarea>-->
+              <input
+                class="form__input"
+                type="url"
+                id="github-input"
+                name="github"
+                placeholder="Ссылка на резюме"
+                autocomplete="off"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <span class="form__error github-input-error"></span>
+
+              <div class="form__checkbox">
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  class="form__checkbox-input"
+                />
+                <label for="checkbox" class="form__checkbox-text"
+                  >Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на
+                  <a href="#" class="link">обработку указанных данных</a>
+                  для целей рассмотрения анкеты и обратной связи по ней.</label
+                >
+              </div>
+              <button type="submit" class="form__btn form__btn_type_submit">
+                Отправить
+              </button>
+            </form>
+            <button type="button" class="popup__close">
+              <img
+                src="<%=require('./images/CloseIcon.svg')%>"
+                alt="закрывающий крестик"
+                class="popup__close-image"
+              />
             </button>
-          </form>
+          </div>
+        </div>
       </main>
-      <footer class="footer page__footer"></footer>
+      <footer class="footer page__footer">
+        <div class="call">
+          <p class="call__num">8-800-700-93-29</p>
+          <p class="call__text">Звонок по России бесплатный</p>
+        </div>
+
+        <div class="add">
+          <a class="add__text" href="#">Помощь</a>
+          <a class="add__text" href="#">Вакансии</a>
+          <a class="add__text" href="#">Вакансии</a>
+        </div>
+        <div class="about">
+          <a class="about__text" href="#">Правовая информация</a>
+          <a class="about__text" href="#">Для работодателей</a>
+          <a class="about__text" href="#">Отзывы</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
