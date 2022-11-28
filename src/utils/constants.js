@@ -8,3 +8,4 @@ export const validationConfig = {
 };
 
 export const formFeedback = document.querySelector(".feedback-form");
+export const popupVideoSelector = '.popup_type_open-video';

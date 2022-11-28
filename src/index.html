@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title</title>
 </head>
+
 <body class="window">
-    <div class="page">
-        <!----------- блок header ----------->
-        <header class="header page__header">
+  <div class="page">
+    <!----------- блок header ----------->
+    <header class="header page__header">
           <img src="<%=require('./images/logo-short.svg')%>" alt="yandex logo" class="header__logo">
           <nav class="header__navigation-bar">
             <ul class="header__navigation-links">
@@ -39,8 +41,8 @@
           </a>
         </header>
         <main class="content page__content">
-          <!----------- блок lead ----------->
-          <section class="lead content__lead">
+    <!----------- блок lead ----------->
+    <section class="lead content__lead">
             <h1 class="lead__title">
               Делись своим опытом и получай дополнительный доход
               <span class="lead__title-span">
@@ -50,8 +52,8 @@
               </span>
             </h1>
           </section>
-          <!----------- блок формы ----------->
-          <form action="#" class="form feedback-form" novalidate>
+    <!----------- блок формы ----------->
+    <form action="#" class="form feedback-form" novalidate>
             <h2 class="form__title">Не нашли себя в открытых предложениях?</h2>
             <input
               class="form__input"
@@ -81,65 +83,103 @@
               Отправить
             </button>
           </form>
-          <!----------- блок departments ----------->
-          <section class="departments">
-            <h2 class="departments__title">
-              Яндекс Практикум — сервис онлайн-образования.
-              Мы помогаем людям расти — на работе и в жизни.
-            </h2>
-            <div class="grid">
-              <div class="grid__item grid__item_type_english">
-                <div class="grid__item-front">
-                  <h3 class="grid__item-title">Английский</h3>
-                </div>
-                <div class="grid__item-back">
-                  <p class="grid__item-description"></p>
-                </div>
-              </div>
-              <div class="grid__item grid__item_type_programming">
-                <div class="grid__item-front">
-                  <h3 class="grid__item-title">Программирование</h3>
-                </div>
-                <div class="grid__item-back">
-                  <p class="grid__item-description"></p>
-                </div>
-              </div>
-              <div class="grid__item grid__item_type_design">
-                <div class="grid__item-front">
-                  <h3 class="grid__item-title">Дизайн</h3>
-                </div>
-                <div class="grid__item-back">
-                  <p class="grid__item-description"></p>
-                </div>
-              </div>
-              <div class="grid__item grid__item_type_marketing">
-                <div class="grid__item-front">
-                  <h3 class="grid__item-title">Маркетинг</h3>
-                </div>
-                <div class="grid__item-back">
-                  <p class="grid__item-description"></p>
-                </div>
-              </div>
-              <div class="grid__item grid__item_type_analytics">
-                <div class="grid__item-front">
-                  <h3 class="grid__item-title">Аналитика</h3>
-                </div>
-                <div class="grid__item-back">
-                  <p class="grid__item-description"></p>
-                </div>
-              </div>
-              <div class="grid__item grid__item_type_management">
-                <div class="grid__item-front">
-                  <h3 class="grid__item-title">Менеджмент</h3>
-                </div>
-                <div class="grid__item-back">
-                  <p class="grid__item-description"></p>
-                </div>
-              </div>
-            </div>
-          </section>
-      </main>
-      <footer class="footer page__footer"></footer>
+    <!----------- блок departments ----------->
+    <section class="departments">
+      <h2 class="departments__title">
+        О нашем проекте
+      </h2>
+      <div class="grid_type_video">
+        <div class="grid__item active grid__item_position_1">
+          <div class="grid__item-front">
+            <h3 class="grid__item-title_type_fact">Яндекс Практикум — сервис онлайн-образования. Мы помогаем людям расти
+              — на&nbsp;работе и в жизни</h3>
+          </div>
+          <div class="grid__item-back">
+            <p class="grid__item-description"></p>
+          </div>
+        </div>
+        <div class="grid__item grid__item_position_2">
+          <div class="grid__item-front">
+            <h3 class="grid__item-title">Программирование</h3>
+          </div>
+          <div class="grid__item-back">
+            <p class="grid__item-description"></p>
+          </div>
+        </div>
+        <div class="grid__item grid__item_position_3">
+          <div class="grid__item-front">
+            <h3 class="grid__item-title">Дизайн</h3>
+          </div>
+          <div class="grid__item-back">
+            <p class="grid__item-description"></p>
+          </div>
+        </div>
+        <div class="grid__item grid__item_position_4">
+          <div class="grid__item-front">
+            <h3 class="grid__item-title">Маркетинг</h3>
+          </div>
+          <div class="grid__item-back">
+            <h3 class="grid__item-title">Маркетинг</h3>
+            <p class="grid__item-description">
+              Здесь мы учим запускать рекламу и управлять рекламными кампаниями. Знакомим с анализом бренда,
+              рассказываем про seo-оптимизацию и email-маркетинг, обучаем на реальных примерах из бизнеса.
+            </p>
+            <a class="grid__link">Узнать больше</a>
+          </div>
+        </div>
+        <div class="grid__item grid__item_position_5">
+          <div class="grid__item-front">
+            <h3 class="grid__item-title">Аналитика</h3>
+          </div>
+          <div class="grid__item-back">
+            <p class="grid__item-description"></p>
+          </div>
+        </div>
+        <div class="grid__item grid__item_position_6">
+          <div class="grid__item-front">
+            <h3 class="grid__item-title">Менеджмент</h3>
+          </div>
+          <div class="grid__item-back">
+            <p class="grid__item-description"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="videos">
+      <h2 class="videos__title">
+        Истории ребят из нашей команды
+      </h2>
+      <div class="grid_type_video">
+        <div class="grid__item-video grid__item_position_1">
+          <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
+        </div>
+        <div class="grid__item-video grid__item_position_2">
+          <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
+        </div>
+        <div class="grid__item-video grid__item_position_3">
+          <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
+        </div>
+        <div class="grid__item-video grid__item_position_4">
+          <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
+        </div>
+        <div class="grid__item-video grid__item_position_5">
+          <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
+        </div>
+        <div class="grid__item-video grid__item_position_6">
+          <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer class="footer page__footer"></footer>
+  </div>
+
+  <div class="popup popup_type_open-video">
+    <div class="popup__video-wrapper">
+      <div id="player"></div>
+      <button class="popup__close-button" type="button"></button>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

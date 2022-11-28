@@ -25,12 +25,12 @@
 
   /* шрифты */
 
-  --font_font_h1: 'YS Text';
-  --font_font_h2: 'YS Display';
-  --font_font_h3: 'YS Display';
-  --font_font_large: 'YS Display';
-  --font_font_regular: 'YS Display';
-  --font_font_small: 'YS Display';
+  --font_font_h1: 'YS Text', sans-serif;
+  --font_font_h2: 'YS Display', sans-serif;
+  --font_font_h3: 'YS Display', sans-serif;
+  --font_font_large: 'YS Display', sans-serif;
+  --font_font_regular: 'YS Display', sans-serif;
+  --font_font_small: 'YS Display', sans-serif;
 
   /* размер line-height */
 
