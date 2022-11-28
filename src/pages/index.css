@@ -145,17 +145,21 @@
 
 @import url(../blocks/choose/__title/choose__title.css);
 
-@import url(../blocks/choose/__about/choose__about.css);
+@import url(../blocks/choose/__card-image/choose__card-image.css);
 
-@import url(../blocks/choose/__item/choose__item.css);
+@import url(../blocks/choose/__cards/choose__cards.css);
 
-@import url(../blocks/choose/__post/choose__post.css);
+@import url(../blocks/choose/__card/choose__card.css);
+
+@import url(../blocks/choose/__card-title/choose__card-title.css);
+
+@import url(../blocks/choose/__list/choose__list.css);
+
+@import url(../blocks/choose/__list-item/choose__list-item.css);
 
 @import url(../blocks/choose/__text/choose__text.css);
 
-@import url(../blocks/choose/__title/choose__title.css);
-
-@import url(../blocks/choose/__items/choose__items.css);
+@import url(../blocks/choose/__text-span/choose__text-span.css);
 
 /* ------------- block vacancies ------------- */
 

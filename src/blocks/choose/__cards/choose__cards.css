@@ -1,5 +1,6 @@
-.choose__items {
+.choose__cards {
+  margin: 40px 0 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
 }
