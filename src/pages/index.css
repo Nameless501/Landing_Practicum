@@ -229,6 +229,10 @@
 
 @import url(../blocks/popup/__close/popup__close.css);
 
+@import url(../blocks/popup/_type/popup_type_open-video.css);
+
+@import url(../blocks/popup/__video-wrapper/popup__video-wrapper.css);
+
 @import url(../blocks/form/__title/form__title.css);
 
 /* ------------- block video ------------- */
