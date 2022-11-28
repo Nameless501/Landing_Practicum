@@ -10,6 +10,22 @@
 
 @import url(../blocks/design-code/design-code.css);
 
+/* ------------- block title ------------- */
+
+@import url(../blocks/title/_type/title_h1.css);
+
+@import url(../blocks/title/_type/title_h2.css);
+
+@import url(../blocks/title/_type/title_h3.css);
+
+/* ------------- block text ------------- */
+
+@import url(../blocks/text/_type/text_large.css);
+
+@import url(../blocks/text/_type/text_regular.css);
+
+@import url(../blocks/text/_type/text_small.css);
+
 /* ------------- block window ------------- */
 
 @import url(../blocks/window/window.css);
@@ -38,11 +54,23 @@
 
 @import url(../blocks/response-button/response-button.css);
 
+@import url(../blocks/response-button/_place/response-button_place_lead.css);
+
+@import url(../blocks/response-button/_place/response-button_place_vacancies.css);
+
+@import url(../blocks/response-button/_place/response-button_place_empty-vacancies.css);
+
 /* ------------- block content ------------- */
 
 @import url(../blocks/content/content.css);
 
-@import url(../blocks/content/content__lead.css);
+@import url(../blocks/content/__lead/content__lead.css);
+
+@import url(../blocks/content/__cards-slider/content__cards-slider.css);
+
+@import url(../blocks/content/__vacancies/content__vacancies.css);
+
+@import url(../blocks/content/__faq/content__faq.css);
 
 /* ------------- block lead ------------- */
 
@@ -59,6 +87,14 @@
 /* ------------- block how-to ------------- */
 
 @import url(../blocks/how-to/how-to.css);
+
+/* ------------- block vacancies ------------- */
+
+@import url(../blocks/vacancies/vacancies.css);
+
+/* ------------- block faq ------------- */
+
+@import url(../blocks/faq/faq.css);
 
 /* ------------- block footer ------------- */
 
@@ -77,3 +113,7 @@
 @import url(../blocks/form/__btn/form__btn.css);
 
 @import url(../blocks/form/__btn/_disabled/form__button_disabled.css);
+
+/* ------------- block accordion ------------- */
+
+@import url(../blocks/accordion/accordion.css);
