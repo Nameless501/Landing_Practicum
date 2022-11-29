@@ -95,19 +95,6 @@
   margin: 40px 0 0;
   padding: 0;
   display: none;
-  width: 136px;
-  height: 50px;
-  background: #262626;
-  border-radius: 14px;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 50px;
-  border: 0;
-  text-align: center;
-  vertical-align: middle;
-  font-family: var(--font_font_small);
-  font-weight: var(--font_font_weight_small);
-  font-size: var(--font_size_small);
-  text-decoration: none;
 }
 
 .vacancies__show-more-button_visible {

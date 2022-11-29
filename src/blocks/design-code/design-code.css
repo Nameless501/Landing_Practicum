@@ -21,11 +21,11 @@
 --font_size_h3: 40px;
 --font_size_large: 30px;
 --font_size_regular: 25px;
---font_size_small: 16px;
+--font_size_small: 20px;
 
 /* шрифты */
 
---font_font_h1: 'YS Text', sans-serif;
+--font_font_h1: 'YS Display', sans-serif;
 --font_font_h2: 'YS Display', sans-serif;
 --font_font_h3: 'YS Display', sans-serif;
 --font_font_large: 'YS Display', sans-serif;
@@ -39,11 +39,11 @@
 --font_line_height_h3: 47px;
 --font_line_height_large: 35px;
 --font_line_height_regular: 35px;
---font_line_height_small: 20px;
+--font_line_height_small: 23px;
 
 /* font weight */
 
---font_font_weight_h1: 500;
+--font_font_weight_h1: 700;
 --font_font_weight_h2: 700;
 --font_font_weight_h3: 500;
 --font_font_weight_large: 500;
