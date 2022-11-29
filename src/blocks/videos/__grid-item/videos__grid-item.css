@@ -1,0 +1,15 @@
+.videos__grid-item {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color_block);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 756px) {
+  .youtube {
+    width: 32px;
+    height: 32px;
+  }
+}

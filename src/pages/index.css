@@ -91,9 +91,7 @@
 
 @import url(../blocks/grid/__wrapper/grid__wrapper.css);
 
-@import url(../blocks/grid/__item-video/grid__item-video.css);
-
-@import url(../blocks/grid/_type/grid_type-video.css);
+@import url(../blocks/grid/__icon/grid__icon.css);
 
 /* ------------- response button ------------- */
 
@@ -122,6 +120,10 @@
 @import url(../blocks/content/__choose/content__choose.css);
 
 @import url(../blocks/content/__contacts/content__contacts.css);
+
+@import url(../blocks/content/__departments/content__departments.css);
+
+@import url(../blocks/content/__videos/content__videos.css);
 
 /* ------------- block lead ------------- */
 
@@ -258,6 +260,22 @@
 @import url(../blocks/videos/videos.css);
 
 @import url(../blocks/videos/__title/videos__title.css);
+
+@import url(../blocks/videos/__grid/videos__grid.css);
+
+@import url(../blocks/videos/__grid-item/videos__grid-item.css);
+
+@import url(../blocks/videos/__grid-item/_position/videos__item_position_1.css);
+
+@import url(../blocks/videos/__grid-item/_position/videos__item_position_2.css);
+
+@import url(../blocks/videos/__grid-item/_position/videos__item_position_3.css);
+
+@import url(../blocks/videos/__grid-item/_position/videos__item_position_4.css);
+
+@import url(../blocks/videos/__grid-item/_position/videos__item_position_5.css);
+
+@import url(../blocks/videos/__grid-item/_position/videos__item_position_6.css);
 
 /* ------------- block accordion ------------- */
 

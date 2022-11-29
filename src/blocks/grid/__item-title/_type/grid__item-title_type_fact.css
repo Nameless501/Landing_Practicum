@@ -1,15 +1,4 @@
 .grid__item-title_type_fact {
-  margin: 0;
-  font-family: var(--font_font_regular);
-  font-style: normal;
-  font-weight: var(--font_font_weight_regular);
-  font-size: 23px;
-  line-height: 1.17;
-  color: var(--color-text);
-}
-
-@media screen and (max-width: 1100px) {
-  .grid__item-title_type_fact {
-    font-size: var(--font_size_small);
-  }
+  margin: 0 0 20px 0;
+  color: var(--color_text);
 }
