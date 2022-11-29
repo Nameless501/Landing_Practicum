@@ -55,4 +55,7 @@ export const cardsSliderConfig = {
   sliderCardActiveSelector: 'cards-slider__card_active',
   firstCardAnimationSelector: 'cards-slider__animation_card_first',
   restCardsAnimationSelector: 'cards-slider__animation_card_rest',
+  firstCardBackAnimationSelector: 'cards-slider__animation_card_first-backward',
+  restCardsBackAnimationSelector: 'cards-slider__animation_card_rest-backward',
+  scrollToElementSelector: '.cards-slider',
 };
