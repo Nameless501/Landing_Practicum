@@ -1,6 +1,6 @@
-.about {
-  max-width: 2585px;
+.info__text-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 590px;
 }

@@ -1,4 +1,7 @@
 .add {
-  margin-right: 127px;
-  width: 105px;
+  margin-right: 122px;
+  max-width: 183px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
