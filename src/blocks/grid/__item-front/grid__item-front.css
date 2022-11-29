@@ -4,6 +4,9 @@
   width: 100%;
   padding: 35px 30px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 30px;
   background-color: var(--color_block);
   backface-visibility: hidden;

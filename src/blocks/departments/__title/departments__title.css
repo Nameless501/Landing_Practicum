@@ -1,15 +1,3 @@
 .departments__title {
   margin: 0 0 40px 0;
-  color: var(--color-text);
-  font-family: var(--font_font_h2);
-  font-style: normal;
-  font-weight: var(--font_font_weight_h2);
-  font-size: var(--font_size_h2);
-  line-height: var(--font_line_height_h2);
-}
-
-@media screen and (max-width: 756px) {
-  .departments__title {
-    font-size: var(--font_size_regular);
-  }
 }

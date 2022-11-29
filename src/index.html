@@ -248,65 +248,101 @@
         </div>
       </section>
       <!----------- блок departments ----------->
-      <section class="departments">
-        <h2 class="departments__title">
+      <section class="departments content__departments">
+        <h2 class="departments__title title_h2">
           О нашем проекте
         </h2>
         <div class="grid">
           <div class="grid__wrapper">
             <div class="grid__item active grid__item_position_1">
-              <div class="grid__item-front" style="background-color:blanchedalmond">
-                <h3 class="grid__item-title_type_fact">Яндекс Практикум — сервис онлайн-образования. Мы помогаем людям
-                  расти
-                  — на&nbsp;работе и в жизни</h3>
+              <div class="grid__item-front">
+                <h3 class="grid__item-title_type_fact text_large">Яндекс Практикум — сервис онлайн-образования.</h3>
+                <h3 class="grid__item-title_type_fact text_large">Мы помогаем людям расти — на&nbsp;работе и в жизни</h3>
               </div>
               <div class="grid__item-back">
                 <p class="grid__item-description"></p>
               </div>
             </div>
             <div class="grid__item grid__item_position_2">
-              <div class="grid__item-front" style="background-color:aqua">
-                <h3 class="grid__item-title">Программирование</h3>
+              <div class="grid__item-front">
+                <h3 class="grid__item-title text_large">Анализ данных</h3>
+                <img class="grid__icon" src="<%=require('./images/Party.svg')%>" alt="">
               </div>
               <div class="grid__item-back">
-                <p class="grid__item-description"></p>
+                <h3 class="grid__item-title text_large">Анализ данных</h3>
+                <p class="grid__item-description text_regular">
+                  Учим анализировать данные
+                </p>
+                <a class="grid__link">
+                  Узнать больше
+                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
+                </a>
               </div>
             </div>
             <div class="grid__item grid__item_position_3">
-              <div class="grid__item-front" style="background-color:aquamarine">
-                <h3 class="grid__item-title">Дизайн</h3>
+              <div class="grid__item-front">
+                <h3 class="grid__item-title text_large">Маркетинг</h3>
+                <img class="grid__icon" src="<%=require('./images/Hole.svg')%>" alt="">
               </div>
               <div class="grid__item-back">
-                <p class="grid__item-description"></p>
+                <h3 class="grid__item-title text_large">Маркетинг</h3>
+                <p class="grid__item-description text_regular">
+                  Учим запускать рекламу и управлять рекламными кампаниями.
+                  Отчеты, рассылки, PR, бренд и вот это все
+                </p>
+                <a class="grid__link">
+                  Узнать больше
+                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
+                </a>
               </div>
             </div>
             <div class="grid__item grid__item_position_4">
-              <div class="grid__item-front" style="background-color:chocolate">
-                <h3 class="grid__item-title">Маркетинг</h3>
+              <div class="grid__item-front">
+                <h3 class="grid__item-title text_large">Менеджмент</h3>
+                <img class="grid__icon" src="<%=require('./images/star.svg')%>" alt="">
               </div>
               <div class="grid__item-back">
-                <h3 class="grid__item-title">Маркетинг</h3>
-                <p class="grid__item-description">
-                  Здесь мы учим запускать рекламу и управлять рекламными кампаниями. Знакомим с анализом бренда,
-                  рассказываем про seo-оптимизацию и email-маркетинг, обучаем на реальных примерах из бизнеса.
+                <h3 class="grid__item-title text_large">Менеджмент</h3>
+                <p class="grid__item-description text_regular">
+                  Учим эффективно упрвлять проектами и продуктами
                 </p>
-                <a class="grid__link">Узнать больше</a>
+                <a class="grid__link">
+                  Узнать больше
+                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
+                </a>
               </div>
             </div>
             <div class="grid__item grid__item_position_5">
-              <div class="grid__item-front" style="background-color:darkseagreen">
-                <h3 class="grid__item-title">Аналитика</h3>
+              <div class="grid__item-front">
+                <h3 class="grid__item-title text_large">Программирование</h3>
+                <img class="grid__icon" src="<%=require('./images/Hope.svg')%>" alt="">
               </div>
               <div class="grid__item-back">
-                <p class="grid__item-description"></p>
+                <h3 class="grid__item-title text_large">Программирование</h3>
+                <p class="grid__item-description text_regular">
+                  Учим разработке и тестированию в условиях, которые имитируют реальную работу:
+                  с&nbsp;проектами, спринтами и дедлайнами
+                </p>
+                <a class="grid__link">
+                  Узнать больше
+                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
+                </a>
               </div>
             </div>
             <div class="grid__item grid__item_position_6">
-              <div class="grid__item-front" style="background-color:darkorchid">
-                <h3 class="grid__item-title">Менеджмент</h3>
+              <div class="grid__item-front">
+                <h3 class="grid__item-title text_large">Дизайн</h3>
+                <img class="grid__icon" src="<%=require('./images/Dawn.svg')%>" alt="">
               </div>
               <div class="grid__item-back">
-                <p class="grid__item-description"></p>
+                <h3 class="grid__item-title text_large">Дизайн</h3>
+                <p class="grid__item-description text_regular">
+                  Учим делать удобный и эстетичный дизайн
+                </p>
+                <a class="grid__link">
+                  Узнать больше
+                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
+                </a>
               </div>
             </div>
           </div>
@@ -390,27 +426,27 @@
         </button>
       </section>
       <!----------- блок video ----------->
-      <section class="videos">
-        <h2 class="videos__title">
+      <section class="videos content__videos">
+        <h2 class="videos__title title_h2">
           Истории ребят из нашей команды
         </h2>
-        <div class="grid_type_video">
-          <div class="grid__item-video grid__item_position_1">
+        <div class="videos__grid">
+          <div class="videos__grid-item videos__item_position_1">
             <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
           </div>
-          <div class="grid__item-video grid__item_position_2">
+          <div class="videos__grid-item videos__item_position_2">
             <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
           </div>
-          <div class="grid__item-video grid__item_position_3">
+          <div class="videos__grid-item videos__item_position_3">
             <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
           </div>
-          <div class="grid__item-video grid__item_position_4">
+          <div class="videos__grid-item videos__item_position_4">
             <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
           </div>
-          <div class="grid__item-video grid__item_position_5">
+          <div class="videos__grid-item videos__item_position_5">
             <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
           </div>
-          <div class="grid__item-video grid__item_position_6">
+          <div class="videos__grid-item videos__item_position_6">
             <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
           </div>
         </div>

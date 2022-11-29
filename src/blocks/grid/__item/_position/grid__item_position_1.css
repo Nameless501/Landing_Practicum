@@ -1,9 +1,8 @@
 .grid__item_position_1 {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: one;
 }
 
-@media screen and (max-width: 756px) {
-  .grid__item_position_1 {
-    grid-area: 1 / 1/ 2 / 2;
-  }
+.grid__item_position_1 > .grid__item-front,
+.grid__item_position_1 > .grid__item-back {
+  background-color: #F2D66B;
 }

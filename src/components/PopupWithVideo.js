@@ -19,7 +19,7 @@ export default class PopupWithVideo extends Popup {
   }
 
   handleClicks() {
-    const videoElements = document.querySelectorAll('.grid__item-video');
+    const videoElements = document.querySelectorAll('.videos__grid-item');
     videoElements.forEach(videoElement => {
       videoElement.addEventListener('click', () => {
         this.open();

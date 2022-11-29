@@ -2,6 +2,9 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: 215px 0 155px 205px;
+  grid-template-rows: 205px 162px 235px;
+  grid-template-areas: 'one two three'
+                       'one five three'
+                       'four five six';
   gap: 20px;
 }
