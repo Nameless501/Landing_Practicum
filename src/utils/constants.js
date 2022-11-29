@@ -42,6 +42,17 @@ export const vacanciesConfig = {
   containerSelector: '.vacancies__cards',
   cardHeaderSelector: '.accordion__card-header',
   showMoreButtonSelector: 'main-button_place_show-more',
-}
+};
 
 export const vacanciesFormElement = document.querySelector('.vacancies__form');
+
+// --------------- cards slider
+
+export const sliderCardsNodeList = document.querySelectorAll('.cards-slider__card')
+
+export const cardsSliderConfig = {
+  sliderCardsContainerSelector: '.cards-slider__cards',
+  sliderCardActiveSelector: 'cards-slider__card_active',
+  firstCardAnimationSelector: 'cards-slider__animation_card_first',
+  restCardsAnimationSelector: 'cards-slider__animation_card_rest',
+};
