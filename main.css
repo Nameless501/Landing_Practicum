@@ -12,7 +12,7 @@
 .page__content{margin:0 auto}
 
 .page{margin:0 auto;max-width:1440px;min-width:320px;padding:0}
-.header{align-items:center;box-sizing:border-box;display:flex;height:130px;justify-content:space-between;max-width:1200px;padding:0}
+.header{align-items:center;background-color:var(--color_background);box-sizing:border-box;display:flex;height:130px;justify-content:space-between;max-width:1200px;padding:0;position:sticky;top:0;z-index:10}
 .header__logo{display:block;height:29px;margin:0;padding:0;width:159px}
 .header__navigation-bar{box-sizing:border-box;display:flex;height:35px;justify-content:space-between;justify-self:end;margin:0 25px 0 0;padding:0}
 .header__navigation-links{align-items:center;display:flex;gap:var(--margin_M);list-style:none;margin:0;padding:0}
