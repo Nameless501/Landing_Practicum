@@ -24,6 +24,16 @@
 --font_size_small: 20px;
 --font_size_extra_small: 18px;
 
+/* размеры шрифтов для мобильных экранов */
+
+--font_size_h1_mob: 36px;
+--font_size_h2_mob: 28px;
+--font_size_h3_mob: 24px;
+--font_size_large_mob: 20px;
+--font_size_regular_mob: 18px;
+--font_size_small_mob: 16px;
+--font_size_extra_small_mob: 14px;
+
 /* шрифты */
 
 --font_font_h1: 'YS Display', sans-serif;
@@ -43,6 +53,16 @@
 --font_line_height_regular: 35px;
 --font_line_height_small: 23px;
 --font_line_height_extra_small: 21px;
+
+/* размер line-height для мобильных экранов   */
+
+--font_line_height_h1_mob: 42px;
+--font_line_height_h2_mob: 33px;
+--font_line_height_h3_mob: 28px;
+--font_line_height_large_mob: 23px;
+--font_line_height_regular_mob: 21px;
+--font_line_height_small_mob: 20px;
+--font_line_height_extra_small_mob: 18px;
 
 /* font weight */
 

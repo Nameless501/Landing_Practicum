@@ -85,7 +85,11 @@
 
 @import url(../blocks/grid/__item-front/grid__item-front.css);
 
+@import url(../blocks/grid/__item-front/_type/grid__item-front_type_fact.css);
+
 @import url(../blocks/grid/__item-back/grid__item-back.css);
+
+@import url(../blocks/grid/__item-back/_type/grid__item-back_type_fact.css);
 
 @import url(../blocks/grid/__item-description/grid__item-description.css);
 
@@ -314,6 +318,10 @@
 @import url(../blocks/videos/__grid-item/_position/videos__item_position_5.css);
 
 @import url(../blocks/videos/__grid-item/_position/videos__item_position_6.css);
+
+@import url(../blocks/videos/__photo/videos__photo.css);
+
+@import url(../blocks/videos/__icon/videos__icon.css);
 
 /* ------------- block accordion ------------- */
 
