@@ -60,3 +60,54 @@ carousel.setListeners();
 // ------------- faq event listeners
 
 SetFAQEventListeners(faqCardsList);
+
+// ------------- faq event listeners
+
+const sliderCardsList = [...document.querySelectorAll('.cards-slider__card')].reverse();
+const sliderCardsContainer = document.querySelector('.cards-slider__cards');
+
+function renderSliderCards() {
+  sliderCardsList.forEach((card, index) => {
+    if(index === 0) {
+      card.classList.add('cards-slider__card_active');
+    } else {
+      card.classList.remove('cards-slider__card_active');
+    }
+
+    card.classList.remove('cards-slider__animation_card_rest');
+    card.classList.remove('cards-slider__animation_card_first');
+    card.classList.remove('cards-slider__animation_card_second');
+    card.style.zIndex = index * -1;
+    card.parentNode.style.order = sliderCardsList.length - index;
+  })
+}
+
+renderSliderCards();
+
+
+function handleSliderAnimationEnd() {
+  const firstCard = sliderCardsList.shift()
+  sliderCardsList.push(firstCard);
+
+  renderSliderCards();
+
+  sliderCardsContainer.addEventListener('click', handleSliderAnimationStart)
+  sliderCardsContainer.removeEventListener('animationend', handleSliderAnimationEnd);
+}
+
+function handleSliderAnimationStart() {
+  sliderCardsList.forEach((card, index) => {
+    if(index === 0) {
+      card.classList.add('cards-slider__animation_card_first');
+    } else if(index === 1) {
+      card.classList.add('cards-slider__animation_card_second');
+    } else {
+      card.classList.add('cards-slider__animation_card_rest');
+    }
+  });
+
+  sliderCardsContainer.addEventListener('animationend', handleSliderAnimationEnd);
+  sliderCardsContainer.removeEventListener('click', handleSliderAnimationStart);
+}
+
+sliderCardsContainer.addEventListener('click', handleSliderAnimationStart);
