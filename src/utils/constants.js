@@ -41,7 +41,7 @@ export const vacanciesConfig = {
   placeholderSelector: 'vacancies__empty',
   containerSelector: '.vacancies__cards',
   cardHeaderSelector: '.accordion__card-header',
-  showMoreButtonSelector: 'vacancies__show-more-button',
+  showMoreButtonSelector: 'main-button_place_show-more',
 }
 
 export const vacanciesFormElement = document.querySelector('.vacancies__form');
