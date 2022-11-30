@@ -1,3 +1,41 @@
+@keyframes first-card {
+  30% {
+    transform: translate(0);
+  }
+  100% {
+    z-index: -10;
+    transform: translate(810px);
+  }
+}
+
+@keyframes rest-cards {
+  40% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-163px);
+  }
+}
+
+@keyframes first-card-backward {
+  30% {
+    transform: translate(0);
+  }
+  100% {
+    z-index: 10;
+    transform: translate(-810px);
+  }
+}
+
+@keyframes rest-cards-backward {
+  40% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(163px);
+  }
+}
+
 .cards-slider {
   padding: 0;
   box-sizing: border-box;
@@ -23,98 +61,131 @@
   list-style: none;
 }
 
-.cards-slider__cards:nth-of-type(1) {
-  margin: 0;
-}
-
 .cards-slider__card {
-  margin: 0 0 0 -184px;
-  padding: 0 30px;
+  margin: 0 0 0 -225px;
+  padding: 35px 30px;
   width: 387px;
   height: 456px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
   position: relative;
-  background-color: var(--color_block);
   border-radius: 30px;
 }
 
-.cards-slider__wrapper {
+.cards-slider__animation_card_first {
+  animation: .8s forwards first-card;
+}
+
+.cards-slider__animation_card_first-backward {
+  animation: .8s forwards first-card-backward;
+}
+
+.cards-slider__animation_card_first > .cards-slider__card-image-wrapper > .cards-slider__card-blur {
+  backdrop-filter: blur(2.5px);
+  transition: backdrop-filter .5s linear;
+}
+
+.cards-slider__animation_card_first > .cards-slider__card-description > .cards-slider__card-blur {
+  backdrop-filter: blur(2.5px);
+  transition: backdrop-filter .5s linear;
+}
+
+.cards-slider__animation_card_rest {
+  animation: .8s forwards rest-cards;
+}
+
+.cards-slider__animation_card_rest-backward {
+  animation: .8s forwards rest-cards-backward;
+}
+
+.cards-slider__card-blur {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--color_accent);
+  background-color: transparent;
+  backdrop-filter: blur(2.5px);
+  visibility: visible;
+  transition: backdrop-filter 0s linear;
 }
 
-.cards-slider__wrapper_color_1 {
-  background-color: #7A7A7A;
-}
-
-.cards-slider__wrapper_color_2 {
-  background-color: #8C8C8C;
-}
-
-.cards-slider__wrapper_color_3 {
-  background-color: #A7A7A7;
-}
-
-.cards-slider__wrapper_color_4 {
-  background-color: var(--color_accent);
-}
-
-.cards-slider__wrapper_color_5 {
-  background-color: #7A7A7A;
+.cards-slider__card-blur_place_image {
+  border-radius: 15px;
 }
 
 .cards-slider__card_active {
-  z-index: 2;
+  margin: 0;
 }
 
-.cards-slider__card_active .cards-slider__wrapper {
-  display: none;
+.cards-slider__card_active > .cards-slider__card-image-wrapper > .cards-slider__card-blur {
+  visibility: hidden;
+}
+
+.cards-slider__card_active > .cards-slider__card-description > .cards-slider__card-blur {
+  visibility: hidden;
+}
+
+.cards-slider__card_color_blue {
+  background-color: #3F75E0;
+}
+
+.cards-slider__card_color_pink {
+  background-color: #D182AF;
+}
+
+.cards-slider__card_color_black {
+  background-color: #000;
+}
+
+.cards-slider__card_color_purple {
+  background-color: #7C6BE3;
+}
+
+.cards-slider__card-description {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #FFF;
+  position: relative;
 }
 
 .cards-slider__card-title {
-  margin: 35px 0 0;
+  margin: 0;
   padding: 0;
+  min-height: 70px;
+  letter-spacing: -1px;
 }
 
 .cards-slider__subtitle {
-  margin: 15px 0 0;
-  padding: 0;
-  max-width: 300px;
-}
-
-.cards-slider__image {
-  margin: 5px 0 0;
-  padding: 0;
-  width: 324px;
-  height: 170px;
-  background-color: var(--color_accent);
-  border-radius: 20px
-}
-
-.cards-slider__next-button {
   margin: 0;
   padding: 0;
-  width: 98px;
-  height: 98px;
-  border-radius: 50%;
-  border: 0;
-  background-color: var(--color_background);
-  position: absolute;
-  top: 179px;
-  left: 357px;
-  background-image: url('../../images/arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 64px 64px;
-  z-index: 3;
+  letter-spacing: -.7px;
+  line-height: 30px;
+}
+
+.cards-slider__card-image-wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 327px;
+  height: 146px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.cards-slider__card-image {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: transparent;
 }

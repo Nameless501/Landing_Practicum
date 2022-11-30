@@ -16,3 +16,8 @@
   cursor: pointer;
   background: #3F75E0;
 }
+
+.main-button:active {
+  cursor: pointer;
+  background: #1656C5;
+}

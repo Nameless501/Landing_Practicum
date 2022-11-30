@@ -11,3 +11,9 @@
   background-color: #EAEAEA;
   color: black;
 }
+
+.main-button_type_ghost:active {
+  border: 2px solid #EAEAEA;
+  background-color: #EAEAEA;
+  color: black;
+}

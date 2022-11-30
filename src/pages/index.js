@@ -6,6 +6,7 @@ import Popup from "../components/Popup.js";
 import PopupWithVideo from "../components/PopupWithVideo";
 import Carousel from '../components/Carousel.js';
 import SetFAQEventListeners from '../components/FAQ.js';
+import CardsSlider from '../components/CardsSlider.js'
 import {
   validationConfig,
   vacanciesConfig,
@@ -15,6 +16,8 @@ import {
   closeBtn,
   popupVideoSelector,
   faqCardsList,
+  sliderCardsNodeList,
+  cardsSliderConfig,
 } from "../utils/constants.js";
 
 // ------------- валидация формы
@@ -60,3 +63,9 @@ carousel.setListeners();
 // ------------- faq event listeners
 
 SetFAQEventListeners(faqCardsList);
+
+// ------------- cards slider
+
+const setCardsSliderListeners = CardsSlider(sliderCardsNodeList, cardsSliderConfig);
+
+setCardsSliderListeners();
