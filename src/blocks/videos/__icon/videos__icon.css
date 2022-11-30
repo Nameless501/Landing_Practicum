@@ -22,3 +22,30 @@
 .videos__grid-item:active .videos__icon{
   background: #1656C5 url(./../../../images/triangle_white.svg) no-repeat 55%;
 }
+
+@media screen and (max-width: 756px) {
+  .videos__icon {
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+    background-size: 9px 9px;
+    top: 16px;
+    left: 16px;
+    transform:none;
+  }
+
+  .videos__icon:hover {
+    background-size: 9px 9px;
+  }
+
+  .videos__grid-item:active .videos__icon{
+    background-size: 9px 9px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .videos__icon {
+    top: 11px;
+    left: 11px;
+  }
+}

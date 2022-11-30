@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 470px) {
   .text_large {
     font-size: var(--font_size_large_mob); /* 20px */
     line-height: var(--font_line_height_large_mob);

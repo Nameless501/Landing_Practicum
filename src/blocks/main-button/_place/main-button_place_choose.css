@@ -1,6 +1,9 @@
 .main-button_place_choose {
-  margin: 0;
-  position: absolute;
-  left: var(--margin_m);
-  bottom: 45px;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 470px) {
+  .main-button_place_choose  {
+    max-width: 275px;
+  }
 }

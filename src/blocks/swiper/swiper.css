@@ -1,11 +1,6 @@
 .swiper {
-  width: 315px;
-  height: 420px;
+  width: 295px;
+  height: 315px;
   overflow: visible !important;
   margin-left: 0 !important;
-}
-
-.swiper-slide {
-  min-width: 315px;
-  height: 400px;
 }
