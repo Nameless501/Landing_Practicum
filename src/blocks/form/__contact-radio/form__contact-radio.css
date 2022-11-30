@@ -1,0 +1,14 @@
+.form__contact-radio {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.form__contact-radio::before {
+  
+  width: 16px;
+  height: 16px;
+  left: 0;
+  bottom: 0;
+}

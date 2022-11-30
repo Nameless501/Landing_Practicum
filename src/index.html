@@ -742,28 +742,45 @@
             Если остались вопросы, напишите&nbsp;нам
           </h2>
           <div class="contacts__items">
-            <img
+            <span class="contacts__span"><img
               class="contacts__vector"
               src="<%=require('./images/Vector 145.svg')%>"
               alt="vector"
-            />
+            /></span>
             <div class="contacts__container">
-              <button class="contacts__btn contacts__btn_type_tg" type="button"></button>
+
+              <a href="https://t.me/yandex"
+                ><button
+                  class="contacts__btn contacts__btn_type_tg"
+                  type="button"
+                ></button
+              ></a>
               <p class="contacts__text text_large">Telegram</p>
             </div>
             <div class="contacts__container">
-              <button class="contacts__btn contacts__btn_type_vk" type="button"></button>
+              <a href="https://vk.com/yandex"
+              ><button
+                class="contacts__btn contacts__btn_type_vk"
+                type="button"
+              ></button
+            ></a>
               <p class="contacts__text text_large">ВКонтакте</p>
             </div>
             <div class="contacts__container">
-              <button class="contacts__btn contacts__btn_type_ld" type="button"></button>
+              <a href="#"
+                ><button
+                  class="contacts__btn contacts__btn_type_ld"
+                  type="button"
+                ></button
+              ></a>
               <p class="contacts__text text_large">LinkedIn</p>
             </div>
-            <img
+
+            <span class="contacts__span"><img
               class="contacts__vector"
               src="<%=require('./images/Vector 135.svg')%>"
               alt="vector"
-            />
+            /></span>
           </div>
         </section>
       </main>
@@ -777,7 +794,7 @@
           <div class="add">
             <a class="add__text text_regular" href="#">Помощь</a>
             <a class="add__text text_regular" href="#">Вакансии</a>
-            <a class="add__text text_regular" href="#">Вакансии</a>
+            <a class="add__text text_regular" href="#">Лицензия</a>
           </div>
           <div class="about">
             <a class="about__text text_regular" href="#">Правовая информация</a>
@@ -787,33 +804,35 @@
         </div>
         <div class="footer__journal">
           <p class="text_regular footer__journal-text">Журнал</p>
-          <img src="<%=require('./images/vk_f.svg')%>" alt="vk" /><img
-            src="<%=require('./images/telegram.svg')%>"
-            alt="telegram"
-          />
+          <a href="#" class="footer__journal-img"
+            ><img src="<%=require('./images/vk_f.svg')%>" alt="vk" /></a
+          ><a href="#" class="footer__journal-img"
+            ><img src="<%=require('./images/telegram.svg')%>" alt="telegram"
+          /></a>
         </div>
         <div class="info">
           <p class="text_regular info__text">
             &copy; 2022 АНО ДПО «ШАД», ООО «Яндекс»
           </p>
           <div class="info__text-container">
-          <p class="text_regular info__text-agree">
-            Информация на данной странице описывает возможные варианты получения
-            дополнительного дохода в месяц (т.н. подработка). Не является
-            предложением о работе. Размещенные объявления о потребности в тех
-            или иных услугах не являются вакансиями.
-          </p>
-          <p class="text_regular info__text-agree">
-            Образовательные услуги оказываются АНО ДПО «ШАД». ШАД —
-            <a class="info__link" href="#">это Школа анализа данных</a>, основанная
-            Яндексом и оказывающая образовательные услуги на основании
-            <a class="info__link" href="#">Лицензии № 036031</a> от 24 марта 2015 года.
-          </p>
-          <p class="text_regular info__text-agree">
-            Сертификат о прохождении обучения по программе дополнительного
-            профессионального образования также выдается АНО ДПО «ШАД».
-          </p>
-        </div>
+            <p class="text_regular info__text-agree">
+              Информация на данной странице описывает возможные варианты
+              получения дополнительного дохода в месяц (т.н. подработка). Не
+              является предложением о работе. Размещенные объявления о
+              потребности в тех или иных услугах не являются вакансиями.
+            </p>
+            <p class="text_regular info__text-agree info__text-none">
+              Образовательные услуги оказываются АНО ДПО «ШАД». ШАД —
+              <a class="info__link" href="#">это Школа анализа данных</a>,
+              основанная Яндексом и оказывающая образовательные услуги на
+              основании <a class="info__link" href="#">Лицензии № 036031</a> от
+              24 марта 2015 года.
+            </p>
+            <p class="text_regular info__text-agree info__text-none">
+              Сертификат о прохождении обучения по программе дополнительного
+              профессионального образования также выдается АНО ДПО «ШАД».
+            </p>
+          </div>
         </div>
       </footer>
       <!----------- блок video popup ----------->
@@ -833,15 +852,15 @@
       <div class="popup popup__form">
         <div class="popup__container">
           <form action="#" class="form feedback-form" novalidate>
-            <h2 class="form__title">
-              Расскажите нам о себе и мы сохраним вашу анкету в базе данных
+            <h2 class="form__title text_regular">
+              Хочу стать наставником на курсе «Мидл фронтенд-разработчик»
             </h2>
             <input
               class="form__input"
               type="text"
               id="name-input"
               name="name"
-              placeholder="ФИО"
+              placeholder="Имя"
               autocomplete="off"
               minlength="2"
               maxlength="40"
@@ -853,22 +872,47 @@
               type="text"
               name="email"
               id="email-input"
-              placeholder="Почта"
+              placeholder="Email"
               autocomplete="off"
               minlength="2"
               maxlength="40"
               required
             />
             <span class="form__error email-input-error"></span>
+
+            <div class="form__contact-items">
+              <input
+                type="radio"
+                id="contactChoice1"
+                name="tel"
+                value="tel"
+                class="form__contact-radio"
+              />
+              <label for="contactChoice1" class="form__contact-item"
+                >Телефон</label
+              >
+
+              <input
+                type="radio"
+                id="contactChoice2"
+                name="tel"
+                value="tg"
+                class="form__contact-radio"
+              />
+              <label for="contactChoice2" class="form__contact-item"
+                >Телеграм</label
+              >
+            </div>
+
             <input
               class="form__input"
-              type="text"
+              type="tel"
               id="tel-input"
               name="tel"
-              placeholder="Telegram"
+              placeholder="+7"
               autocomplete="off"
               minlength="2"
-              maxlength="20"
+              maxlength="40"
               required
             />
             <span class="form__error tel-input-error"></span>
