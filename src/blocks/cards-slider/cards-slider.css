@@ -17,7 +17,6 @@
   }
 }
 
-
 @keyframes first-card-backward {
   30% {
     transform: translate(0);
@@ -36,7 +35,6 @@
     transform: translate(163px);
   }
 }
-
 
 .cards-slider {
   padding: 0;
@@ -84,8 +82,13 @@
   animation: .8s forwards first-card-backward;
 }
 
-.cards-slider__animation_card_first > .cards-slider__card-wrapper {
-  backdrop-filter: blur(1.5px);
+.cards-slider__animation_card_first > .cards-slider__card-image-wrapper > .cards-slider__card-blur {
+  backdrop-filter: blur(2.5px);
+  transition: backdrop-filter .5s linear;
+}
+
+.cards-slider__animation_card_first > .cards-slider__card-description > .cards-slider__card-blur {
+  backdrop-filter: blur(2.5px);
   transition: backdrop-filter .5s linear;
 }
 
@@ -97,26 +100,33 @@
   animation: .8s forwards rest-cards-backward;
 }
 
-.cards-slider__card-wrapper {
+.cards-slider__card-blur {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
   position: absolute;
   top: 0;
   left: 0;
   background-color: transparent;
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(2.5px);
   visibility: visible;
   transition: backdrop-filter 0s linear;
+}
+
+.cards-slider__card-blur_place_image {
+  border-radius: 15px;
 }
 
 .cards-slider__card_active {
   margin: 0;
 }
 
-.cards-slider__card_active > .cards-slider__card-wrapper {
+.cards-slider__card_active > .cards-slider__card-image-wrapper > .cards-slider__card-blur {
+  visibility: hidden;
+}
+
+.cards-slider__card_active > .cards-slider__card-description > .cards-slider__card-blur {
   visibility: hidden;
 }
 
@@ -143,6 +153,7 @@
   flex-direction: column;
   gap: 10px;
   color: #FFF;
+  position: relative;
 }
 
 .cards-slider__card-title {
@@ -159,11 +170,22 @@
   line-height: 30px;
 }
 
-.cards-slider__image {
+.cards-slider__card-image-wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 327px;
+  height: 146px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.cards-slider__card-image {
   margin: 0;
   padding: 0;
   display: block;
   width: 100%;
-  height: 146px;
+  height: 100%;
   border-radius: 15px;
+  background-color: transparent;
 }
