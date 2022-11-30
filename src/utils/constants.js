@@ -32,12 +32,15 @@ export const accordionExpandSelector = "accordion__card-description";
 // --------------- render vacancies
 
 export const vacanciesConfig = {
-  templateSelector: ".vacancies__card-template",
-  cardSelector: ".accordion__card",
-  cardTitleSelector: ".accordion__card-header-title",
-  cardDescriptionSelector: ".accordion__card-description-textarea",
-  cardTextSelector: "accordion__card-description-text",
-  cardTextSizeSelector: "text_regular",
+  templateSelector: '.vacancies__card-template',
+  cardSelector: '.accordion__card_type_',
+  cardTitleSelector: '.accordion__card-header-title',
+  listItemTemplateSelector: '.accordion__card-description-template',
+  requirementsListItemSelector: '.accordion__card-description-requirement',
+  requirementsListSelector: '.accordion__card-description-requirements-list',
+  salarySelector: '.accordion__card-description-salary-amount',
+  courseLengthSelector: '.accordion__card-description-length',
+  textInsertSelector: '.accordion__card-description-inserted-text',
   cardButtonSelector: accordionArrowButtonSelector,
   cardExpandSelector: accordionExpandSelector,
   roleInputSelector: 'input[name="role"]:checked',

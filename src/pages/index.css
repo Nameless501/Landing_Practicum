@@ -24,9 +24,13 @@
 
 @import url(../blocks/text/_type/text_regular.css);
 
+@import url(../blocks/text/_type/text_regular-bold.css);
+
 @import url(../blocks/text/_type/text_small.css);
 
 @import url(../blocks/text/_type/text_extra_small.css);
+
+@import url(../blocks/text/_type/text_radio.css);
 
 /* ------------- block window ------------- */
 

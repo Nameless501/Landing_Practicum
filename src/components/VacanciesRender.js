@@ -18,15 +18,23 @@ export default function VacanciesRender(vacanciesConfig, vacanciesData) {
       templateSelector,
       cardSelector,
       cardTitleSelector,
-      cardDescriptionSelector,
-      cardTextSelector,
-      cardTextSizeSelector,
       cardHeaderSelector,
+      listItemTemplateSelector,
+      requirementsListItemSelector,
+      textInsertSelector,
+      requirementsListSelector,
+      salarySelector,
+      courseLengthSelector,
     } = vacanciesConfig;
 
-    function getTemplate() {
-      const cardTemplate = document.querySelector(templateSelector).content.querySelector(cardSelector).cloneNode(true);
+    function getCardTemplate(role) {
+      const cardTemplate = document.querySelector(templateSelector).content.querySelector(cardSelector + role).cloneNode(true);
       return cardTemplate;
+    }
+
+    function getListTemplate(card) {
+      const listItem = card.querySelector(listItemTemplateSelector).content.querySelector(requirementsListItemSelector).cloneNode(true);
+      return listItem;
     }
 
     function setListeners(card) {
@@ -56,24 +64,32 @@ export default function VacanciesRender(vacanciesConfig, vacanciesData) {
       });
     }
 
-    function createParagraph(string) {
-      const textNode = document.createElement('p');
-      textNode.classList.add(cardTextSelector, cardTextSizeSelector);
-      textNode.textContent = string;
+    function createParagraph(string, card) {
+      const listItem = getListTemplate(card);
+      const paragraph = listItem.querySelector(textInsertSelector);
 
-      return textNode;
+      paragraph.textContent = string;
+
+      return listItem;
     }
 
-    const currentCard = getTemplate();
+    const currentCard = getCardTemplate(data.role);
     const title = currentCard.querySelector(cardTitleSelector);
-    const description = currentCard.querySelector(cardDescriptionSelector);
+    const requirementsList = currentCard.querySelector(requirementsListSelector);
+    const salaryElement = currentCard.querySelector(salarySelector);
 
     setListeners(currentCard);
 
     title.textContent = data.name;
     data.description.forEach((paragraph) => {
-      description.append(createParagraph(paragraph));
+      requirementsList.append(createParagraph(paragraph, currentCard));
     });
+    salaryElement.textContent = data.salary;
+
+    if(data.courseLength) {
+      const courseLengthElement = currentCard.querySelector(courseLengthSelector);
+      courseLengthElement.textContent = data.courseLength;
+    }
 
     return currentCard;
   }

@@ -77,3 +77,13 @@ const setCardsSliderListeners = CardsSlider(
 );
 
 setCardsSliderListeners();
+
+const headerElement = document.querySelector('.header');
+
+window.addEventListener('mousemove', (evt) => {
+  if(evt.y < 130) {
+    headerElement.style.top = 0;
+  } else {
+    headerElement.style.top = '-130px';
+  }
+})

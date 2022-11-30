@@ -1,5 +1,4 @@
 .accordion {
-  margin: 40px 0 0;
   padding: 0;
   max-width: 1200px;
   display: flex;
@@ -10,21 +9,20 @@
 }
 
 .accordion > .accordion__card:first-child {
-  border-top: 2px solid #000000;
+  border-top: 2px solid #EAEAEA;
 }
 
 .accordion__card {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #EAEAEA;
   box-sizing: border-box;
 }
 
 .accordion__card-header {
   margin: 0;
-  padding: 0;
-  height: 104px;
+  padding: 23px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,17 +38,24 @@
 }
 
 .accordion__card-header-button {
-  margin: 0;
+  margin: 0 13px 0 0;
   padding: 0;
-  width: 64px;
-  height: 64px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
   background-image: url('../../images/arrow.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 34px 32px;
   background-color: transparent;
   border: 0;
-  transform: rotate(90deg);
+}
+
+.accordion__card-header-button:hover {
+  background-image: url('../../images/Arrow_white.svg');
+  background-color: #000;
+  transform: rotate(180deg);
 }
 
 .accordion__card-header-button:hover {
@@ -58,27 +63,41 @@
 }
 
 .accordion__card-header-button_active {
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
+}
+
+.accordion__card-header-button_active:hover {
+  transform: rotate(0);
 }
 
 .accordion__card-description {
   margin: 20px 0 0;
   padding: 0;
   display: none;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .accordion__card-description_visible {
   display: flex;
 }
 
-.accordion__card-description-textarea {
+.accordion__card-description-title {
   margin: 0;
   padding: 0;
-  max-width: 693px;
+  color: #3F75E0;
+}
+
+.accordion__card-description-textarea {
+  margin: 55px 0 0;
+  padding: 0;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+}
+
+.accordion__card-description-textarea_place_faq {
+  margin: 0 0 40px;
 }
 
 .accordion__card-description-text {
@@ -86,6 +105,29 @@
   padding: 0;
 }
 
-.accordion__card-description-text:last-of-type {
-  margin-bottom: 40px;
+.accordion__card-description-requirements {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion__card-description-text_type_list {
+  display: flex;
+  gap: 10px;
+}
+
+.accordion__card-description-requirements-list {
+  margin: 5px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__card-description-text-span {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.accordion__card-description-inserted-text {
+  margin: 0;
+  padding: 0;
 }
