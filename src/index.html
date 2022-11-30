@@ -14,22 +14,22 @@
       <nav class="header__navigation-bar">
         <ul class="header__navigation-links">
           <li>
-            <a href="#" class="header__navigation-link text_regular">
+            <a href="#departments" class="header__navigation-link text_regular">
               Направления
             </a>
           </li>
           <li>
-            <a href="#" class="header__navigation-link text_regular">
+            <a href="#vacancies" class="header__navigation-link text_regular">
               Предложения
             </a>
           </li>
           <li>
-            <a href="#" class="header__navigation-link text_regular">
+            <a href="#reviews" class="header__navigation-link text_regular">
               Отзывы
             </a>
           </li>
           <li>
-            <a href="#" class="header__navigation-link text_regular">
+            <a href="#faq" class="header__navigation-link text_regular">
               FAQ
             </a>
           </li>
@@ -287,7 +287,7 @@
           </div>
         </section>
         <!----------- блок departments ----------->
-        <section class="departments content__departments">
+        <section id="departments" class="departments content__departments">
           <h2 class="departments__title title_h2">
             О нашем проекте
           </h2>
@@ -381,8 +381,10 @@
           </div>
         </section>
         <!----------- блок vacancies ----------->
-        <section class="vacancies content__vacancies">
-          <h2 class="vacancies__title title_h2">Вакансии</h2>
+        <section id="vacancies" class="vacancies content__vacancies">
+          <h2 class="vacancies__title title_h2">
+            Открытые предложения
+          </h2>
           <form class="vacancies__form">
             <fieldset class="vacancies__role-selection">
               <input
@@ -395,7 +397,7 @@
               />
               <label
                 for="role-mentor"
-                class="vacancies__role-button text_small"
+                class="vacancies__role-button text_radio"
               >
                 Наставник
               </label>
@@ -408,7 +410,7 @@
               />
               <label
                 for="role-reviewer"
-                class="vacancies__role-button text_small"
+                class="vacancies__role-button text_radio"
               >
                 Ревьюер
               </label>
@@ -424,7 +426,7 @@
               />
               <label
                 for="course-programming"
-                class="vacancies__course-button text_small"
+                class="vacancies__course-button text_radio"
               >
                 Программирование
               </label>
@@ -437,7 +439,7 @@
               />
               <label
                 for="course-analytics"
-                class="vacancies__course-button text_small"
+                class="vacancies__course-button text_radio"
               >
                 Аналитика
               </label>
@@ -450,7 +452,7 @@
               />
               <label
                 for="course-design"
-                class="vacancies__course-button text_small"
+                class="vacancies__course-button text_radio"
               >
                 Дизайн
               </label>
@@ -463,7 +465,7 @@
               />
               <label
                 for="course-marketing"
-                class="vacancies__course-button text_small"
+                class="vacancies__course-button text_radio"
               >
                 Маркетинг
               </label>
@@ -476,7 +478,7 @@
               />
               <label
                 for="course-management"
-                class="vacancies__course-button text_small"
+                class="vacancies__course-button text_radio"
               >
                 Менеджмент
               </label>
@@ -485,31 +487,114 @@
           <ul class="accordion vacancies__cards"></ul>
           <div class="vacancies__empty text_large">
             <div class="vacancies__empty-description">
-              <h3 class="vacancies__empty-title">Таких вакансий пока нет</h3>
+              <h3 class="vacancies__empty-title">Таких предложений пока нет</h3>
               <p class="vacancies__empty-text text_regular">
-                Расскажите нам о себе и мы сохраним вашу анкету в базе данных и
-                рассмотрим вас на будущую вакансию
+                Расскажите нам о себе и мы сохраним ваши данные для возможного сотрудничества в будущем
               </p>
             </div>
             <button
               type="button"
               class="main-button main-button_type_secondary responce main-button_place_empty-vacancies text_extra_small"
             >
-              Оставить заявку
+              Рассказать
             </button>
           </div>
           <template class="vacancies__card-template">
-            <li class="accordion__card">
+            <li class="accordion__card accordion__card_type_mentor">
               <div class="accordion__card-header">
                 <h3 class="accordion__card-header-title text_large"></h3>
                 <button class="accordion__card-header-button"></button>
               </div>
               <article class="accordion__card-description">
+                <h3 class="accordion__card-description-title text_regular-bold">
+                  [Оплата в среднем
+                  <span class="accordion__card-description-salary-amount"></span>
+                  тысяч ₽]
+                </h3>
                 <div class="accordion__card-description-textarea">
-                  <!--
-                      <p class="accordion__card-description-text"></p>
-                      <p class="accordion__card-description-text"></p>
-                    -->
+                  <h3 class="accordion__card-description-title text_regular-bold">
+                    Что делает наставник?
+                  </h3>
+                  <p class="accordion__card-description-text text_regular">
+                    Наставник помогает студентам учиться: отвечает на вопросы и помогает с трудностями.
+                    Каждый наставник курирует группу из 50 студентов: общается с ними в Slack,
+                    проводит групповые звонки на протяжении
+                    <span class="accordion__card-description-length text_regular"></span>
+                    месяцев обучения и постоянно улучшает образовательный опыт.
+                  </p>
+                </div>
+                <div class="accordion__card-description-textarea">
+                  <h3 class="accordion__card-description-title text_regular-bold">
+                    Я хочу стать наставником. Меня возьмут?
+                  </h3>
+                  <div class="accordion__card-description-requirements">
+                    <p class="accordion__card-description-text text_regular">
+                      Скорее всего — да, если вы:
+                    </p>
+                    <ul class="accordion__card-description-requirements-list">
+                      <template class="accordion__card-description-template">
+                        <li class="accordion__card-description-requirement">
+                          <p class="accordion__card-description-text accordion__card-description-text_type_list text_regular">
+                            <span class="accordion__card-description-text-span">
+                              &bull;
+                            </span>
+                            <span class="accordion__card-description-inserted-text"></span>
+                          </p>
+                        </li>
+                      </template>
+                    </ul>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="text_small main-button main-button_place_vacancies main-button_type_secondary"
+                >
+                  Откликнуться
+                </button>
+              </article>
+            </li>
+            <li class="accordion__card accordion__card_type_reviewer">
+              <div class="accordion__card-header">
+                <h3 class="accordion__card-header-title text_large"></h3>
+                <button class="accordion__card-header-button"></button>
+              </div>
+              <article class="accordion__card-description">
+                <h3 class="accordion__card-description-title text_regular-bold">
+                  [Оплата в среднем
+                  <span class="accordion__card-description-salary-amount"></span>
+                  тысяч ₽]
+                </h3>
+                <div class="accordion__card-description-textarea">
+                  <h3 class="accordion__card-description-title text_regular-bold">
+                    Что делает ревьюер?
+                  </h3>
+                  <p class="accordion__card-description-text text_regular">
+                    Проверяет написанный студентом код и даёт обратную связь.
+                    Именно ревьюер решает: зачесть задание или нет. Также он даёт советы по улучшению кода,
+                    отмечает неточности, указывает на ошибки.
+                  </p>
+                </div>
+                <div class="accordion__card-description-textarea">
+                  <h3 class="accordion__card-description-title text_regular-bold">
+                    Я хочу стать ревьюером. Меня возьмут?
+                  </h3>
+                  <div class="accordion__card-description-requirements">
+                    <p class="accordion__card-description-text text_regular">
+                      Скорее всего — да, если вы:
+                    </p>
+                    <ul class="accordion__card-description-requirements-list">
+                      <template class="accordion__card-description-template">
+                        <li class="accordion__card-description-requirement">
+                          <p class="accordion__card-description-text accordion__card-description-text_type_list text_regular">
+                            <span class="accordion__card-description-text-span">
+                              &bull;
+                            </span>
+                            <span class="accordion__card-description-inserted-text"></span>
+                          </p>
+                        </li>
+                      </template>
+                    </ul>
+                  </div>
                 </div>
                 <button
                   type="button"
@@ -528,7 +613,7 @@
           </button>
         </section>
         <!----------- блок video ----------->
-        <section class="videos content__videos">
+        <section id="reviews" class="videos content__videos">
           <h2 class="videos__title title_h2">
             Истории ребят из нашей команды
           </h2>
@@ -560,30 +645,24 @@
           </div>
         </section>
         <!----------- блок FAQ ----------->
-        <section class="faq content__faq">
+        <section id="faq" class="faq content__faq">
           <h2 class="faq__title title_h2">FAQ</h2>
-          <ul class="faq__accordion accordion">
+          <ul class="faq_questions accordion">
             <li class="accordion__card">
               <div
                 class="accordion__card-header accordion__card-header_place_faq"
               >
                 <h3 class="accordion__card-header-title text_large">
-                  Как я пойму, что у меня достаточно опыта, чтобы делиться
-                  знаниями с людьми?
+                  Как я пойму, что у меня достаточно опыта, чтобы делиться знаниями?
                 </h3>
                 <button class="accordion__card-header-button"></button>
               </div>
               <article class="accordion__card-description">
-                <div class="accordion__card-description-textarea">
+                <div class="accordion__card-description-textarea accordion__card-description-textarea_place_faq">
                   <p class="accordion__card-description-text text_regular">
-                    Яндекс Практикум — это сервис онлайн-образования, доступный
-                    в России и Америке. Мы помогаем людям расти — на работе и в
-                    жизни.
-                  </p>
-                  <p class="accordion__card-description-text text_regular">
-                    Студенты могут освоить новую специальность, заговорить
-                    на иностранном языке и получать удовольствие от того, чем
-                    занимаются — каждый день.
+                    Мы в первую очередь ценим практический опыт с теми технологиями, которые изучают на наших курсах.
+                    Нам важно, чтобы наставники делились с группой настоящими рабочими кейсами, поэтому экспертами
+                    становятся специалисты уровня мидл и старше.
                   </p>
                 </div>
               </article>
@@ -598,16 +677,11 @@
                 <button class="accordion__card-header-button"></button>
               </div>
               <article class="accordion__card-description">
-                <div class="accordion__card-description-textarea">
+                <div class="accordion__card-description-textarea accordion__card-description-textarea_place_faq">
                   <p class="accordion__card-description-text text_regular">
                     Яндекс Практикум — это сервис онлайн-образования, доступный
                     в России и Америке. Мы помогаем людям расти — на работе и в
                     жизни.
-                  </p>
-                  <p class="accordion__card-description-text text_regular">
-                    Студенты могут освоить новую специальность, заговорить
-                    на иностранном языке и получать удовольствие от того, чем
-                    занимаются — каждый день.
                   </p>
                 </div>
               </article>
@@ -622,16 +696,11 @@
                 <button class="accordion__card-header-button"></button>
               </div>
               <article class="accordion__card-description">
-                <div class="accordion__card-description-textarea">
+                <div class="accordion__card-description-textarea accordion__card-description-textarea_place_faq">
                   <p class="accordion__card-description-text text_regular">
                     Яндекс Практикум — это сервис онлайн-образования, доступный
                     в России и Америке. Мы помогаем людям расти — на работе и в
                     жизни.
-                  </p>
-                  <p class="accordion__card-description-text text_regular">
-                    Студенты могут освоить новую специальность, заговорить
-                    на иностранном языке и получать удовольствие от того, чем
-                    занимаются — каждый день.
                   </p>
                 </div>
               </article>
@@ -646,16 +715,11 @@
                 <button class="accordion__card-header-button"></button>
               </div>
               <article class="accordion__card-description">
-                <div class="accordion__card-description-textarea">
+                <div class="accordion__card-description-textarea accordion__card-description-textarea_place_faq">
                   <p class="accordion__card-description-text text_regular">
                     Яндекс Практикум — это сервис онлайн-образования, доступный
                     в России и Америке. Мы помогаем людям расти — на работе и в
                     жизни.
-                  </p>
-                  <p class="accordion__card-description-text text_regular">
-                    Студенты могут освоить новую специальность, заговорить
-                    на иностранном языке и получать удовольствие от того, чем
-                    занимаются — каждый день.
                   </p>
                 </div>
               </article>

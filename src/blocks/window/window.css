@@ -3,7 +3,7 @@
   padding: 0;
   font-family: 'YS Display', Arial, sans-serif;
   color: var(--color_text);
-  background-color: #f5f5f5;
+  background-color: var(--color_background);
   box-sizing: border-box;
   position: relative;
   -moz-osx-font-smoothing: grayscale;
