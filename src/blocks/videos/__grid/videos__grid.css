@@ -11,6 +11,6 @@
   .videos__grid {
     gap: 15px;
     grid-template-columns: auto auto;
-    grid-template-rows: 120px 70px 120px 18px 122px;
+    grid-template-rows: 124px 58px 120px 16px 122px;
   }
 }

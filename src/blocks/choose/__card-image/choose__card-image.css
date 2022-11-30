@@ -7,3 +7,9 @@
   border-radius: 30px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 470px) {
+  .choose__card-image {
+    height: 160px;
+  }
+}
