@@ -2,3 +2,10 @@
 margin: 0;
 padding: 0;
 }
+
+@media screen and (max-width: 470px) {
+  .contacts__text {
+    font-size: var(--font_size_small_mob);
+    line-height: var(--font_line_height_small_mob);
+  }
+}

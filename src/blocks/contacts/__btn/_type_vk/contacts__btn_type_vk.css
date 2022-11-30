@@ -1,7 +1,5 @@
 .contacts__btn_type_vk {
   background-image: url(../../../../images/VK.svg);
-  width: 155px;
-  height: 117px;
   background-repeat: no-repeat;
   border: none;
 }
@@ -11,4 +9,10 @@
 }
 .contacts__btn_type_vk:visited {
   background-image: url(../../../../images/VK_p.svg);
+}
+
+@media screen and (max-width: 756px) {
+  .contacts__btn_type_vk {
+    background-size: 55px 56px;
+  }
 }
