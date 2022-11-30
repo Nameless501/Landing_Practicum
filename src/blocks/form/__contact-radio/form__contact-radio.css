@@ -1,14 +1,19 @@
 .form__contact-radio {
-  width: 0;
-  height: 0;
-  position: absolute;
   opacity: 0;
   z-index: -1;
 }
-.form__contact-radio::before {
-  
+.form__contact-radio + label::before {
+  content: "";
+  display: inline-block;
   width: 16px;
   height: 16px;
-  left: 0;
-  bottom: 0;
+  background-image: url(../../../images/Radio2.svg);
+  margin-right: 5px;
+}
+.form__contact-radio + label {
+  display: inline-flex;
+  align-items: center;
+}
+.form__contact-radio:checked + label::before {
+  background-image: url(../../../images/Radio.svg);
 }

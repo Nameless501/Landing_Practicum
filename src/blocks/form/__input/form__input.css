@@ -1,14 +1,24 @@
 .form__input {
   outline: none;
-  padding: 10px;;
+  padding: 10px;
   margin-top: 20px;
   border: 2px solid #e0e0e0;
   border-radius: 14px;
   width: 384px;
+  position: relative;
 }
 .form__input:first-of-type {
   margin-top: 30px;
 }
-.form__input:focus{
+.form__input:focus {
   border: 2px solid #000;
+}
+.form__input::before {
+  position: absolute;
+  background-image: url(../../../images/star.svg);
+  top: 7px;
+  left: 7px;
+  width: 16px;
+  height: 16px;
+  z-index: 200;
 }

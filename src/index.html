@@ -6,175 +6,246 @@
     <title>Title</title>
   </head>
 
-<body class="window">
-  <div class="page">
-    <!----------- блок header ----------->
-    <header class="header page__header">
-      <img src="<%=require('./images/logo-short.svg')%>" alt="yandex logo" class="header__logo">
-      <nav class="header__navigation-bar">
-        <ul class="header__navigation-links">
-          <li>
-            <a href="#" class="header__navigation-link text_regular">
-              Направления
-            </a>
-          </li>
-          <li>
-            <a href="#" class="header__navigation-link text_regular">
-              Предложения
-            </a>
-          </li>
-          <li>
-            <a href="#" class="header__navigation-link text_regular">
-              Отзывы
-            </a>
-          </li>
-          <li>
-            <a href="#" class="header__navigation-link text_regular">
-              FAQ
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button type="button" class="text_small main-button main-button_type_ghost main-button_place_header">
-        Хочу делиться знаниями
-      </button>
-    </header>
-    <main class="content page__content">
-      <!----------- блок lead ----------->
-      <section class="lead content__lead">
-        <h1 class="lead__title title_h1">
-          Делись знаниями,
-          <span class="lead__title-span lead__title-span_align_baseline">
-            <img src="<%=require('./images/lead_1.png')%>" alt="decoration" class="lead__image lead__image_1">
-          </span>
-          <br>
-          расти в профессии и делай
-          <span class="lead__title-span lead__title-span_align_middle">
-            <img src="<%=require('./images/bullet_1.svg')%>" alt="decoration" class="lead__image lead__image_2">
-          </span>
-          мир лучше
-          <span class="lead__title-span lead__title-span_align_middle">
-            <button type="button" class="text_small main-button main-button_place_lead main-button_type_primary">
-              Хочу делиться знаниями
-            </button>
-          </span>
-          <span class="lead__title-span lead__title-span_align_top">
-            <img src="<%=require('./images/lead_2.svg')%>" alt="decoration" class="lead__image lead__image_3">
-          </span>
-        </h1>
-      </section>
-      <!----------- блок cards-slider ----------->
-      <section class="cards-slider content__cards-slider">
-        <h2 class="cards-slider__title title_h2">
-          Что будете делать
-        </h2>
-        <div class="cards-slider__gallery">
-          <ul class="cards-slider__cards">
+  <body class="window">
+    <div class="page">
+      <!----------- блок header ----------->
+      <header class="header page__header">
+        <img
+          src="<%=require('./images/logo-short.svg')%>"
+          alt="yandex logo"
+          class="header__logo"
+        />
+        <nav class="header__navigation-bar">
+          <ul class="header__navigation-links">
             <li>
-              <article class="cards-slider__card cards-slider__card_color_black">
-                <div class="cards-slider__card-description">
-                  <h3 class="cards-slider__card-title text_large">
-                    Развиваться внутри вашей роли
-                  </h3>
-                  <p class="cards-slider__subtitle text_regular">
-                    вы сможете стать старшим наставником или сеньор-ревьювером
-                  </p>
-                  <div class="cards-slider__card-blur"></div>
-                </div>
-                <div class="cards-slider__card-image-wrapper">
-                  <img src="<%=require('./images/card_slider_6.jpg')%>" alt="card photo" class="cards-slider__card-image">
-                  <div class="cards-slider__card-blur cards-slider__card-blur_place_image"></div>
-                </div>
-              </article>
+              <a href="#" class="header__navigation-link text_regular">
+                Направления
+              </a>
             </li>
             <li>
-              <article class="cards-slider__card cards-slider__card_color_purple">
-                <div class="cards-slider__card-description">
-                  <h3 class="cards-slider__card-title text_large">
-                    Общаться с людьми из EdTech
-                  </h3>
-                  <p class="cards-slider__subtitle text_regular">
-                    станете частью сообщества экспертов и посмотрите на мир онлайн-образования изнутри
-                  </p>
-                  <div class="cards-slider__card-blur"></div>
-                </div>
-                <div class="cards-slider__card-image-wrapper">
-                  <img src="<%=require('./images/card_slider_5.jpg')%>" alt="card photo" class="cards-slider__card-image">
-                  <div class="cards-slider__card-blur cards-slider__card-blur_place_image"></div>
-                </div>
-              </article>
+              <a href="#" class="header__navigation-link text_regular">
+                Предложения
+              </a>
             </li>
             <li>
-              <article class="cards-slider__card cards-slider__card_color_blue">
-                <div class="cards-slider__card-description">
-                  <h3 class="cards-slider__card-title text_large">
-                    Развивать личный бренд
-                  </h3>
-                  <p class="cards-slider__subtitle text_regular">
-                    публикуйте статьи в нашем блоге и выступайте на мероприятиях, чтобы о вас узнали как об эксперте
-                  </p>
-                  <div class="cards-slider__card-blur"></div>
-                </div>
-                <div class="cards-slider__card-image-wrapper">
-                  <img src="<%=require('./images/card_slider_4.jpg')%>" alt="card photo" class="cards-slider__card-image">
-                  <div class="cards-slider__card-blur cards-slider__card-blur_place_image"></div>
-                </div>
-              </article>
+              <a href="#" class="header__navigation-link text_regular">
+                Отзывы
+              </a>
             </li>
             <li>
-              <article class="cards-slider__card cards-slider__card_color_black">
-                <div class="cards-slider__card-description">
-                  <h3 class="cards-slider__card-title text_large">
-                    Менять жизнь людей к лучшему
-                  </h3>
-                  <p class="cards-slider__subtitle text_regular">
-                    тысячи наших студентов нуждаются в ваших знаниях и опыте — не бойтесь ими делиться
-                  </p>
-                  <div class="cards-slider__card-blur"></div>
-                </div>
-                <div class="cards-slider__card-image-wrapper">
-                  <img src="<%=require('./images/card_slider_3.jpg')%>" alt="card photo" class="cards-slider__card-image">
-                  <div class="cards-slider__card-blur cards-slider__card-blur_place_image"></div>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="cards-slider__card cards-slider__card_color_pink">
-                <div class="cards-slider__card-description">
-                  <h3 class="cards-slider__card-title text_large">
-                    Учиться новому
-                  </h3>
-                  <p class="cards-slider__subtitle text_regular">
-                    вы узнаете, как давать обратную связь, выступать на публике и мотивировать людей
-                  </p>
-                  <div class="cards-slider__card-blur"></div>
-                </div>
-                <div class="cards-slider__card-image-wrapper">
-                  <img src="<%=require('./images/card_slider_2.jpg')%>" alt="card photo" class="cards-slider__card-image">
-                  <div class="cards-slider__card-blur cards-slider__card-blur_place_image"></div>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="cards-slider__card cards-slider__card_color_blue cards-slider__card_active">
-                <div class="cards-slider__card-description">
-                  <h3 class="cards-slider__card-title text_large">
-                    Иметь доход от 35 до 50 тысяч ₽ в месяц
-                  </h3>
-                  <p class="cards-slider__subtitle text_regular">
-                    работайте по 2-3 часа в день, в группе ≈50 человек, график выбираете сами
-                  </p>
-                  <div class="cards-slider__card-blur"></div>
-                </div>
-                <div class="cards-slider__card-image-wrapper">
-                  <img src="<%=require('./images/card_slider_1.jpg')%>" alt="card photo" class="cards-slider__card-image">
-                  <div class="cards-slider__card-blur cards-slider__card-blur_place_image"></div>
-                </div>
-              </article>
+              <a href="#" class="header__navigation-link text_regular"> FAQ </a>
             </li>
           </ul>
-        </div>
-      </section>
+        </nav>
+        <button
+          type="button"
+          class="text_small main-button main-button_type_ghost main-button_place_header"
+        >
+          Хочу делиться знаниями
+        </button>
+      </header>
+      <main class="content page__content">
+        <!----------- блок lead ----------->
+        <section class="lead content__lead">
+          <h1 class="lead__title title_h1">
+            Делись знаниями,
+            <span class="lead__title-span lead__title-span_align_baseline">
+              <img
+                src="<%=require('./images/lead_1.png')%>"
+                alt="decoration"
+                class="lead__image lead__image_1"
+              />
+            </span>
+            <br />
+            расти в профессии и делай
+            <span class="lead__title-span lead__title-span_align_middle">
+              <img
+                src="<%=require('./images/bullet_1.svg')%>"
+                alt="decoration"
+                class="lead__image lead__image_2"
+              />
+            </span>
+            мир лучше
+            <span class="lead__title-span lead__title-span_align_middle">
+              <button
+                type="button"
+                class="text_small main-button main-button_place_lead main-button_type_primary"
+              >
+                Хочу делиться знаниями
+              </button>
+            </span>
+            <span class="lead__title-span lead__title-span_align_top">
+              <img
+                src="<%=require('./images/lead_2.svg')%>"
+                alt="decoration"
+                class="lead__image lead__image_3"
+              />
+            </span>
+          </h1>
+        </section>
+        <!----------- блок cards-slider ----------->
+        <section class="cards-slider content__cards-slider">
+          <h2 class="cards-slider__title title_h2">Что будете делать</h2>
+          <div class="cards-slider__gallery">
+            <ul class="cards-slider__cards">
+              <li>
+                <article
+                  class="cards-slider__card cards-slider__card_color_black"
+                >
+                  <div class="cards-slider__card-description">
+                    <h3 class="cards-slider__card-title text_large">
+                      Развиваться внутри вашей роли
+                    </h3>
+                    <p class="cards-slider__subtitle text_regular">
+                      вы сможете стать старшим наставником или сеньор-ревьювером
+                    </p>
+                    <div class="cards-slider__card-blur"></div>
+                  </div>
+                  <div class="cards-slider__card-image-wrapper">
+                    <img
+                      src="<%=require('./images/card_slider_6.jpg')%>"
+                      alt="card photo"
+                      class="cards-slider__card-image"
+                    />
+                    <div
+                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
+                    ></div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="cards-slider__card cards-slider__card_color_purple"
+                >
+                  <div class="cards-slider__card-description">
+                    <h3 class="cards-slider__card-title text_large">
+                      Общаться с людьми из EdTech
+                    </h3>
+                    <p class="cards-slider__subtitle text_regular">
+                      станете частью сообщества экспертов и посмотрите на мир
+                      онлайн-образования изнутри
+                    </p>
+                    <div class="cards-slider__card-blur"></div>
+                  </div>
+                  <div class="cards-slider__card-image-wrapper">
+                    <img
+                      src="<%=require('./images/card_slider_5.jpg')%>"
+                      alt="card photo"
+                      class="cards-slider__card-image"
+                    />
+                    <div
+                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
+                    ></div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="cards-slider__card cards-slider__card_color_blue"
+                >
+                  <div class="cards-slider__card-description">
+                    <h3 class="cards-slider__card-title text_large">
+                      Развивать личный бренд
+                    </h3>
+                    <p class="cards-slider__subtitle text_regular">
+                      публикуйте статьи в нашем блоге и выступайте
+                      на мероприятиях, чтобы о вас узнали как об эксперте
+                    </p>
+                    <div class="cards-slider__card-blur"></div>
+                  </div>
+                  <div class="cards-slider__card-image-wrapper">
+                    <img
+                      src="<%=require('./images/card_slider_4.jpg')%>"
+                      alt="card photo"
+                      class="cards-slider__card-image"
+                    />
+                    <div
+                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
+                    ></div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="cards-slider__card cards-slider__card_color_black"
+                >
+                  <div class="cards-slider__card-description">
+                    <h3 class="cards-slider__card-title text_large">
+                      Менять жизнь людей к лучшему
+                    </h3>
+                    <p class="cards-slider__subtitle text_regular">
+                      тысячи наших студентов нуждаются в ваших знаниях и опыте —
+                      не бойтесь ими делиться
+                    </p>
+                    <div class="cards-slider__card-blur"></div>
+                  </div>
+                  <div class="cards-slider__card-image-wrapper">
+                    <img
+                      src="<%=require('./images/card_slider_3.jpg')%>"
+                      alt="card photo"
+                      class="cards-slider__card-image"
+                    />
+                    <div
+                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
+                    ></div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="cards-slider__card cards-slider__card_color_pink"
+                >
+                  <div class="cards-slider__card-description">
+                    <h3 class="cards-slider__card-title text_large">
+                      Учиться новому
+                    </h3>
+                    <p class="cards-slider__subtitle text_regular">
+                      вы узнаете, как давать обратную связь, выступать
+                      на публике и мотивировать людей
+                    </p>
+                    <div class="cards-slider__card-blur"></div>
+                  </div>
+                  <div class="cards-slider__card-image-wrapper">
+                    <img
+                      src="<%=require('./images/card_slider_2.jpg')%>"
+                      alt="card photo"
+                      class="cards-slider__card-image"
+                    />
+                    <div
+                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
+                    ></div>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article
+                  class="cards-slider__card cards-slider__card_color_blue cards-slider__card_active"
+                >
+                  <div class="cards-slider__card-description">
+                    <h3 class="cards-slider__card-title text_large">
+                      Иметь доход от 35 до 50 тысяч ₽ в месяц
+                    </h3>
+                    <p class="cards-slider__subtitle text_regular">
+                      работайте по 2-3 часа в день, в группе ≈50 человек, график
+                      выбираете сами
+                    </p>
+                    <div class="cards-slider__card-blur"></div>
+                  </div>
+                  <div class="cards-slider__card-image-wrapper">
+                    <img
+                      src="<%=require('./images/card_slider_1.jpg')%>"
+                      alt="card photo"
+                      class="cards-slider__card-image"
+                    />
+                    <div
+                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
+                    ></div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
         <!----------- блок how-to ----------->
         <section class="how-to content__how-to">
           <h2 class="how-to__title title_h2">Как стать экспертом</h2>
@@ -245,7 +316,7 @@
                 </li>
               </ul>
               <button
-                class="text_extra_small main-button main-button_place_choose main-button_type_secondary"
+                class="text_extra_small main-button main-button_place_choose main-button_type_secondary add__text_form_btn"
               >
                 Хочу стать наставником
               </button>
@@ -293,41 +364,49 @@
         </section>
         <!----------- блок departments ----------->
         <section class="departments content__departments">
-          <h2 class="departments__title title_h2">
-            О нашем проекте
-          </h2>
+          <h2 class="departments__title title_h2">О нашем проекте</h2>
           <div class="grid">
             <div class="grid__wrapper">
               <div class="grid__item active grid__item_position_1">
                 <div class="grid__item-front grid__item-front_type_fact">
                   <h3 class="grid__item-title_type_fact title_h3">
+
                     Яндекс Практикум — это сервис digital-образования.
+
                     <span class="title_h3 grid__item-title_hidden">Мы помогаем людям расти — на работе и в жизни.</span>
                   </h3>
                 </div>
                 <div class="grid__item-back grid__item-back_type_fact">
-                  <h3 class="grid__item-title_type_fact title_h3">Мы помогаем людям расти — на работе и в жизни.</h3>
+                  <h3 class="grid__item-title_type_fact title_h3">
+                    Мы помогаем людям расти — на работе и в жизни.
+                  </h3>
                 </div>
               </div>
               <div class="grid__item grid__item_position_2">
                 <div class="grid__item-front">
                   <h3 class="grid__item-title text_large">Анализ данных</h3>
-                  <img class="grid__icon" src="<%=require('./images/Party.svg')%>" alt="">
+                  <img
+                    class="grid__icon"
+                    src="<%=require('./images/Party.svg')%>"
+                    alt=""
+                  />
                 </div>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Анализ данных</h3>
                   <p class="grid__item-description text_regular">
                     Учим анализировать данные
                   </p>
-                  <a class="grid__link">
-                    Узнать больше
-                  </a>
+                  <a class="grid__link"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_3">
                 <div class="grid__item-front">
                   <h3 class="grid__item-title text_large">Маркетинг</h3>
-                  <img class="grid__icon" src="<%=require('./images/Hole.svg')%>" alt="">
+                  <img
+                    class="grid__icon"
+                    src="<%=require('./images/Hole.svg')%>"
+                    alt=""
+                  />
                 </div>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Маркетинг</h3>
@@ -335,55 +414,59 @@
                     Учим запускать рекламу и управлять рекламными кампаниями.
                     Отчеты, рассылки, PR, бренд и вот это все
                   </p>
-                  <a class="grid__link">
-                    Узнать больше
-                  </a>
+                  <a class="grid__link"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_4">
                 <div class="grid__item-front">
                   <h3 class="grid__item-title text_large">Менеджмент</h3>
-                  <img class="grid__icon" src="<%=require('./images/star.svg')%>" alt="">
+                  <img
+                    class="grid__icon"
+                    src="<%=require('./images/star.svg')%>"
+                    alt=""
+                  />
                 </div>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Менеджмент</h3>
                   <p class="grid__item-description text_regular">
                     Учим эффективно управлять проектами и продуктами
                   </p>
-                  <a class="grid__link">
-                    Узнать больше
-                  </a>
+                  <a class="grid__link"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_5">
                 <div class="grid__item-front">
                   <h3 class="grid__item-title text_large">Программирование</h3>
-                  <img class="grid__icon" src="<%=require('./images/Hope.svg')%>" alt="">
+                  <img
+                    class="grid__icon"
+                    src="<%=require('./images/Hope.svg')%>"
+                    alt=""
+                  />
                 </div>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Программирование</h3>
                   <p class="grid__item-description text_regular">
-                    Учим разработке и тестированию в условиях, которые имитируют реальную работу:
-                    с&nbsp;проектами, спринтами и дедлайнами
+                    Учим разработке и тестированию в условиях, которые имитируют
+                    реальную работу: с&nbsp;проектами, спринтами и дедлайнами
                   </p>
-                  <a class="grid__link">
-                    Узнать больше
-                  </a>
+                  <a class="grid__link"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_6">
                 <div class="grid__item-front">
                   <h3 class="grid__item-title text_large">Дизайн</h3>
-                  <img class="grid__icon" src="<%=require('./images/Dawn.svg')%>" alt="">
+                  <img
+                    class="grid__icon"
+                    src="<%=require('./images/Dawn.svg')%>"
+                    alt=""
+                  />
                 </div>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Дизайн</h3>
                   <p class="grid__item-description text_regular">
                     Учим делать удобный и эстетичный дизайн
                   </p>
-                  <a class="grid__link">
-                    Узнать больше
-                  </a>
+                  <a class="grid__link"> Узнать больше </a>
                 </div>
               </div>
             </div>
@@ -538,32 +621,72 @@
         </section>
         <!----------- блок video ----------->
         <section class="videos content__videos">
-          <h2 class="videos__title title_h2">
-            Истории ребят из нашей команды
-          </h2>
+          <h2 class="videos__title title_h2">Истории ребят из нашей команды</h2>
           <div class="videos__grid">
-            <div class="videos__grid-item videos__item_position_1" data-url="776189882?h=cc548d8c61">
-              <img src="<%=require('./images/Alisa.jpg')%>" class="videos__photo" alt="Алиса">
+            <div
+              class="videos__grid-item videos__item_position_1"
+              data-url="776189882?h=cc548d8c61"
+            >
+              <img
+                src="<%=require('./images/Alisa.jpg')%>"
+                class="videos__photo"
+                alt="Алиса"
+              />
               <div class="videos__icon"></div>
             </div>
-            <div class="videos__grid-item videos__item_position_2" data-url="776163954?h=1eedac0347">
-              <img src="<%=require('./images/Tina.jpg')%>" class="videos__photo" alt="Тина">
+            <div
+              class="videos__grid-item videos__item_position_2"
+              data-url="776163954?h=1eedac0347"
+            >
+              <img
+                src="<%=require('./images/Tina.jpg')%>"
+                class="videos__photo"
+                alt="Тина"
+              />
               <div class="videos__icon"></div>
             </div>
-            <div class="videos__grid-item videos__item_position_3" data-url="776122242?h=855cdd6f5d">
-              <img src="<%=require('./images/Sasha.jpg')%>" class="videos__photo" alt="Саша">
+            <div
+              class="videos__grid-item videos__item_position_3"
+              data-url="776122242?h=855cdd6f5d"
+            >
+              <img
+                src="<%=require('./images/Sasha.jpg')%>"
+                class="videos__photo"
+                alt="Саша"
+              />
               <div class="videos__icon"></div>
             </div>
-            <div class="videos__grid-item videos__item_position_4" data-url="776102940?h=be2fe601c6">
-              <img src="<%=require('./images/Vova.jpg')%>" class="videos__photo" alt="Вова">
+            <div
+              class="videos__grid-item videos__item_position_4"
+              data-url="776102940?h=be2fe601c6"
+            >
+              <img
+                src="<%=require('./images/Vova.jpg')%>"
+                class="videos__photo"
+                alt="Вова"
+              />
               <div class="videos__icon"></div>
             </div>
-            <div class="videos__grid-item videos__item_position_5" data-url="775791631?h=76194b89b5">
-              <img src="<%=require('./images/Rita.jpg')%>"class="videos__photo" alt="Рита">
+            <div
+              class="videos__grid-item videos__item_position_5"
+              data-url="775791631?h=76194b89b5"
+            >
+              <img
+                src="<%=require('./images/Rita.jpg')%>"
+                class="videos__photo"
+                alt="Рита"
+              />
               <div class="videos__icon"></div>
             </div>
-            <div class="videos__grid-item videos__item_position_6" data-url="776185296?h=e7b202cd48">
-              <img src="<%=require('./images/Polina.jpg')%>" class="videos__photo" alt="Полина">
+            <div
+              class="videos__grid-item videos__item_position_6"
+              data-url="776185296?h=e7b202cd48"
+            >
+              <img
+                src="<%=require('./images/Polina.jpg')%>"
+                class="videos__photo"
+                alt="Полина"
+              />
               <div class="videos__icon"></div>
             </div>
           </div>
@@ -677,13 +800,13 @@
             Если остались вопросы, напишите&nbsp;нам
           </h2>
           <div class="contacts__items">
-            <span class="contacts__span"><img
-              class="contacts__vector"
-              src="<%=require('./images/Vector 145.svg')%>"
-              alt="vector"
+            <span class="contacts__span"
+              ><img
+                class="contacts__vector"
+                src="<%=require('./images/Vector 145.svg')%>"
+                alt="vector"
             /></span>
             <div class="contacts__container">
-
               <a href="https://t.me/yandex"
                 ><button
                   class="contacts__btn contacts__btn_type_tg"
@@ -694,11 +817,11 @@
             </div>
             <div class="contacts__container">
               <a href="https://vk.com/yandex"
-              ><button
-                class="contacts__btn contacts__btn_type_vk"
-                type="button"
-              ></button
-            ></a>
+                ><button
+                  class="contacts__btn contacts__btn_type_vk"
+                  type="button"
+                ></button
+              ></a>
               <p class="contacts__text text_large">ВКонтакте</p>
             </div>
             <div class="contacts__container">
@@ -711,10 +834,11 @@
               <p class="contacts__text text_large">LinkedIn</p>
             </div>
 
-            <span class="contacts__span"><img
-              class="contacts__vector"
-              src="<%=require('./images/Vector 135.svg')%>"
-              alt="vector"
+            <span class="contacts__span"
+              ><img
+                class="contacts__vector"
+                src="<%=require('./images/Vector 135.svg')%>"
+                alt="vector"
             /></span>
           </div>
         </section>
@@ -801,6 +925,7 @@
               maxlength="40"
               required
             />
+
             <span class="form__error name-input-error"></span>
             <input
               class="form__input"
@@ -894,7 +1019,10 @@
                 >Даю согласие на обработку персональных данных</label
               >
             </div>
-            <button type="submit" class="form__btn form__btn_type_submit text_small">
+            <button
+              type="submit"
+              class="form__btn form__btn_type_submit text_small"
+            >
               Отправить
             </button>
           </form>
@@ -905,6 +1033,76 @@
               class="popup__close-image"
             />
           </button>
+        </div>
+      </div>
+      <!----------- блок form popup2 ----------->
+      <div class="popup popup__second-form">
+        <div class="popup__container popup__container_type_big">
+          <form action="#" class="form big_form">
+            <h2 class="form__title text_regular">
+              Расскажите нам о себе и мы сохраним ваши данные
+            </h2>
+            <input
+              class="form__input"
+              type="text"
+              id="name-input"
+              name="name"
+              placeholder="Имя"
+              autocomplete="off"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__error name-input-error"></span>
+            <input
+              class="form__input"
+              type="text"
+              name="email"
+              id="email-input"
+              placeholder="Email"
+              autocomplete="off"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__error email-input-error"></span>
+            <div class="form__contact-items">
+              <input
+                type="radio"
+                id="contactChoice1"
+                name="tel"
+                value="tel"
+                class="form__contact-radio"
+              />
+              <label for="contactChoice1" class="form__contact-item"
+                >Телефон</label
+              >
+
+              <input
+                type="radio"
+                id="contactChoice2"
+                name="tel"
+                value="tg"
+                class="form__contact-radio"
+              />
+              <label for="contactChoice2" class="form__contact-item"
+                >Телеграм</label
+              >
+            </div>
+
+            <input
+              class="form__input"
+              type="tel"
+              id="tel-input"
+              name="tel"
+              placeholder="+7"
+              autocomplete="off"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__error tel-input-error"></span>
+          </form>
         </div>
       </div>
     </div>
