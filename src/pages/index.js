@@ -6,7 +6,8 @@ import Popup from "../components/Popup.js";
 import PopupWithVideo from "../components/PopupWithVideo";
 import Carousel from "../components/Carousel.js";
 import SetFAQEventListeners from "../components/FAQ.js";
-import CardsSlider from '../components/CardsSlider.js'
+import CardsSlider from "../components/CardsSlider.js";
+
 import {
   validationConfig,
   vacanciesConfig,
@@ -18,12 +19,17 @@ import {
   faqCardsList,
   sliderCardsNodeList,
   cardsSliderConfig,
+  bigPopupBtn,
+  formBig,
 } from "../utils/constants.js";
 
 // ------------- валидация формы
 
-const validation = new FormValidator(validationConfig, formFeedback);
-validation.enableValidation();
+const formValidation = new FormValidator(validationConfig, formFeedback);
+formValidation.enableValidation();
+
+//const bigFormValidation = new FormValidator(validationConfig, formBig);
+//bigFormValidation.enableValidation();
 
 // ------------- попап формы
 
@@ -33,6 +39,11 @@ popupBtn.addEventListener("click", () => {
   formPopup.open();
 });
 
+/*const bigPopup = new Popup(".popup__second-form");
+bigPopup.setEventListeners();
+popupBtn.addEventListener("click", () => {
+  bigPopup.open();
+});*/
 
 // ------------- попап видео
 
@@ -60,6 +71,9 @@ SetFAQEventListeners(faqCardsList);
 
 // ------------- cards slider
 
-const setCardsSliderListeners = CardsSlider(sliderCardsNodeList, cardsSliderConfig);
+const setCardsSliderListeners = CardsSlider(
+  sliderCardsNodeList,
+  cardsSliderConfig
+);
 
 setCardsSliderListeners();

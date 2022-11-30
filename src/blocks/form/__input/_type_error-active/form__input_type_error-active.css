@@ -1,9 +1,6 @@
 .form__input_type_error-active {
   color: red;
   display: block;
-  position: absolute;
-  top: 141px;
-  left: 35px;
   min-height: 30px;
   padding: 0;
   margin: 5px 0 -35px 0;
