@@ -221,6 +221,8 @@
 
 @import url(../blocks/contacts/__text/contacts__text.css);
 
+@import url(../blocks/contacts/__span/contacts__span.css);
+
 /* ------------- block footer ------------- */
 
 @import url(../blocks/footer/footer.css);
@@ -278,6 +280,12 @@
 @import url(../blocks/form/__checkbox/form__checkbox.css);
 
 @import url(../blocks/form/__checkbox-input/form__checkbox-input.css);
+
+
+
+@import url(../blocks/form/__contact-items/form__contact-items.css);
+
+@import url(../blocks/form/__contact-radio/form__contact-radio.css);
 
 /* ------------- block popup ------------- */
 

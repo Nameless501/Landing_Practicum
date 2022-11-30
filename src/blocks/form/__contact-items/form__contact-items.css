@@ -1,0 +1,7 @@
+.form__contact-items {
+  display: flex;
+  max-width: 195px;
+  margin-top: 20px;
+  justify-content: space-between;
+  position: relative;
+}

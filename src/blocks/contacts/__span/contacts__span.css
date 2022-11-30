@@ -1,0 +1,13 @@
+.contacts__span {
+  margin: 2px 30px 61px 121px;
+  padding: 0;
+  display: inline-block;
+}
+.contacts__span:last-of-type {
+  margin: 21px 150px 79px 0;
+}
+@media (max-width:375px) {
+  .contacts__span{
+    display: none;
+  }
+}
