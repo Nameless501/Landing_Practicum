@@ -916,7 +916,7 @@
               required
             />
             <span class="form__error tel-input-error"></span>
-            <select name="roles" id="roles" class="form__select">
+            <!--<select name="roles" id="roles" class="form__select">
               <option value="1"></option>
               <option value="2">Наставник</option>
               <option value="3">Ревьюер</option>
@@ -929,7 +929,7 @@
               <option value="5">Дизайн</option>
               <option value="6">Маркетинг</option>
             </select>
-            <!--<textarea
+            <textarea
                   name="about"
                   id="about"
                   cols="30"
@@ -956,18 +956,16 @@
                 class="form__checkbox-input"
               />
               <label for="checkbox" class="form__checkbox-text"
-                >Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на
-                <a href="#" class="link">обработку указанных данных</a>
-                для целей рассмотрения анкеты и обратной связи по ней.</label
+                >Даю согласие на обработку персональных данных</label
               >
             </div>
-            <button type="submit" class="form__btn form__btn_type_submit">
+            <button type="submit" class="form__btn form__btn_type_submit text_small">
               Отправить
             </button>
           </form>
           <button type="button" class="popup__close">
             <img
-              src="<%=require('./images/CloseIcon.svg')%>"
+              src="<%=require('./images/Close.png')%>"
               alt="закрывающий крестик"
               class="popup__close-image"
             />
