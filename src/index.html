@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Title</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+  </head>
 
 <body class="window">
   <div class="page">
@@ -268,384 +267,577 @@
               Хочу стать ревьюером
             </button>
           </div>
-        </div>
-      </section>
-      <!----------- блок departments ----------->
-      <section class="departments content__departments">
-        <h2 class="departments__title title_h2">
-          О нашем проекте
-        </h2>
-        <div class="grid">
-          <div class="grid__wrapper">
-            <div class="grid__item active grid__item_position_1">
-              <div class="grid__item-front">
-                <h3 class="grid__item-title_type_fact text_large">Яндекс Практикум — сервис онлайн-образования.</h3>
-                <h3 class="grid__item-title_type_fact text_large">Мы помогаем людям расти — на&nbsp;работе и в жизни</h3>
+        </section>
+        <!----------- блок departments ----------->
+        <section class="departments content__departments">
+          <h2 class="departments__title title_h2">
+            О нашем проекте
+          </h2>
+          <div class="grid">
+            <div class="grid__wrapper">
+              <div class="grid__item active grid__item_position_1">
+                <div class="grid__item-front grid__item-front_type_fact">
+                  <h3 class="grid__item-title_type_fact title_h3">Яндекс Практикум — это сервис онлайн-образования.</h3>
+                </div>
+                <div class="grid__item-back grid__item-back_type_fact">
+                  <h3 class="grid__item-title_type_fact title_h3">Мы помогаем людям расти — на работе и в жизни.</h3>
+                </div>
               </div>
-              <div class="grid__item-back">
-                <p class="grid__item-description"></p>
+              <div class="grid__item grid__item_position_2">
+                <div class="grid__item-front">
+                  <h3 class="grid__item-title text_large">Анализ данных</h3>
+                </div>
+                <div class="grid__item-back">
+                  <h3 class="grid__item-title text_large">Анализ данных</h3>
+                  <p class="grid__item-description text_regular">
+                    Учим анализировать данные
+                  </p>
+                  <a class="grid__link">
+                    Узнать больше
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="grid__item grid__item_position_2">
-              <div class="grid__item-front">
-                <h3 class="grid__item-title text_large">Анализ данных</h3>
-                <img class="grid__icon" src="<%=require('./images/Party.svg')%>" alt="">
+              <div class="grid__item grid__item_position_3">
+                <div class="grid__item-front">
+                  <h3 class="grid__item-title text_large">Маркетинг</h3>
+                  <img class="grid__icon" src="<%=require('./images/Hole.svg')%>" alt="">
+                </div>
+                <div class="grid__item-back">
+                  <h3 class="grid__item-title text_large">Маркетинг</h3>
+                  <p class="grid__item-description text_regular">
+                    Учим запускать рекламу и управлять рекламными кампаниями.
+                    Отчеты, рассылки, PR, бренд и вот это все
+                  </p>
+                  <a class="grid__link">
+                    Узнать больше
+                  </a>
+                </div>
               </div>
-              <div class="grid__item-back">
-                <h3 class="grid__item-title text_large">Анализ данных</h3>
-                <p class="grid__item-description text_regular">
-                  Учим анализировать данные
-                </p>
-                <a class="grid__link">
-                  Узнать больше
-                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
-                </a>
+              <div class="grid__item grid__item_position_4">
+                <div class="grid__item-front">
+                  <h3 class="grid__item-title text_large">Менеджмент</h3>
+                  <img class="grid__icon" src="<%=require('./images/star.svg')%>" alt="">
+                </div>
+                <div class="grid__item-back">
+                  <h3 class="grid__item-title text_large">Менеджмент</h3>
+                  <p class="grid__item-description text_regular">
+                    Учим эффективно управлять проектами и продуктами
+                  </p>
+                  <a class="grid__link">
+                    Узнать больше
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="grid__item grid__item_position_3">
-              <div class="grid__item-front">
-                <h3 class="grid__item-title text_large">Маркетинг</h3>
-                <img class="grid__icon" src="<%=require('./images/Hole.svg')%>" alt="">
+              <div class="grid__item grid__item_position_5">
+                <div class="grid__item-front">
+                  <h3 class="grid__item-title text_large">Программирование</h3>
+                  <img class="grid__icon" src="<%=require('./images/Hope.svg')%>" alt="">
+                </div>
+                <div class="grid__item-back">
+                  <h3 class="grid__item-title text_large">Программирование</h3>
+                  <p class="grid__item-description text_regular">
+                    Учим разработке и тестированию в условиях, которые имитируют реальную работу:
+                    с&nbsp;проектами, спринтами и дедлайнами
+                  </p>
+                  <a class="grid__link">
+                    Узнать больше
+                  </a>
+                </div>
               </div>
-              <div class="grid__item-back">
-                <h3 class="grid__item-title text_large">Маркетинг</h3>
-                <p class="grid__item-description text_regular">
-                  Учим запускать рекламу и управлять рекламными кампаниями.
-                  Отчеты, рассылки, PR, бренд и вот это все
-                </p>
-                <a class="grid__link">
-                  Узнать больше
-                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
-                </a>
-              </div>
-            </div>
-            <div class="grid__item grid__item_position_4">
-              <div class="grid__item-front">
-                <h3 class="grid__item-title text_large">Менеджмент</h3>
-                <img class="grid__icon" src="<%=require('./images/star.svg')%>" alt="">
-              </div>
-              <div class="grid__item-back">
-                <h3 class="grid__item-title text_large">Менеджмент</h3>
-                <p class="grid__item-description text_regular">
-                  Учим эффективно упрвлять проектами и продуктами
-                </p>
-                <a class="grid__link">
-                  Узнать больше
-                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
-                </a>
-              </div>
-            </div>
-            <div class="grid__item grid__item_position_5">
-              <div class="grid__item-front">
-                <h3 class="grid__item-title text_large">Программирование</h3>
-                <img class="grid__icon" src="<%=require('./images/Hope.svg')%>" alt="">
-              </div>
-              <div class="grid__item-back">
-                <h3 class="grid__item-title text_large">Программирование</h3>
-                <p class="grid__item-description text_regular">
-                  Учим разработке и тестированию в условиях, которые имитируют реальную работу:
-                  с&nbsp;проектами, спринтами и дедлайнами
-                </p>
-                <a class="grid__link">
-                  Узнать больше
-                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
-                </a>
-              </div>
-            </div>
-            <div class="grid__item grid__item_position_6">
-              <div class="grid__item-front">
-                <h3 class="grid__item-title text_large">Дизайн</h3>
-                <img class="grid__icon" src="<%=require('./images/Dawn.svg')%>" alt="">
-              </div>
-              <div class="grid__item-back">
-                <h3 class="grid__item-title text_large">Дизайн</h3>
-                <p class="grid__item-description text_regular">
-                  Учим делать удобный и эстетичный дизайн
-                </p>
-                <a class="grid__link">
-                  Узнать больше
-                  <img src="<%=require('./images/arrow-right.svg')%>" alt="arrow-right">
-                </a>
+              <div class="grid__item grid__item_position_6">
+                <div class="grid__item-front">
+                  <h3 class="grid__item-title text_large">Дизайн</h3>
+                  <img class="grid__icon" src="<%=require('./images/Dawn.svg')%>" alt="">
+                </div>
+                <div class="grid__item-back">
+                  <h3 class="grid__item-title text_large">Дизайн</h3>
+                  <p class="grid__item-description text_regular">
+                    Учим делать удобный и эстетичный дизайн
+                  </p>
+                  <a class="grid__link">
+                    Узнать больше
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!----------- блок vacancies ----------->
-      <section class="vacancies content__vacancies">
-        <h2 class="vacancies__title title_h2">
-          Вакансии
-        </h2>
-        <form class="vacancies__form">
-          <fieldset class="vacancies__role-selection">
-            <input type="radio" name="role" id="role-mentor" value="mentor" class="vacancies__role-radio" checked>
-            <label for="role-mentor" class="vacancies__role-button text_small">
-              Наставник
-            </label>
-            <input type="radio" name="role" id="role-reviewer" value="reviewer" class="vacancies__role-radio">
-            <label for="role-reviewer" class="vacancies__role-button text_small">
-              Ревьюер
-            </label>
-          </fieldset>
-          <fieldset class="vacancies__course-selection">
-            <input type="radio" name="course" id="course-programming" value="programming"
-              class="vacancies__course-radio" checked>
-            <label for="course-programming" class="vacancies__course-button text_small">
-              Программирование
-            </label>
-            <input type="radio" name="course" id="course-analytics" value="analytics" class="vacancies__course-radio">
-            <label for="course-analytics" class="vacancies__course-button text_small">
-              Аналитика
-            </label>
-            <input type="radio" name="course" id="course-design" value="design" class="vacancies__course-radio">
-            <label for="course-design" class="vacancies__course-button text_small">
-              Дизайн
-            </label>
-            <input type="radio" name="course" id="course-marketing" value="marketing" class="vacancies__course-radio">
-            <label for="course-marketing" class="vacancies__course-button text_small">
-              Маркетинг
-            </label>
-            <input type="radio" name="course" id="course-management" value="management" class="vacancies__course-radio">
-            <label for="course-management" class="vacancies__course-button text_small">
-              Менеджмент
-            </label>
-          </fieldset>
-        </form>
-        <ul class="accordion vacancies__cards"></ul>
-        <div class="vacancies__empty text_large">
-          <div class="vacancies__empty-description">
-            <h3 class="vacancies__empty-title">
-              Таких вакансий пока нет
-            </h3>
-            <p class="vacancies__empty-text text_regular">
-              Расскажите нам о себе и мы сохраним вашу анкету в базе данных и рассмотрим вас на будущую вакансию
-            </p>
-          </div>
-          <button type="button" class="main-button main-button_type_secondary responce main-button_place_empty-vacancies text_extra_small">
-            Оставить заявку
-          </button>
-        </div>
-        <template class="vacancies__card-template">
-          <li class="accordion__card">
-            <div class="accordion__card-header">
-              <h3 class="accordion__card-header-title text_large"></h3>
-              <button class="accordion__card-header-button"></button>
+        </section>
+        <!----------- блок vacancies ----------->
+        <section class="vacancies content__vacancies">
+          <h2 class="vacancies__title title_h2">Вакансии</h2>
+          <form class="vacancies__form">
+            <fieldset class="vacancies__role-selection">
+              <input
+                type="radio"
+                name="role"
+                id="role-mentor"
+                value="mentor"
+                class="vacancies__role-radio"
+                checked
+              />
+              <label
+                for="role-mentor"
+                class="vacancies__role-button text_small"
+              >
+                Наставник
+              </label>
+              <input
+                type="radio"
+                name="role"
+                id="role-reviewer"
+                value="reviewer"
+                class="vacancies__role-radio"
+              />
+              <label
+                for="role-reviewer"
+                class="vacancies__role-button text_small"
+              >
+                Ревьюер
+              </label>
+            </fieldset>
+            <fieldset class="vacancies__course-selection">
+              <input
+                type="radio"
+                name="course"
+                id="course-programming"
+                value="programming"
+                class="vacancies__course-radio"
+                checked
+              />
+              <label
+                for="course-programming"
+                class="vacancies__course-button text_small"
+              >
+                Программирование
+              </label>
+              <input
+                type="radio"
+                name="course"
+                id="course-analytics"
+                value="analytics"
+                class="vacancies__course-radio"
+              />
+              <label
+                for="course-analytics"
+                class="vacancies__course-button text_small"
+              >
+                Аналитика
+              </label>
+              <input
+                type="radio"
+                name="course"
+                id="course-design"
+                value="design"
+                class="vacancies__course-radio"
+              />
+              <label
+                for="course-design"
+                class="vacancies__course-button text_small"
+              >
+                Дизайн
+              </label>
+              <input
+                type="radio"
+                name="course"
+                id="course-marketing"
+                value="marketing"
+                class="vacancies__course-radio"
+              />
+              <label
+                for="course-marketing"
+                class="vacancies__course-button text_small"
+              >
+                Маркетинг
+              </label>
+              <input
+                type="radio"
+                name="course"
+                id="course-management"
+                value="management"
+                class="vacancies__course-radio"
+              />
+              <label
+                for="course-management"
+                class="vacancies__course-button text_small"
+              >
+                Менеджмент
+              </label>
+            </fieldset>
+          </form>
+          <ul class="accordion vacancies__cards"></ul>
+          <div class="vacancies__empty text_large">
+            <div class="vacancies__empty-description">
+              <h3 class="vacancies__empty-title">Таких вакансий пока нет</h3>
+              <p class="vacancies__empty-text text_regular">
+                Расскажите нам о себе и мы сохраним вашу анкету в базе данных и
+                рассмотрим вас на будущую вакансию
+              </p>
             </div>
-            <article class="accordion__card-description">
-              <div class="accordion__card-description-textarea">
-                <!--
+            <button
+              type="button"
+              class="main-button main-button_type_secondary responce main-button_place_empty-vacancies text_extra_small"
+            >
+              Оставить заявку
+            </button>
+          </div>
+          <template class="vacancies__card-template">
+            <li class="accordion__card">
+              <div class="accordion__card-header">
+                <h3 class="accordion__card-header-title text_large"></h3>
+                <button class="accordion__card-header-button"></button>
+              </div>
+              <article class="accordion__card-description">
+                <div class="accordion__card-description-textarea">
+                  <!--
                       <p class="accordion__card-description-text"></p>
                       <p class="accordion__card-description-text"></p>
                     -->
-              </div>
-              <button type="button" class="text_small main-button main-button_place_vacancies main-button_type_secondary">
-                Откликнуться
-              </button>
-            </article>
-          </li>
-        </template>
-        <button type="button" class="text_small main-button main-button_type_ghost main-button_place_show-more">
-          Смотреть еще
-        </button>
-      </section>
-      <!----------- блок video ----------->
-      <section class="videos content__videos">
-        <h2 class="videos__title title_h2">
-          Истории ребят из нашей команды
-        </h2>
-        <div class="videos__grid">
-          <div class="videos__grid-item videos__item_position_1">
-            <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
-          </div>
-          <div class="videos__grid-item videos__item_position_2">
-            <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
-          </div>
-          <div class="videos__grid-item videos__item_position_3">
-            <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
-          </div>
-          <div class="videos__grid-item videos__item_position_4">
-            <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
-          </div>
-          <div class="videos__grid-item videos__item_position_5">
-            <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
-          </div>
-          <div class="videos__grid-item videos__item_position_6">
-            <img src="<%=require('./images/youtube.png')%>" class="youtube" alt="">
-          </div>
-        </div>
-      </section>
-      <!----------- блок FAQ ----------->
-      <section class="faq content__faq">
-        <h2 class="faq__title title_h2">
-          FAQ
-        </h2>
-        <ul class="faq__accordion accordion">
-          <li class="accordion__card">
-            <div class="accordion__card-header accordion__card-header_place_faq">
-              <h3 class="accordion__card-header-title text_large">
-                Как я пойму, что у меня достаточно опыта, чтобы делиться знаниями с людьми?
-              </h3>
-              <button class="accordion__card-header-button"></button>
-            </div>
-            <article class="accordion__card-description">
-              <div class="accordion__card-description-textarea">
-                <p class="accordion__card-description-text text_regular">
-                  Яндекс Практикум — это сервис онлайн-образования, доступный в России и Америке. Мы помогаем людям расти — на работе и в жизни.
-                </p>
-                <p class="accordion__card-description-text text_regular">
-                  Студенты могут освоить новую специальность, заговорить на иностранном языке и получать удовольствие от того, чем занимаются — каждый день.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="accordion__card">
-            <div class="accordion__card-header accordion__card-header_place_faq">
-              <h3 class="accordion__card-header-title text_large">
-                Какой график и формат работы?
-              </h3>
-              <button class="accordion__card-header-button"></button>
-            </div>
-            <article class="accordion__card-description">
-              <div class="accordion__card-description-textarea">
-                <p class="accordion__card-description-text text_regular">
-                  Яндекс Практикум — это сервис онлайн-образования, доступный в России и Америке. Мы помогаем людям расти — на работе и в жизни.
-                </p>
-                <p class="accordion__card-description-text text_regular">
-                  Студенты могут освоить новую специальность, заговорить на иностранном языке и получать удовольствие от того, чем занимаются — каждый день.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="accordion__card">
-            <div class="accordion__card-header accordion__card-header_place_faq">
-              <h3 class="accordion__card-header-title text_large">
-                Какой доход возможно получать?
-              </h3>
-              <button class="accordion__card-header-button"></button>
-            </div>
-            <article class="accordion__card-description">
-              <div class="accordion__card-description-textarea">
-                <p class="accordion__card-description-text text_regular">
-                  Яндекс Практикум — это сервис онлайн-образования, доступный в России и Америке. Мы помогаем людям расти — на работе и в жизни.
-                </p>
-                <p class="accordion__card-description-text text_regular">
-                  Студенты могут освоить новую специальность, заговорить на иностранном языке и получать удовольствие от того, чем занимаются — каждый день.
-                </p>
-              </div>
-            </article>
-          </li>
-          <li class="accordion__card">
-            <div class="accordion__card-header accordion__card-header_place_faq">
-              <h3 class="accordion__card-header-title text_large">
-                Есть ли какие-то плюшки или бонусы?
-              </h3>
-              <button class="accordion__card-header-button"></button>
-            </div>
-            <article class="accordion__card-description">
-              <div class="accordion__card-description-textarea">
-                <p class="accordion__card-description-text text_regular">
-                  Яндекс Практикум — это сервис онлайн-образования, доступный в России и Америке. Мы помогаем людям расти — на работе и в жизни.
-                </p>
-                <p class="accordion__card-description-text text_regular">
-                  Студенты могут освоить новую специальность, заговорить на иностранном языке и получать удовольствие от того, чем занимаются — каждый день.
-                </p>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </section>
-      <!----------- блок контактов ----------->
-      <section class="contacts content__contacts">
-        <h2 class="contacts__title">Если остались вопросы, напишите нам</h2>
-        <div class="contacts__items">
-          <button class="contacts__btn">Я открываю попап</button>
-          <button class="contacts__btn">ВКонтакте</button>
-          <button class="contacts__btn">Еще что нибудь</button>
-        </div>
-      </section>
-    </main>
-    <!----------- блок footer ----------->
-    <footer class="footer page__footer">
-      <div class="call">
-        <p class="call__num">8-800-700-93-29</p>
-        <p class="call__text">Звонок по России бесплатный</p>
-      </div>
-      <div class="add">
-        <a class="add__text" href="#">Помощь</a>
-        <a class="add__text" href="#">Вакансии</a>
-        <a class="add__text" href="#">Вакансии</a>
-      </div>
-      <div class="about">
-        <a class="about__text" href="#">Правовая информация</a>
-        <a class="about__text" href="#">Для работодателей</a>
-        <a class="about__text" href="#">Отзывы</a>
-      </div>
-    </footer>
-    <!----------- блок video popup ----------->
-    <div class="popup popup_type_open-video">
-      <div class="popup__video-wrapper">
-        <div id="player"></div>
-        <button class="popup__close" type="button">
-          <img src="<%=require('./images/CloseIcon.svg')%>" alt="закрывающий крестик" class="popup__close-image" />
-        </button>
-      </div>
-    </div>
-    <!----------- блок form popup ----------->
-    <div class="popup popup__form">
-      <div class="popup__container">
-        <form action="#" class="form feedback-form" novalidate>
-          <h2 class="form__title">
-            Расскажите нам о себе и мы сохраним вашу анкету в базе данных
+                </div>
+                <button
+                  type="button"
+                  class="text_small main-button main-button_place_vacancies main-button_type_secondary"
+                >
+                  Откликнуться
+                </button>
+              </article>
+            </li>
+          </template>
+          <button
+            type="button"
+            class="text_small main-button main-button_type_ghost main-button_place_show-more"
+          >
+            Смотреть еще
+          </button>
+        </section>
+        <!----------- блок video ----------->
+        <section class="videos content__videos">
+          <h2 class="videos__title title_h2">
+            Истории ребят из нашей команды
           </h2>
-          <input class="form__input" type="text" id="name-input" name="name" placeholder="ФИО" autocomplete="off"
-            minlength="2" maxlength="40" required />
-          <span class="form__error name-input-error"></span>
-          <input class="form__input" type="text" name="email" id="email-input" placeholder="Почта" autocomplete="off"
-            minlength="2" maxlength="40" required />
-          <span class="form__error email-input-error"></span>
-          <input class="form__input" type="text" id="tel-input" name="tel" placeholder="Telegram" autocomplete="off"
-            minlength="2" maxlength="20" required />
-          <span class="form__error tel-input-error"></span>
-          <select name="roles" id="roles" class="form__select">
-            <option value="1"></option>
-            <option value="2">Наставник</option>
-            <option value="3">Ревьюер</option>
-          </select>
-          <select name="direction" id="direction" class="form__select">
-            <option value="1"></option>
-            <option value="2">Программирование</option>
-            <option value="3">Анализ данных</option>
-            <option value="4">Менеджмент</option>
-            <option value="5">Дизайн</option>
-            <option value="6">Маркетинг</option>
-          </select>
-          <!--<textarea
+          <div class="videos__grid">
+            <div class="videos__grid-item videos__item_position_1" data-url="776189882?h=cc548d8c61">
+              <img src="<%=require('./images/Alisa.jpg')%>" class="videos__photo" alt="Алиса">
+              <div class="videos__icon"></div>
+            </div>
+            <div class="videos__grid-item videos__item_position_2" data-url="776163954?h=1eedac0347">
+              <img src="<%=require('./images/Tina.jpg')%>" class="videos__photo" alt="Тина">
+              <div class="videos__icon"></div>
+            </div>
+            <div class="videos__grid-item videos__item_position_3" data-url="776122242?h=855cdd6f5d">
+              <img src="<%=require('./images/Sasha.jpg')%>" class="videos__photo" alt="Саша">
+              <div class="videos__icon"></div>
+            </div>
+            <div class="videos__grid-item videos__item_position_4" data-url="776102940?h=be2fe601c6">
+              <img src="<%=require('./images/Vova.jpg')%>" class="videos__photo" alt="Вова">
+              <div class="videos__icon"></div>
+            </div>
+            <div class="videos__grid-item videos__item_position_5" data-url="775791631?h=76194b89b5">
+              <img src="<%=require('./images/Rita.jpg')%>"class="videos__photo" alt="Рита">
+              <div class="videos__icon"></div>
+            </div>
+            <div class="videos__grid-item videos__item_position_6" data-url="776185296?h=e7b202cd48">
+              <img src="<%=require('./images/Polina.jpg')%>" class="videos__photo" alt="Полина">
+              <div class="videos__icon"></div>
+            </div>
+          </div>
+        </section>
+        <!----------- блок FAQ ----------->
+        <section class="faq content__faq">
+          <h2 class="faq__title title_h2">FAQ</h2>
+          <ul class="faq__accordion accordion">
+            <li class="accordion__card">
+              <div
+                class="accordion__card-header accordion__card-header_place_faq"
+              >
+                <h3 class="accordion__card-header-title text_large">
+                  Как я пойму, что у меня достаточно опыта, чтобы делиться
+                  знаниями с людьми?
+                </h3>
+                <button class="accordion__card-header-button"></button>
+              </div>
+              <article class="accordion__card-description">
+                <div class="accordion__card-description-textarea">
+                  <p class="accordion__card-description-text text_regular">
+                    Яндекс Практикум — это сервис онлайн-образования, доступный
+                    в России и Америке. Мы помогаем людям расти — на работе и в
+                    жизни.
+                  </p>
+                  <p class="accordion__card-description-text text_regular">
+                    Студенты могут освоить новую специальность, заговорить
+                    на иностранном языке и получать удовольствие от того, чем
+                    занимаются — каждый день.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="accordion__card">
+              <div
+                class="accordion__card-header accordion__card-header_place_faq"
+              >
+                <h3 class="accordion__card-header-title text_large">
+                  Какой график и формат работы?
+                </h3>
+                <button class="accordion__card-header-button"></button>
+              </div>
+              <article class="accordion__card-description">
+                <div class="accordion__card-description-textarea">
+                  <p class="accordion__card-description-text text_regular">
+                    Яндекс Практикум — это сервис онлайн-образования, доступный
+                    в России и Америке. Мы помогаем людям расти — на работе и в
+                    жизни.
+                  </p>
+                  <p class="accordion__card-description-text text_regular">
+                    Студенты могут освоить новую специальность, заговорить
+                    на иностранном языке и получать удовольствие от того, чем
+                    занимаются — каждый день.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="accordion__card">
+              <div
+                class="accordion__card-header accordion__card-header_place_faq"
+              >
+                <h3 class="accordion__card-header-title text_large">
+                  Какой доход возможно получать?
+                </h3>
+                <button class="accordion__card-header-button"></button>
+              </div>
+              <article class="accordion__card-description">
+                <div class="accordion__card-description-textarea">
+                  <p class="accordion__card-description-text text_regular">
+                    Яндекс Практикум — это сервис онлайн-образования, доступный
+                    в России и Америке. Мы помогаем людям расти — на работе и в
+                    жизни.
+                  </p>
+                  <p class="accordion__card-description-text text_regular">
+                    Студенты могут освоить новую специальность, заговорить
+                    на иностранном языке и получать удовольствие от того, чем
+                    занимаются — каждый день.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="accordion__card">
+              <div
+                class="accordion__card-header accordion__card-header_place_faq"
+              >
+                <h3 class="accordion__card-header-title text_large">
+                  Есть ли какие-то плюшки или бонусы?
+                </h3>
+                <button class="accordion__card-header-button"></button>
+              </div>
+              <article class="accordion__card-description">
+                <div class="accordion__card-description-textarea">
+                  <p class="accordion__card-description-text text_regular">
+                    Яндекс Практикум — это сервис онлайн-образования, доступный
+                    в России и Америке. Мы помогаем людям расти — на работе и в
+                    жизни.
+                  </p>
+                  <p class="accordion__card-description-text text_regular">
+                    Студенты могут освоить новую специальность, заговорить
+                    на иностранном языке и получать удовольствие от того, чем
+                    занимаются — каждый день.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <!----------- блок контактов ----------->
+        <section class="contacts content__contacts">
+          <h2 class="contacts__title title_h2">
+            Если остались вопросы, напишите нам
+          </h2>
+          <div class="contacts__items">
+            <img
+              class="contacts_vector"
+              src="<%=require('./images/Vector 145.svg')%>"
+              alt="vector"
+            />
+            <div class="contacts__container">
+              <button class="contacts__btn contacts__btn_type_tg" type="button"></button>
+              <p class="contacts__text text_large">Telegram</p>
+            </div>
+            <div class="contacts__container">
+              <button class="contacts__btn contacts__btn_type_vk" type="button"></button>
+              <p class="contacts__text text_large">ВКонтакте</p>
+            </div>
+            <div class="contacts__container">
+              <button class="contacts__btn contacts__btn_type_ld" type="button"></button>
+              <p class="contacts__text text_large">LinkedIn</p>
+            </div>
+            <img
+              class="contacts_vector"
+              src="<%=require('./images/Vector 135.svg')%>"
+              alt="vector"
+            />
+          </div>
+        </section>
+      </main>
+      <!----------- блок footer ----------->
+      <footer class="footer page__footer">
+        <div class="footer__connection">
+          <div class="call">
+            <p class="call__num text_large">8-800-700-93-29</p>
+            <p class="call__text text_regular">Звонок по России бесплатный</p>
+          </div>
+          <div class="add">
+            <a class="add__text text_regular" href="#">Помощь</a>
+            <a class="add__text text_regular" href="#">Вакансии</a>
+            <a class="add__text text_regular" href="#">Вакансии</a>
+          </div>
+          <div class="about">
+            <a class="about__text text_regular" href="#">Правовая информация</a>
+            <a class="about__text text_regular" href="#">Для работодателей</a>
+            <a class="about__text text_regular" href="#">Отзывы</a>
+          </div>
+        </div>
+        <div class="footer__journal">
+          <p class="text_regular footer__journal-text">Журнал</p>
+          <img src="<%=require('./images/vk_f.svg')%>" alt="vk" /><img
+            src="<%=require('./images/telegram.svg')%>"
+            alt="telegram"
+          />
+        </div>
+        <div class="info">
+          <p class="text_regular info__text">
+            &copy; 2022 АНО ДПО «ШАД», ООО «Яндекс»
+          </p>
+          <div class="info__text-container">
+          <p class="text_regular info__text-agree">
+            Информация на данной странице описывает возможные варианты получения
+            дополнительного дохода в месяц (т.н. подработка). Не является
+            предложением о работе. Размещенные объявления о потребности в тех
+            или иных услугах не являются вакансиями.
+          </p>
+          <p class="text_regular info__text-agree">
+            Образовательные услуги оказываются АНО ДПО «ШАД». ШАД —
+            <a class="info__link" href="#">это Школа анализа данных</a>, основанная
+            Яндексом и оказывающая образовательные услуги на основании
+            <a class="info__link" href="#">Лицензии № 036031</a> от 24 марта 2015 года.
+          </p>
+          <p class="text_regular info__text-agree">
+            Сертификат о прохождении обучения по программе дополнительного
+            профессионального образования также выдается АНО ДПО «ШАД».
+          </p>
+        </div>
+        </div>
+      </footer>
+      <!----------- блок video popup ----------->
+      <div class="popup popup_type_open-video">
+        <div class="popup__video-wrapper">
+          <div id="player"></div>
+          <button class="popup__close" type="button">
+            <img
+              src="<%=require('./images/CloseIcon.svg')%>"
+              alt="закрывающий крестик"
+              class="popup__close-image"
+            />
+          </button>
+        </div>
+      </div>
+      <!----------- блок form popup ----------->
+      <div class="popup popup__form">
+        <div class="popup__container">
+          <form action="#" class="form feedback-form" novalidate>
+            <h2 class="form__title">
+              Расскажите нам о себе и мы сохраним вашу анкету в базе данных
+            </h2>
+            <input
+              class="form__input"
+              type="text"
+              id="name-input"
+              name="name"
+              placeholder="ФИО"
+              autocomplete="off"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__error name-input-error"></span>
+            <input
+              class="form__input"
+              type="text"
+              name="email"
+              id="email-input"
+              placeholder="Почта"
+              autocomplete="off"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="form__error email-input-error"></span>
+            <input
+              class="form__input"
+              type="text"
+              id="tel-input"
+              name="tel"
+              placeholder="Telegram"
+              autocomplete="off"
+              minlength="2"
+              maxlength="20"
+              required
+            />
+            <span class="form__error tel-input-error"></span>
+            <select name="roles" id="roles" class="form__select">
+              <option value="1"></option>
+              <option value="2">Наставник</option>
+              <option value="3">Ревьюер</option>
+            </select>
+            <select name="direction" id="direction" class="form__select">
+              <option value="1"></option>
+              <option value="2">Программирование</option>
+              <option value="3">Анализ данных</option>
+              <option value="4">Менеджмент</option>
+              <option value="5">Дизайн</option>
+              <option value="6">Маркетинг</option>
+            </select>
+            <textarea
                   name="about"
                   id="about"
                   cols="30"
                   rows="10"
                   placeholder="Перечислите набор технологий, которыми вы владеете и уровень владения каждой"
                   class="form__textarea"
-                ></textarea>-->
-          <input class="form__input" type="url" id="github-input" name="github" placeholder="Ссылка на резюме"
-            autocomplete="off" minlength="2" maxlength="30" required />
-          <span class="form__error github-input-error"></span>
-          <div class="form__checkbox">
-            <input type="checkbox" id="checkbox" class="form__checkbox-input" />
-            <label for="checkbox" class="form__checkbox-text">Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на
-              <a href="#" class="link">обработку указанных данных</a>
-              для целей рассмотрения анкеты и обратной связи по ней.</label>
-          </div>
-          <button type="submit" class="form__btn form__btn_type_submit">
-            Отправить
+                ></textarea>
+            <input
+              class="form__input"
+              type="url"
+              id="github-input"
+              name="github"
+              placeholder="Ссылка на резюме"
+              autocomplete="off"
+              minlength="2"
+              maxlength="30"
+              required
+            />
+            <span class="form__error github-input-error"></span>
+            <div class="form__checkbox">
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="form__checkbox-input"
+              />
+              <label for="checkbox" class="form__checkbox-text"
+                >Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на
+                <a href="#" class="link">обработку указанных данных</a>
+                для целей рассмотрения анкеты и обратной связи по ней.</label
+              >
+            </div>
+            <button type="submit" class="form__btn form__btn_type_submit">
+              Отправить
+            </button>
+          </form>
+          <button type="button" class="popup__close">
+            <img
+              src="<%=require('./images/CloseIcon.svg')%>"
+              alt="закрывающий крестик"
+              class="popup__close-image"
+            />
           </button>
-        </form>
-        <button type="button" class="popup__close">
-          <img src="<%=require('./images/CloseIcon.svg')%>" alt="закрывающий крестик" class="popup__close-image" />
-        </button>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

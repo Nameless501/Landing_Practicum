@@ -1,3 +1,6 @@
 .about {
-  width: 256px;
+  max-width: 2585px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

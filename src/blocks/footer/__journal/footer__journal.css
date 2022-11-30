@@ -1,0 +1,7 @@
+.footer__journal {
+  display: flex;
+  width: 182px;
+  justify-content: space-between;
+  margin: 50px 0;
+  padding: 0;
+}

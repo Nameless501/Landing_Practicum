@@ -1,0 +1,15 @@
+.contacts__btn_type_ld {
+  background-image: url(../../../../images/LD.svg);
+  width: 134px;
+  height: 163px;
+  border: none;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+.contacts__btn_type_ld:hover {
+  background-image: url(../../../../images/LD_h.svg);
+  transition: 0.3s ease-in-out;
+}
+.contacts__btn_type_ld:visited {
+  background-image: url(../../../../images/LD_p.svg);
+}

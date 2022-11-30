@@ -85,7 +85,11 @@
 
 @import url(../blocks/grid/__item-front/grid__item-front.css);
 
+@import url(../blocks/grid/__item-front/_type/grid__item-front_type_fact.css);
+
 @import url(../blocks/grid/__item-back/grid__item-back.css);
+
+@import url(../blocks/grid/__item-back/_type/grid__item-back_type_fact.css);
 
 @import url(../blocks/grid/__item-description/grid__item-description.css);
 
@@ -205,6 +209,18 @@
 
 @import url(../blocks/contacts/__items/contacts__items.css);
 
+@import url(../blocks/contacts/__btn/_type_ld/contacts__btn_type_ld.css);
+
+@import url(../blocks/contacts/__btn/_type_tg/contacts__btn_type_tg.css);
+
+@import url(../blocks/contacts/__btn/_type_vk/contacts__btn_type_vk.css);
+
+@import url(../blocks/contacts/__vector/contacts__vector.css);
+
+@import url(../blocks/contacts/__container/contacts__container.css);
+
+@import url(../blocks/contacts/__text/contacts__text.css);
+
 /* ------------- block footer ------------- */
 
 @import url(../blocks/footer/footer.css);
@@ -224,6 +240,22 @@
 @import url(../blocks/call/call.css);
 
 @import url(../blocks/footer/__items/footer__items.css);
+
+@import url(../blocks/footer/__connection/footer__connection.css);
+
+@import url(../blocks/footer/__journal/footer__journal.css);
+
+@import url(../blocks/footer/__journal-text/footer__journal-text.css);
+
+@import url(../blocks/info/info.css);
+
+@import url(../blocks/info/__text-container/info__text-container.css);
+
+@import url(../blocks/info/__text/info__text.css);
+
+@import url(../blocks/info/__text-agree/info__text-agree.css);
+
+@import url(../blocks/info/__link/info__link.css);
 
 /* ------------- block form ------------- */
 
@@ -286,6 +318,10 @@
 @import url(../blocks/videos/__grid-item/_position/videos__item_position_5.css);
 
 @import url(../blocks/videos/__grid-item/_position/videos__item_position_6.css);
+
+@import url(../blocks/videos/__photo/videos__photo.css);
+
+@import url(../blocks/videos/__icon/videos__icon.css);
 
 /* ------------- block accordion ------------- */
 
