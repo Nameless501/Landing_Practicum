@@ -2,3 +2,8 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 375px) {
+  .info{
+    display: block;
+  }
+}

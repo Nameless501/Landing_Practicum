@@ -4,3 +4,9 @@
   justify-content: space-between;
   max-width: 590px;
 }
+@media (max-width:375px) {
+  .info__text-container{
+    flex-direction: column-reverse;
+    max-width: 315px;
+  }
+}

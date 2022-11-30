@@ -1,5 +1,17 @@
 .info__text {
   margin: 0 160px 0 0;
   padding: 0;
-  width: 450px;
+  max-width: 450px;
+}
+@media (max-width: 375px) {
+  .info__text {
+    grid-area: "ok";
+    max-width: 315px;
+    font-family: "YS Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 20px 0 0 0;
+  }
 }

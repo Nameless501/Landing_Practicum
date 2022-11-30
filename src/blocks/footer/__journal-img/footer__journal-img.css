@@ -1,0 +1,14 @@
+.footer__journal-img {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 375px) {
+  .footer__journal-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+  .footer__journal-img:last-child {
+    margin: 0;
+  }
+}

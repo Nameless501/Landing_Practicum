@@ -1,5 +1,4 @@
 .about__text {
-  
   padding: 0;
   margin: 0 0 15px 0;
   text-decoration: none;
@@ -7,4 +6,14 @@
 }
 .about__text:last-child {
   margin: 0;
+}
+@media (max-width: 375px) {
+  .about__text {
+    margin: 0 0 15px 0;
+    font-family: "YS Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
 }

@@ -2,3 +2,10 @@
   margin-right: 281px;
   max-width: 329px;
 }
+@media (max-width: 375px) {
+  .call {
+    grid-area: num;
+    max-width: 315px;
+    margin: 20px 0 0 0;
+  }
+}

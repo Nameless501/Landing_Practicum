@@ -1,11 +1,11 @@
 import "./index.css";
 import FormValidator from "../components/FormValidator.js";
 import { vacanciesData } from "../utils/vacancies.js";
-import VacanciesRender from '../components/VacanciesRender.js';
+import VacanciesRender from "../components/VacanciesRender.js";
 import Popup from "../components/Popup.js";
 import PopupWithVideo from "../components/PopupWithVideo";
-import Carousel from '../components/Carousel.js';
-import SetFAQEventListeners from '../components/FAQ.js';
+import Carousel from "../components/Carousel.js";
+import SetFAQEventListeners from "../components/FAQ.js";
 import {
   validationConfig,
   vacanciesConfig,
@@ -30,12 +30,6 @@ popupBtn.addEventListener("click", () => {
   formPopup.open();
 });
 
-/*popupBtn.addEventListener("click", function () {
-  popup.classList.add("popup_opened");
-});
-closeBtn.addEventListener("click", function () {
-  popup.classList.remove("popup_opened");
-});*/
 
 // ------------- попап видео
 
@@ -49,7 +43,7 @@ const handleVacanciesRender = VacanciesRender(vacanciesConfig, vacanciesData);
 
 handleVacanciesRender();
 
-vacanciesFormElement.addEventListener('input', handleVacanciesRender);
+vacanciesFormElement.addEventListener("input", handleVacanciesRender);
 
 // ------------- карусель
 

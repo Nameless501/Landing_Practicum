@@ -1,9 +1,24 @@
 .footer {
   margin-top: 175px;
   margin: 175px auto 0 auto;
-  
   max-width: 1440px;
-  background-color: #f0f0f0;
+  background-color: #eaeaea;
   border-radius: 40px 40px 0px 0px;
   padding: 80px 120px 120px 120px;
+}
+@media (max-width: 375px) {
+  .footer {
+    max-width: 375px;
+    padding: 40px 30px 90px 30px;
+    display: grid;
+    grid-template-columns: 315px;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "journal"
+      "add"
+      "about"
+      "num"
+      "agree"
+      "ok";
+  }
 }

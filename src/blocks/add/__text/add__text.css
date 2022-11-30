@@ -7,3 +7,12 @@
 .add__text:first-child {
   margin: 0;
 }
+@media (max-width: 375px) {
+  .add__text {
+    font-family: "YS Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

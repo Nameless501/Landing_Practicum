@@ -1,6 +1,12 @@
 .about {
-  max-width: 2585px;
+  max-width: 285px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 375px) {
+  .about{
+    grid-area: about;
+    margin-top: 15px;
+  }
 }
