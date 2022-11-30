@@ -4,6 +4,6 @@
 
 @media screen and (max-width: 756px) {
   .videos__item_position_4 {
-    grid-area: 3 / 2 / 5 / 3;
+    grid-area: 2 / 1 / 4 / 2;
   }
 }

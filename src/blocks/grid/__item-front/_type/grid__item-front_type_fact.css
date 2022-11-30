@@ -1,3 +1,9 @@
 .grid__item-front_type_fact {
   background: url(./../../../../images/yellow_back.png);
 }
+
+@media screen and (max-width: 920px) {
+  .grid__item-front_type_fact {
+    background-size: 315px 295px;
+  }
+}

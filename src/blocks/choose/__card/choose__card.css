@@ -10,3 +10,17 @@
   flex-direction: column;
   position: relative;
 }
+
+@media screen and (max-width: 920px) {
+  .choose__card {
+    max-width: 590px;
+    min-width: 315px;
+    min-height: 490px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .choose__card {
+    padding: 25px 20px;
+  }
+}

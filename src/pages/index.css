@@ -195,6 +195,8 @@
 
 @import url(../blocks/choose/__text-span/choose__text-span.css);
 
+@import url(../blocks/choose/__text/_add/choose__text_add.css);
+
 /* ------------- block vacancies ------------- */
 
 @import url(../blocks/vacancies/vacancies.css);
@@ -224,6 +226,8 @@
 @import url(../blocks/contacts/__container/contacts__container.css);
 
 @import url(../blocks/contacts/__text/contacts__text.css);
+
+@import url(../blocks/contacts/__span/contacts__span.css);
 
 /* ------------- block footer ------------- */
 
@@ -282,6 +286,12 @@
 @import url(../blocks/form/__checkbox/form__checkbox.css);
 
 @import url(../blocks/form/__checkbox-input/form__checkbox-input.css);
+
+@import url(../blocks/form/__checkbox-text/form__checkbox-text.css);
+
+@import url(../blocks/form/__contact-items/form__contact-items.css);
+
+@import url(../blocks/form/__contact-radio/form__contact-radio.css);
 
 /* ------------- block popup ------------- */
 
