@@ -293,6 +293,16 @@
 
 @import url(../blocks/form/__contact-radio/form__contact-radio.css);
 
+@import url(../blocks/form/__input-container/form__input-container.css);
+
+
+@import url(../blocks/email-input-error/email-input-error.css);
+@import url(../blocks/tel-input-error/tel-input-error.css);
+@import url(../blocks/github-input-error/github-input-error.css);
+@import url(../blocks/name-input-error/name-input-error.css);
+
+@import url(../blocks/form/__input-container/_type_error/form__input-container_type_error.css);
+
 /* ------------- block popup ------------- */
 
 @import url(../blocks/popup/popup.css);

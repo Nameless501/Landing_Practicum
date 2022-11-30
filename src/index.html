@@ -350,7 +350,9 @@
                 <li class="choose__list-item">
                   <p class="choose__text text_regular">
                     <span class="choose__text-span"> &bull; </span>
-                    оценивает работы<span class="choose__text_add"> — «зачёт»/«незачёт»</span>
+                    оценивает работы<span class="choose__text_add">
+                      — «зачёт»/«незачёт»</span
+                    >
                   </p>
                 </li>
               </ul>
@@ -372,10 +374,11 @@
               <div class="grid__item active grid__item_position_1">
                 <div class="grid__item-front grid__item-front_type_fact">
                   <h3 class="grid__item-title_type_fact title_h3">
-
                     Яндекс Практикум — это сервис digital-образования.
 
-                    <span class="title_h3 grid__item-title_hidden">Мы помогаем людям расти — на работе и в жизни.</span>
+                    <span class="title_h3 grid__item-title_hidden"
+                      >Мы помогаем людям расти — на работе и в жизни.</span
+                    >
                   </h3>
                 </div>
                 <div class="grid__item-back grid__item-back_type_fact">
@@ -982,31 +985,36 @@
             <h2 class="form__title text_regular">
               Хочу стать наставником на курсе «Мидл фронтенд-разработчик»
             </h2>
-            <input
-              class="form__input"
-              type="text"
-              id="name-input"
-              name="name"
-              placeholder="Имя"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-
-            <span class="form__error name-input-error"></span>
-            <input
-              class="form__input"
-              type="text"
-              name="email"
-              id="email-input"
-              placeholder="Email"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-            <span class="form__error email-input-error"></span>
+            <div class="form__input-container">
+              <input
+                class="form__input"
+                type="text"
+                id="name-input"
+                name="name"
+                placeholder="Имя"
+                autocomplete="off"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
+              <span class="form__error name-input-error"></span>
+            </div>
+            <div class="form__input-container">
+              <input
+                class="form__input"
+                type="text"
+                name="email"
+                id="email-input"
+                placeholder="Email"
+                autocomplete="off"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
+              <span class="form__error email-input-error"></span>
+            </div>
 
             <div class="form__contact-items">
               <input
@@ -1032,18 +1040,22 @@
               >
             </div>
 
-            <input
-              class="form__input"
-              type="tel"
-              id="tel-input"
-              name="tel"
-              placeholder="+7"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-            <span class="form__error tel-input-error"></span>
+            <div class="form__input-container">
+              <input
+                class="form__input"
+                type="tel"
+                id="tel-input"
+                name="tel"
+                placeholder="+7"
+                autocomplete="off"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
+              <span class="form__error tel-input-error"></span>
+            </div>
+
             <!--<select name="roles" id="roles" class="form__select">
               <option value="1"></option>
               <option value="2">Наставник</option>
@@ -1065,18 +1077,23 @@
                   placeholder="Перечислите набор технологий, которыми вы владеете и уровень владения каждой"
                   class="form__textarea"
                 ></textarea>-->
-            <input
-              class="form__input"
-              type="url"
-              id="github-input"
-              name="github"
-              placeholder="Ссылка на резюме"
-              autocomplete="off"
-              minlength="2"
-              maxlength="30"
-              required
-            />
-            <span class="form__error github-input-error"></span>
+
+            <div class="form__input-container">
+              <input
+                class="form__input"
+                type="url"
+                id="github-input"
+                name="github"
+                placeholder="Ссылка на резюме"
+                autocomplete="off"
+                minlength="2"
+                maxlength="30"
+                required
+              />
+              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
+              <span class="form__error github-input-error"></span>
+            </div>
+
             <div class="form__checkbox">
               <input
                 type="checkbox"
@@ -1106,54 +1123,54 @@
       <!----------- блок form popup2 ----------->
       <div class="popup popup__second-form">
         <div class="popup__container popup__container_type_big">
-          <form action="#" class="form big_form">
+          <form action="#" class="form big-form">
             <h2 class="form__title text_regular">
               Расскажите нам о себе и мы сохраним ваши данные
             </h2>
             <input
               class="form__input"
               type="text"
-              id="name-input"
-              name="name"
+              id="name-big-input"
+              name="nameBig"
               placeholder="Имя"
               autocomplete="off"
               minlength="2"
               maxlength="40"
               required
             />
-            <span class="form__error name-input-error"></span>
+            <span class="form__error name-big-input-error"></span>
             <input
               class="form__input"
               type="text"
-              name="email"
-              id="email-input"
+              name="emailBig"
+              id="email-big-input"
               placeholder="Email"
               autocomplete="off"
               minlength="2"
               maxlength="40"
               required
             />
-            <span class="form__error email-input-error"></span>
+            <span class="form__error email-big-input-error"></span>
             <div class="form__contact-items">
               <input
                 type="radio"
-                id="contactChoice1"
+                id="contactChoice3"
                 name="tel"
                 value="tel"
                 class="form__contact-radio"
               />
-              <label for="contactChoice1" class="form__contact-item"
+              <label for="contactChoice3" class="form__contact-item"
                 >Телефон</label
               >
 
               <input
                 type="radio"
-                id="contactChoice2"
+                id="contactChoice4"
                 name="tel"
                 value="tg"
                 class="form__contact-radio"
               />
-              <label for="contactChoice2" class="form__contact-item"
+              <label for="contactChoice4" class="form__contact-item"
                 >Телеграм</label
               >
             </div>
@@ -1161,15 +1178,15 @@
             <input
               class="form__input"
               type="tel"
-              id="tel-input"
-              name="tel"
+              id="tel-big-input"
+              name="telBig"
               placeholder="+7"
               autocomplete="off"
               minlength="2"
               maxlength="40"
               required
             />
-            <span class="form__error tel-input-error"></span>
+            <span class="form__error tel-big-input-error"></span>
           </form>
         </div>
       </div>

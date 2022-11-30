@@ -21,6 +21,8 @@ import {
   cardsSliderConfig,
   bigPopupBtn,
   formBig,
+  errorInput,
+  formInput,
 } from "../utils/constants.js";
 
 // ------------- валидация формы
@@ -77,6 +79,14 @@ const setCardsSliderListeners = CardsSlider(
 );
 
 setCardsSliderListeners();
+
+// --------------- form
+function checkError() {
+  if (formInput.classList.contains("form__input_type_error")) {
+    errorInput.classList.add("form__input-container_type_error");
+  }
+}
+checkError();
 
 const headerElement = document.querySelector('.header');
 
