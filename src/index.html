@@ -242,48 +242,121 @@
               Хочу стать наставником
             </button>
           </div>
-          <div class="choose__card">
-            <img src="<%=require('./images/choose_card_2.jpg')%>" alt="card photo" class="choose__card-image">
-            <h3 class="choose__card-title title_h3">
-              Ревьюер
-            </h3>
-            <ul class="choose__list">
-              <li class="choose__list-item">
-                <p class="choose__text text_regular">
-                  <span class="choose__text-span">
-                    &bull;
-                  </span>
-                  Проверяет код и проекты студентов
-                </p>
-              </li>
-              <li class="choose__list-item">
-                <p class="choose__text text_regular">
-                  <span class="choose__text-span">
-                    &bull;
-                  </span>
-                  Простыми словами объясняет им их ошибки и недочеты
-                </p>
-              </li>
-              <li class="choose__list-item">
-                <p class="choose__text text_regular">
-                  <span class="choose__text-span">
-                    &bull;
-                  </span>
-                  Дает корректирующую обратную связь
-                </p>
-              </li>
-              <li class="choose__list-item">
-                <p class="choose__text text_regular">
-                  <span class="choose__text-span">
-                    &bull;
-                  </span>
-                  Оценивает работы — «зачёт»/«незачёт»
-                </p>
-              </li>
-            </ul>
-            <button class="text_extra_small main-button main-button_place_choose main-button_type_secondary">
-              Хочу стать ревьюером
-            </button>
+        </section>
+        <!----------- блок how-to ----------->
+        <section class="how-to content__how-to">
+          <h2 class="how-to__title title_h2">Как стать экспертом</h2>
+          <ul class="how-to__recommendation-list">
+            <li class="how-to__recommendation-list-item">
+              <img
+                src="<%=require('./images/bullet_1.svg')%>"
+                alt="list bullet"
+                class="how-to__recommendation-list_bullet"
+              />
+              <p class="how-to__recommendation title_h3">
+                Выберите роль и заполните заявку
+              </p>
+            </li>
+            <li class="how-to__recommendation-list-item">
+              <img
+                src="<%=require('./images/bullet_2.svg')%>"
+                alt="list bullet"
+                class="how-to__recommendation-list_bullet"
+              />
+              <p class="how-to__recommendation title_h3">
+                Пройдите отбор и бесплатное обучение
+              </p>
+            </li>
+            <li class="how-to__recommendation-list-item">
+              <img
+                src="<%=require('./images/bullet_3.svg')%>"
+                alt="list bullet"
+                class="how-to__recommendation-list_bullet"
+              />
+              <p class="how-to__recommendation title_h3">
+                Начните&nbsp;делиться знаниями со студентами
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!----------- блок выбора профессии ----------->
+        <section class="choose content__choose">
+          <h2 class="choose__title title_h2">Выберите роль по душе</h2>
+          <div class="choose__cards">
+            <div class="choose__card">
+              <img
+                src="<%=require('./images/choose_card_1.jpg')%>"
+                alt="card photo"
+                class="choose__card-image"
+              />
+              <h3 class="choose__card-title title_h3">Наставник</h3>
+              <ul class="choose__list">
+                <li class="choose__list-item">
+                  <p class="choose__text text_regular">
+                    <span class="choose__text-span"> &bull; </span>
+                    помогает студентам ставить цели, рефлексировать и делать
+                    выводы
+                  </p>
+                </li>
+                <li class="choose__list-item">
+                  <p class="choose__text text_regular">
+                    <span class="choose__text-span"> &bull; </span>
+                    проводит вебинары 2 раза в месяц <br />
+                    и дает обратную связь
+                  </p>
+                </li>
+                <li class="choose__list-item">
+                  <p class="choose__text text_regular">
+                    <span class="choose__text-span"> &bull; </span>
+                    делится опытом и мотивирует
+                  </p>
+                </li>
+              </ul>
+              <button
+                class="text_extra_small main-button main-button_place_choose main-button_type_secondary"
+              >
+                Хочу стать наставником
+              </button>
+            </div>
+            <div class="choose__card">
+              <img
+                src="<%=require('./images/choose_card_2.jpg')%>"
+                alt="card photo"
+                class="choose__card-image"
+              />
+              <h3 class="choose__card-title title_h3">Ревьюер</h3>
+              <ul class="choose__list">
+                <li class="choose__list-item">
+                  <p class="choose__text text_regular">
+                    <span class="choose__text-span"> &bull; </span>
+                    проверяет код и проекты студентов
+                  </p>
+                </li>
+                <li class="choose__list-item">
+                  <p class="choose__text text_regular">
+                    <span class="choose__text-span"> &bull; </span>
+                    простыми словами объясняет им их ошибки и недочеты
+                  </p>
+                </li>
+                <li class="choose__list-item">
+                  <p class="choose__text text_regular">
+                    <span class="choose__text-span"> &bull; </span>
+                    дает корректирующую обратную связь
+                  </p>
+                </li>
+                <li class="choose__list-item">
+                  <p class="choose__text text_regular">
+                    <span class="choose__text-span"> &bull; </span>
+                    оценивает работы — «зачёт»/«незачёт»
+                  </p>
+                </li>
+              </ul>
+              <button
+                class="text_extra_small main-button main-button_place_choose main-button_type_secondary"
+              >
+                Хочу стать ревьюером
+              </button>
+            </div>
           </div>
         </section>
         <!----------- блок departments ----------->
@@ -304,6 +377,7 @@
               <div class="grid__item grid__item_position_2">
                 <div class="grid__item-front">
                   <h3 class="grid__item-title text_large">Анализ данных</h3>
+                  <img class="grid__icon" src="<%=require('./images/Party.svg')%>" alt="">
                 </div>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Анализ данных</h3>
@@ -665,11 +739,11 @@
         <!----------- блок контактов ----------->
         <section class="contacts content__contacts">
           <h2 class="contacts__title title_h2">
-            Если остались вопросы, напишите нам
+            Если остались вопросы, напишите&nbsp;нам
           </h2>
           <div class="contacts__items">
             <img
-              class="contacts_vector"
+              class="contacts__vector"
               src="<%=require('./images/Vector 145.svg')%>"
               alt="vector"
             />
@@ -686,7 +760,7 @@
               <p class="contacts__text text_large">LinkedIn</p>
             </div>
             <img
-              class="contacts_vector"
+              class="contacts__vector"
               src="<%=require('./images/Vector 135.svg')%>"
               alt="vector"
             />

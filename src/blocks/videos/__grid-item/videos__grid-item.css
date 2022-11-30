@@ -3,4 +3,9 @@
   border-radius: 30px;
   cursor: pointer;
   overflow: hidden;
+  
+@media screen and (max-width: 756px) {
+  .videos__grid-item {
+    border-radius: 15px;
+  }
 }

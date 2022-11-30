@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 756px) {
   .videos__grid {
-    gap: 10px 15px;
+    gap: 15px;
     grid-template-columns: auto auto;
     grid-template-rows: 120px 70px 120px 18px 122px;
   }

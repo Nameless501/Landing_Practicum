@@ -1,11 +1,22 @@
 .content__how-to {
   margin: 175px auto 0;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content__how-to {
+    margin: 145px auto 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .content__how-to {
+    margin: 75px auto 0;
+  }
 }
 
 .how-to {
-  padding: 0;
   max-width: 1200px;
-  box-sizing: border-box;
 }
 
 .how-to__title {
@@ -24,6 +35,19 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1024px) {
+  .how-to__recommendation-list {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .how-to__recommendation-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .how-to__recommendation-list-item {
   margin: 0;
   padding: 0;
@@ -32,6 +56,13 @@
   gap: 15px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 920px) {
+  .how-to__recommendation-list-item {
+    max-width: 100%;
+  }
+}
+
 
 .how-to__recommendation-list_bullet {
   margin: 0;
