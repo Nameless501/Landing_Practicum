@@ -23,7 +23,7 @@ export default class Popup {
     }
   };
   setEventListeners() {
-    this._closeButton.addEventListener("mousedown", this.close.bind(this));
+    // this._closeButton.addEventListener("mousedown", this.close.bind(this));
     this._popup.addEventListener("mousedown", this._handleOverClose.bind(this));
   }
 }
