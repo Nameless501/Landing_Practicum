@@ -5,11 +5,12 @@
   border: none;
   background-repeat: no-repeat;
 }
-.contacts__btn_type_ld:hover {
+
+.contacts__link:hover > .contacts__btn_type_ld {
   background-image: url(../../../../images/LD_h.svg);
   transition: 0.3s ease-in-out;
 }
-.contacts__btn_type_ld:visited {
+.contacts__link:active > .contacts__btn_type_ld {
   background-image: url(../../../../images/LD_p.svg);
 }
 
