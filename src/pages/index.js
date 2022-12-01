@@ -16,6 +16,8 @@ import {
   popupBtn,
   closeBtn,
   popupVideoSelector,
+  popupTellUsSelector,
+  buttonNoVacanciesElement,
   faqCardsList,
   bigPopupBtn,
   formBig,
@@ -42,7 +44,17 @@ checkError();
 // ------------- попап формы
 
 const formPopup = new Popup(".popup__form");
+
 formPopup.setEventListeners();
+
+const popupTellUs = new Popup(popupTellUsSelector);
+
+popupTellUs.setEventListeners();
+
+buttonNoVacanciesElement.addEventListener('click', () => {
+  popupTellUs.open();
+});
+
 // popupBtn.addEventListener("click", () => {
 //   formPopup.open();
 // });

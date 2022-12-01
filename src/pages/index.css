@@ -36,6 +36,8 @@
 
 @import url(../blocks/link/_place/link_place_header.css);
 
+@import url(../blocks/link/_place/link_place_button.css);
+
 /* ------------- block window ------------- */
 
 @import url(../blocks/window/window.css);
