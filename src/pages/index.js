@@ -18,6 +18,8 @@ import {
   faqCardsList,
   bigPopupBtn,
   formBig,
+  errorInput,
+  formInput,
   headerElement,
   cardsSliderProps
 } from "../utils/constants.js";
@@ -29,6 +31,13 @@ formValidation.enableValidation();
 
 //const bigFormValidation = new FormValidator(validationConfig, formBig);
 //bigFormValidation.enableValidation();
+
+function checkError() {
+  if (formInput.classList.contains("form__input_type_error")) {
+    errorInput.classList.add("form__input-container_type_error");
+  }
+}
+checkError();
 
 // ------------- попап формы
 
@@ -68,7 +77,7 @@ carousel.setListeners();
 
 SetFAQEventListeners(faqCardsList);
 
-// ------------- header slide handler
+// ------------- header
 
 window.addEventListener('mousemove', (evt) => {
   if(evt.y < 130) {

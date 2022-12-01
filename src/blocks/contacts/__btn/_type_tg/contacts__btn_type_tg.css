@@ -1,7 +1,7 @@
 .contacts__btn_type_tg {
   background-image: url(../../../../images/TG.png);
-  width: 155px;
-  height: 117px;
+  /* width: 155px;
+  height: 117px; */
   border: none;
   background-repeat: no-repeat;
 }
@@ -11,4 +11,10 @@
 }
 .contacts__btn_type_tg:visited {
   background-image: url(../../../../images/TG_p.svg);
+}
+
+@media screen and (max-width: 756px) {
+  .contacts__btn_type_tg {
+    background-size: 76px 57px;
+  }
 }
