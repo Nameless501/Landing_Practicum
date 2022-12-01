@@ -63,7 +63,7 @@ const stage_3 = [486, 489, 489, -489, -489, -489];
 
 const stage_4 = [323, 326, 326, 326, -652, -652];
 
-const stage_5 = [160, 163, 163, 163, 163, -815];
+const stage_5 = [163, 163, 163, 163, 161, -813];
 
 export const cardsSliderProps = {
   stages: [stage_1, stage_2, stage_3, stage_4, stage_5],
