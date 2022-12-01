@@ -865,7 +865,7 @@
         <!----------- блок контактов ----------->
         <section class="contacts content__contacts">
           <h2 class="contacts__title title_h2">
-            Если остались вопросы, напишите&nbsp;нам
+            Если остались вопросы, мы&nbsp;на&nbsp;связи
           </h2>
           <div class="contacts__items">
             <span class="contacts__span"
@@ -913,52 +913,58 @@
       </main>
       <!----------- блок footer ----------->
       <footer class="footer page__footer">
-        <div class="footer__connection">
-          <div class="call">
-            <p class="call__num text_large">8-800-700-93-29</p>
-            <p class="call__text text_regular">Звонок по России бесплатный</p>
+        <div class="footer__grid">
+          <div class="footer__connection">
+            <div class="call">
+              <p class="call__num text_large">8-800-700-93-29</p>
+              <p class="call__text text_regular">Звонок по России бесплатный</p>
+            </div>
+            <div class="footer__journal">
+              <p class="text_regular footer__journal-text">Журнал</p>
+              <a href="#" class="footer__journal-img"
+                ><img src="<%=require('./images/vk_f.svg')%>" alt="vk" /></a
+              ><a href="#" class="footer__journal-img"
+                ><img src="<%=require('./images/telegram.svg')%>" alt="telegram"
+              /></a>
+            </div>
           </div>
-          <div class="add">
-            <a class="add__text text_regular" href="#">Помощь</a>
-            <a class="add__text text_regular" href="#">Вакансии</a>
-            <a class="add__text text_regular" href="#">Лицензия</a>
+          <div class="footer__links">
+            <div class="add">
+              <a class="add__text text_regular" href="#">Помощь</a>
+              <a class="add__text text_regular" href="#">Предложения</a>
+              <a class="add__text text_regular" href="#">Лицензия</a>
+            </div>
+            <div class="about">
+              <a class="about__text text_regular" href="#">Правовая информация</a>
+              <a class="about__text text_regular" href="#">Для работодателей</a>
+              <a class="about__text text_regular" href="#">Отзывы</a>
+            </div>
           </div>
-          <div class="about">
-            <a class="about__text text_regular" href="#">Правовая информация</a>
-            <a class="about__text text_regular" href="#">Для работодателей</a>
-            <a class="about__text text_regular" href="#">Отзывы</a>
+          <div class="footer__copyright">
+            <p class="text_regular info__text">
+              &copy; 2022 АНО ДПО «ШАД», ООО&nbsp;«Яндекс»
+            </p>
           </div>
-        </div>
-        <div class="footer__journal">
-          <p class="text_regular footer__journal-text">Журнал</p>
-          <a href="#" class="footer__journal-img"
-            ><img src="<%=require('./images/vk_f.svg')%>" alt="vk" /></a
-          ><a href="#" class="footer__journal-img"
-            ><img src="<%=require('./images/telegram.svg')%>" alt="telegram"
-          /></a>
-        </div>
-        <div class="info">
-          <p class="text_regular info__text">
-            &copy; 2022 АНО ДПО «ШАД», ООО «Яндекс»
-          </p>
-          <div class="info__text-container">
-            <p class="text_regular info__text-agree">
-              Информация на данной странице описывает возможные варианты
-              получения дополнительного дохода в месяц (т.н. подработка). Не
-              является предложением о работе. Размещенные объявления о
-              потребности в тех или иных услугах не являются вакансиями.
-            </p>
-            <p class="text_regular info__text-agree info__text-none">
-              Образовательные услуги оказываются АНО ДПО «ШАД». ШАД —
-              <a class="info__link" href="#">это Школа анализа данных</a>,
-              основанная Яндексом и оказывающая образовательные услуги на
-              основании <a class="info__link" href="#">Лицензии № 036031</a> от
-              24 марта 2015 года.
-            </p>
-            <p class="text_regular info__text-agree info__text-none">
-              Сертификат о прохождении обучения по программе дополнительного
-              профессионального образования также выдается АНО ДПО «ШАД».
-            </p>
+          <div class="info">
+            <div class="info__text-container">
+              <p class="text_regular info__text-agree">
+                Информация на данной странице описывает возможные варианты
+                получения дополнительного дохода в месяц (т.н. подработка). Не
+                является предложением о работе. Размещенные объявления о
+                потребности в тех или иных услугах не являются вакансиями.
+              </p>
+              <p class="text_regular info__text-agree info__text-none">
+                Образовательные услуги оказываются АНО ДПО «ШАД». ШАД —
+                <a class="info__link" href="#">это Школа анализа данных</a>,
+                основанная Яндексом и оказывающая образовательные услуги на
+                основании <a class="info__link" href="#">Лицензии № 036031</a> от
+                24 марта 2015 года.
+              </p>
+              <p class="text_regular info__text-agree info__text-none">
+                Сертификат о прохождении обучения по программе дополнительного
+                профессионального образования также выдается АНО ДПО «ШАД».
+              </p>
+            </div>
           </div>
         </div>
       </footer>

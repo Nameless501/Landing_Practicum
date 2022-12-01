@@ -6,3 +6,9 @@
 .info__text-agree:last-child {
   margin: 0;
 }
+
+@media screen and (max-width: 470px) {
+  .info__text-agree {
+    margin: 0 0 20px 0;
+  }
+}

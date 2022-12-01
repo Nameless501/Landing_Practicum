@@ -2,6 +2,20 @@
   display: flex;
   width: 182px;
   justify-content: space-between;
+  align-items: center;
   margin: 50px 0;
   padding: 0;
+}
+
+@media screen and (max-width: 756px) {
+  .footer__journal {
+    margin: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .footer__journal {
+    margin: 22px 0 0;
+    width: 142px;
+  }
 }

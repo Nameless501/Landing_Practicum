@@ -1,11 +1,10 @@
 .contacts__btn {
-  margin: 0 19px 0 19px;
-  padding: 23px 0 23px 30px;
   width: 160px;
-height: 167px;
+  height: 130px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  background-position: top;
 }
 .contacts__btn:last-child {
   margin: 0;
@@ -14,3 +13,9 @@ height: 167px;
   margin: 0;
 }
 
+@media screen and (max-width: 756px) {
+  .contacts__btn {
+    height: 58px;
+    width: 78px;
+  }
+}

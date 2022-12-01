@@ -1,10 +1,9 @@
 .contacts__btn_type_ld {
   background-image: url(../../../../images/LD.svg);
-  width: 134px;
-  height: 163px;
+  /* width: 134px;
+  height: 117px; */
   border: none;
   background-repeat: no-repeat;
-  margin-bottom: 15px;
 }
 .contacts__btn_type_ld:hover {
   background-image: url(../../../../images/LD_h.svg);
@@ -12,4 +11,10 @@
 }
 .contacts__btn_type_ld:visited {
   background-image: url(../../../../images/LD_p.svg);
+}
+
+@media screen and (max-width: 756px) {
+  .contacts__btn_type_ld {
+    background-size: 56px 57px;
+  }
 }
