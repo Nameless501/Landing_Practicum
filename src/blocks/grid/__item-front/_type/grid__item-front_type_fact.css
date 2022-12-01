@@ -1,5 +1,6 @@
 .grid__item-front_type_fact {
   background: url(./../../../../images/yellow_back.png);
+  background-size: 100% 361px;
 }
 
 @media screen and (max-width: 920px) {

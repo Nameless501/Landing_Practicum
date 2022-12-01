@@ -7,9 +7,8 @@
 }
 .contacts__btn_type_ld:hover {
   background-image: url(../../../../images/LD_h.svg);
-  transition: 0.3s ease-in-out;
 }
-.contacts__btn_type_ld:visited {
+.contacts__btn_type_ld:active {
   background-image: url(../../../../images/LD_p.svg);
 }
 
