@@ -10,14 +10,13 @@ export const validationConfig = {
 };
 
 export const formFeedback = document.querySelector(".feedback-form");
-export const formBig = document.querySelector(".big_form");
+export const formBig = document.querySelector(".big-form");
 
 // ---------------  popup
 
 export const popupVideoSelector = ".popup_type_open-video";
 export const popupBtn = document.querySelector(".main-button");
 export const closeBtn = document.querySelector(".popup__close");
-
 
 // --------------- faq and accordion selectors
 
@@ -68,3 +67,6 @@ export const cardsSliderConfig = {
   restCardsBackAnimationSelector: "cards-slider__animation_card_rest-backward",
   scrollToElementSelector: ".cards-slider",
 };
+// --------------- form
+export const errorInput = document.querySelector(".form__input-container");
+export const formInput = document.querySelector(".form__input");
