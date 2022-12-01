@@ -92,3 +92,7 @@ export const cardsSliderProps = {
 // --------------- header
 
 export const headerElement = document.querySelector('.header');
+
+export const menuIcon = document.querySelector('.menu__icon');
+
+export const navigationBar = document.querySelector('.header__navigation-bar');

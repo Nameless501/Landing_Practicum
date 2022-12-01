@@ -8,6 +8,7 @@ import Carousel from "../components/Carousel.js";
 import SetFAQEventListeners from "../components/FAQ.js";
 import CardsSlider from "../components/CardsSlider.js";
 import { handleHeaderToggle } from '../utils/utils.js';
+import Menu from "../components/Menu";
 import {
   validationConfig,
   vacanciesConfig,
@@ -22,7 +23,10 @@ import {
   formBig,
   errorInputSelector,
   formInputSelector,
-  cardsSliderProps
+  cardsSliderProps,
+  menuIcon,
+  navigationBar,
+  headerElement
 } from "../utils/constants.js";
 
 // ------------- валидация формы
@@ -72,3 +76,8 @@ window.addEventListener('mousemove', handleHeaderToggle);
 // ------------- cards slider
 
 let timeLine = CardsSlider(cardsSliderProps);
+
+// ------------- burger menu
+
+const menu = new Menu(menuIcon, navigationBar);
+menu.setListeners();

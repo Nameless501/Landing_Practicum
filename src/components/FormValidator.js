@@ -51,7 +51,7 @@ export default class FormValidator {
       this._submitButtonElement.classList.remove(
         this._validationConfig.inactiveButtonClass
       );
-      this._submitButtonElement.removeAttribute('disabled');
+      this._submitButtonElement.removeAttribute('disabled', 'disabled');
     }
   };
   _hasInvalidInput = () => {
@@ -63,11 +63,17 @@ export default class FormValidator {
   _showTelegramInput() {
     this._telegramInput.classList.remove(this._validationConfig.hideInputSelector);
     this._phoneInput.classList.add(this._validationConfig.hideInputSelector);
+
+    this._telegramInput.querySelector('input').setAttribute('required', 'required');
+    this._phoneInput.querySelector('input').removeAttribute('required', 'required')
   }
 
   _showPhoneInput() {
     this._phoneInput.classList.remove(this._validationConfig.hideInputSelector);
     this._telegramInput.classList.add(this._validationConfig.hideInputSelector);
+
+    this._phoneInput.querySelector('input').setAttribute('required', 'required');
+    this._telegramInput.querySelector('input').removeAttribute('required', 'required')
   }
 
   _setContactsSectionListeners() {
