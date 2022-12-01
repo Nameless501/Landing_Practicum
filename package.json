@@ -27,6 +27,9 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "core-js": "^3.24.1",
+		"gsap": "^3.11.0",
+		"scroll-lock": "^2.1.5",
     "swiper": "^8.4.5"
   }
 }
