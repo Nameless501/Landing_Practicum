@@ -1,129 +1,78 @@
-export default function CardsSlider(nodeList, config) {
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function CardsSlider(props) {
   const {
-    sliderCardsContainerSelector,
-    sliderCardActiveSelector,
-    firstCardAnimationSelector,
-    restCardsAnimationSelector,
-    firstCardBackAnimationSelector,
-    restCardsBackAnimationSelector,
-    scrollToElementSelector,
-  } = config;
-  const cardsList = [...nodeList].reverse();
-  const sliderCardsContainer = document.querySelector(sliderCardsContainerSelector);
-  const scrollToElement = document.querySelector(scrollToElementSelector);
-  let counter = 0;
+    blurSelector,
+    cardSelector,
+    triggerSelector,
+    duration,
+    stages,
+    stagesCount,
+  } = props;
 
-
-function getDistanceToCards() {
-  const containerProps = sliderCardsContainer.getBoundingClientRect();
-  return containerProps.y;
-}
-
-  function renderCards() {
-    cardsList.forEach((card, index) => {
-      if(index === 0) {
-        card.classList.add(sliderCardActiveSelector);
-      } else {
-        card.classList.remove(sliderCardActiveSelector);
-      }
-      card.style.zIndex = index * -1;
-      card.parentNode.style.order = cardsList.length - index;
-    });
-  }
-
-  function handleCardsListRearrange() {
-    if(cardsList[0].classList.contains(firstCardAnimationSelector)) {
-      const firstCard = cardsList.shift();
-      cardsList.push(firstCard);
-
-      handleAnimationEnd(true);
-    } else if(cardsList[0].classList.contains(restCardsBackAnimationSelector)) {
-      const lastCard = cardsList.pop();
-      cardsList.unshift(lastCard);
-
-      handleAnimationEnd(false);
+  let timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: triggerSelector,
+      start: 'top 200px',
+      end: 'bottom',
+      scrub: 1,
+      smoothChildTiming: true,
+      toggleActions: "play pause none reset",
     }
+  })
+
+  // --------------- генерация эффекта blur и перспективы для каждой карточки
+
+  function handleBlurAnimation(i) {
+    const label = i > 1 ? (i + i - 1) : 1;
+
+    timeline.addLabel(`stage${i}`, label)
+      .to(
+        cardSelector + i,
+        { zIndex: -1, duration: duration.z },
+        `stage${i}`
+      )
+      .to(
+        blurSelector + i,
+        { duration: duration.z, opacity: 1 },
+        `stage${i}`
+      )
+      .to(
+        blurSelector + (i + 1),
+        { duration: duration.z, opacity: 0 },
+        `stage${i}`
+      )
   }
 
-  function handleAnimationEnd(isForward) {
-    cardsList.forEach((card) => {
-      card.classList.remove(firstCardAnimationSelector);
-      card.classList.remove(restCardsAnimationSelector);
-      card.classList.remove(firstCardBackAnimationSelector);
-      card.classList.remove(restCardsBackAnimationSelector);
+  // --------------- генерация эффекта движения для каждой карточки
+
+  function handleMotionAnimation(i) {
+    const stage = stages[i];
+    const label = i + i + 2;
+
+    timeline.addLabel(`stage${i + 2}`, label)
+
+    stage.forEach((pos, ind) => {
+      timeline.to(
+        cardSelector + (ind + 1),
+        {
+          x: stage[ind],
+          duration: duration.x,
+        },
+        `stage${i + 2}`
+      )
     })
-
-    renderCards(isForward);
-
-    const isLastCard = (counter === 6 && isForward) ||
-      (counter === 0 && !isForward);
-
-    if(isLastCard) {
-      window.removeEventListener('scroll', handlePageScrollStop);
-      window.addEventListener('scroll', resetSliderListeners);
-      document.body.style.overflow = '';
-      counter = 0;
-    } else {
-      window.addEventListener('wheel', handleAnimationStart);
-    }
-
-    sliderCardsContainer.removeEventListener('animationend', handleAnimationEnd);
   }
 
-  function handleAnimationStart(evt) {
-    window.removeEventListener('wheel', handleAnimationStart);
+  // --------------- генерация анимация для каждого этапа
 
-    if(evt.deltaY > 0) {
-      cardsList.forEach((card, index) => {
-        if(index === 0) {
-          card.classList.add(firstCardAnimationSelector);
-        } else {
-          card.classList.add(restCardsAnimationSelector);
-        }
-      });
-
-      counter++;
-    } else if(evt.deltaY < 0 && counter > 0) {
-      cardsList.forEach((card, index) => {
-        if(index === cardsList.length - 1) {
-          card.classList.add(firstCardBackAnimationSelector);
-        } else {
-          card.classList.add(restCardsBackAnimationSelector);
-        }
-      });
-
-      counter--
-    } else {
-      window.removeEventListener('scroll', handlePageScrollStop);
-      window.addEventListener('scroll', resetSliderListeners);
-      document.body.style.overflow = '';
-    }
-
-    sliderCardsContainer.addEventListener('animationend', handleCardsListRearrange);
+  for(let i = 0; i < stagesCount; i++) {
+    handleMotionAnimation(i);
+    handleBlurAnimation(i + 1);
   }
 
-  function handlePageScrollStop() {
-    const distance = getDistanceToCards();
-
-    if(distance < 250 && distance > 200) {
-      scrollToElement.scrollIntoView({ block: 'center' });
-      document.body.style.overflow = 'hidden';
-      window.addEventListener('wheel', handleAnimationStart);
-    }
-  }
-
-  function setSliderListeners() {
-    window.addEventListener('scroll', handlePageScrollStop);
-  }
-
-  function resetSliderListeners() {
-    const distance = getDistanceToCards();
-
-    if(distance > 600 || distance < -600) {
-      setSliderListeners();
-      window.removeEventListener('scroll', resetSliderListeners);
-    }
-  }
-
-  return setSliderListeners;
+  return timeline;
 }

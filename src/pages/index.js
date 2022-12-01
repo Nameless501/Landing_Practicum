@@ -7,7 +7,6 @@ import PopupWithVideo from "../components/PopupWithVideo";
 import Carousel from "../components/Carousel.js";
 import SetFAQEventListeners from "../components/FAQ.js";
 import CardsSlider from "../components/CardsSlider.js";
-
 import {
   validationConfig,
   vacanciesConfig,
@@ -17,12 +16,12 @@ import {
   closeBtn,
   popupVideoSelector,
   faqCardsList,
-  sliderCardsNodeList,
-  cardsSliderConfig,
   bigPopupBtn,
   formBig,
   errorInput,
   formInput,
+  headerElement,
+  cardsSliderProps
 } from "../utils/constants.js";
 
 // ------------- валидация формы
@@ -32,6 +31,13 @@ formValidation.enableValidation();
 
 //const bigFormValidation = new FormValidator(validationConfig, formBig);
 //bigFormValidation.enableValidation();
+
+function checkError() {
+  if (formInput.classList.contains("form__input_type_error")) {
+    errorInput.classList.add("form__input-container_type_error");
+  }
+}
+checkError();
 
 // ------------- попап формы
 
@@ -71,24 +77,7 @@ carousel.setListeners();
 
 SetFAQEventListeners(faqCardsList);
 
-// ------------- cards slider
-
-const setCardsSliderListeners = CardsSlider(
-  sliderCardsNodeList,
-  cardsSliderConfig
-);
-
-setCardsSliderListeners();
-
-// --------------- form
-function checkError() {
-  if (formInput.classList.contains("form__input_type_error")) {
-    errorInput.classList.add("form__input-container_type_error");
-  }
-}
-checkError();
-
-const headerElement = document.querySelector('.header');
+// ------------- header
 
 window.addEventListener('mousemove', (evt) => {
   if(evt.y < 130) {
@@ -96,4 +85,8 @@ window.addEventListener('mousemove', (evt) => {
   } else {
     headerElement.style.top = '-130px';
   }
-})
+});
+
+// ------------- cards slider
+
+let timeLine = CardsSlider(cardsSliderProps);

@@ -1,45 +1,15 @@
-@keyframes first-card {
-  30% {
-    transform: translate(0);
-  }
-  100% {
-    z-index: -10;
-    transform: translate(810px);
-  }
-}
-
-@keyframes rest-cards {
-  40% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(-163px);
-  }
-}
-
-@keyframes first-card-backward {
-  30% {
-    transform: translate(0);
-  }
-  100% {
-    z-index: 10;
-    transform: translate(-810px);
-  }
-}
-
-@keyframes rest-cards-backward {
-  40% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(163px);
-  }
-}
-
 .cards-slider {
   padding: 0;
   box-sizing: border-box;
   max-width: 1200px;
+  height: 1300px;
+}
+
+.cards-slider_scroll-wrapper {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 13%;
 }
 
 .cards-slider__title {
@@ -50,7 +20,6 @@
 .cards-slider__gallery {
   margin: 40px 0 0;
   padding: 0;
-  position: relative;
 }
 
 .cards-slider__cards {
@@ -74,32 +43,6 @@
   border-radius: 30px;
 }
 
-.cards-slider__animation_card_first {
-  animation: .8s forwards first-card;
-}
-
-.cards-slider__animation_card_first-backward {
-  animation: .8s forwards first-card-backward;
-}
-
-.cards-slider__animation_card_first > .cards-slider__card-image-wrapper > .cards-slider__card-blur {
-  backdrop-filter: blur(2.5px);
-  transition: backdrop-filter .5s linear;
-}
-
-.cards-slider__animation_card_first > .cards-slider__card-description > .cards-slider__card-blur {
-  backdrop-filter: blur(2.5px);
-  transition: backdrop-filter .5s linear;
-}
-
-.cards-slider__animation_card_rest {
-  animation: .8s forwards rest-cards;
-}
-
-.cards-slider__animation_card_rest-backward {
-  animation: .8s forwards rest-cards-backward;
-}
-
 .cards-slider__card-blur {
   margin: 0;
   padding: 0;
@@ -110,8 +53,7 @@
   left: 0;
   background-color: transparent;
   backdrop-filter: blur(2.5px);
-  visibility: visible;
-  transition: backdrop-filter 0s linear;
+  opacity: 1;
 }
 
 .cards-slider__card-blur_place_image {
@@ -122,12 +64,12 @@
   margin: 0;
 }
 
-.cards-slider__card_active > .cards-slider__card-image-wrapper > .cards-slider__card-blur {
-  visibility: hidden;
+.cards-slider__card_unblur > .cards-slider__card-image-wrapper > .cards-slider__card-blur {
+  opacity: 0;
 }
 
-.cards-slider__card_active > .cards-slider__card-description > .cards-slider__card-blur {
-  visibility: hidden;
+.cards-slider__card_unblur > .cards-slider__card-description > .cards-slider__card-blur {
+  opacity: 0;
 }
 
 .cards-slider__card_color_blue {

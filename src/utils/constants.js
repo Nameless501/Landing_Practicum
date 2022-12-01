@@ -54,19 +54,30 @@ export const vacanciesFormElement = document.querySelector(".vacancies__form");
 
 // --------------- cards slider
 
-export const sliderCardsNodeList = document.querySelectorAll(
-  ".cards-slider__card"
-);
+const stage_1 = [812, -163, -163, -163, -163, -163];
 
-export const cardsSliderConfig = {
-  sliderCardsContainerSelector: ".cards-slider__cards",
-  sliderCardActiveSelector: "cards-slider__card_active",
-  firstCardAnimationSelector: "cards-slider__animation_card_first",
-  restCardsAnimationSelector: "cards-slider__animation_card_rest",
-  firstCardBackAnimationSelector: "cards-slider__animation_card_first-backward",
-  restCardsBackAnimationSelector: "cards-slider__animation_card_rest-backward",
-  scrollToElementSelector: ".cards-slider",
-};
+const stage_2 = [649, 652, -326, -326, -326, -326];
+
+const stage_3 = [486, 489, 489, -489, -489, -489];
+
+const stage_4 = [323, 326, 326, 326, -652, -652];
+
+const stage_5 = [163, 163, 163, 163, 161, -813];
+
+export const cardsSliderProps = {
+  stages: [stage_1, stage_2, stage_3, stage_4, stage_5],
+  cardSelector: '.cards-slider__card_',
+  blurSelector: '.cards-slider__card-blur_card_',
+  triggerSelector: '.cards-slider__cards',
+  duration: { x: 1, z: 0.4 },
+  stagesCount: 5,
+}
+
+// --------------- header
+
+export const headerElement = document.querySelector('.header');
+
 // --------------- form
+
 export const errorInput = document.querySelector(".form__input-container");
 export const formInput = document.querySelector(".form__input");

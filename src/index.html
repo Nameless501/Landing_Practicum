@@ -1,102 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-  </head>
 
-  <body class="window">
-    <div class="page">
-      <!----------- блок header ----------->
-      <header class="header page__header">
-        <img
-          src="<%=require('./images/logo-short.svg')%>"
-          alt="yandex logo"
-          class="header__logo"
-        />
-        <nav class="header__navigation-bar">
-          <ul class="header__navigation-links">
-            <li>
-              <a
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title</title>
+</head>
+
+<body class="window">
+  <div class="page">
+    <!----------- блок header ----------->
+    <header class="header page__header">
+      <img src="<%=require('./images/logo-short.svg')%>" alt="yandex logo" class="header__logo" />
+      <nav class="header__navigation-bar">
+        <ul class="header__navigation-links">
+          <li>
+            <a
                 href="#departments"
                 class="header__navigation-link text_regular"
               >
-                Направления
-              </a>
-            </li>
-            <li>
-              <a href="#vacancies" class="header__navigation-link text_regular">
-                Предложения
-              </a>
-            </li>
-            <li>
-              <a href="#reviews" class="header__navigation-link text_regular">
-                Отзывы
-              </a>
-            </li>
-            <li>
-              <a href="#faq" class="header__navigation-link text_regular">
+              Направления
+            </a>
+          </li>
+          <li>
+            <a href="#vacancies" class="header__navigation-link text_regular">
+              Предложения
+            </a>
+          </li>
+          <li>
+            <a href="#reviews" class="header__navigation-link text_regular">
+              Отзывы
+            </a>
+          </li>
+          <li>
+            <a href="#faq" class="header__navigation-link text_regular">
                 FAQ
               </a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          type="button"
-          class="text_small main-button main-button_type_ghost main-button_place_header"
-        >
-          Хочу делиться знаниями
-        </button>
-      </header>
-      <main class="content page__content">
-        <!----------- блок lead ----------->
-        <section class="lead content__lead">
-          <h1 class="lead__title title_h1">
-            Делись знаниями,
-            <span class="lead__title-span lead__title-span_align_baseline">
-              <img
-                src="<%=require('./images/lead_1.png')%>"
-                alt="decoration"
-                class="lead__image lead__image_1"
-              />
-            </span>
-            <br />
-            расти в профессии и делай
-            <span class="lead__title-span lead__title-span_align_middle">
-              <img
-                src="<%=require('./images/bullet_1.svg')%>"
-                alt="decoration"
-                class="lead__image lead__image_2"
-              />
-            </span>
-            мир лучше
-            <span class="lead__title-span lead__title-span_align_middle">
-              <button
-                type="button"
-                class="text_small main-button main-button_place_lead main-button_type_primary"
-              >
-                Хочу делиться знаниями
-              </button>
-            </span>
-            <span class="lead__title-span lead__title-span_align_top">
-              <img
-                src="<%=require('./images/lead_2.svg')%>"
-                alt="decoration"
-                class="lead__image lead__image_3"
-              />
-            </span>
-          </h1>
-        </section>
-        <!----------- блок cards-slider ----------->
-        <section class="cards-slider content__cards-slider">
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="text_small main-button main-button_type_ghost main-button_place_header">
+        Хочу делиться знаниями
+      </button>
+    </header>
+    <main class="content page__content">
+      <!----------- блок lead ----------->
+      <section class="lead content__lead">
+        <h1 class="lead__title title_h1">
+          Делись знаниями,
+          <span class="lead__title-span lead__title-span_align_baseline">
+            <img src="<%=require('./images/lead_1.png')%>" alt="decoration" class="lead__image lead__image_1" />
+          </span>
+          <br />
+          расти в профессии и делай
+          <span class="lead__title-span lead__title-span_align_middle">
+            <img src="<%=require('./images/bullet_1.svg')%>" alt="decoration" class="lead__image lead__image_2" />
+          </span>
+          мир лучше
+          <span class="lead__title-span lead__title-span_align_middle">
+            <button type="button" class="text_small main-button main-button_place_lead main-button_type_primary">
+              Хочу делиться знаниями
+            </button>
+          </span>
+          <span class="lead__title-span lead__title-span_align_top">
+            <img src="<%=require('./images/lead_2.svg')%>" alt="decoration" class="lead__image lead__image_3" />
+          </span>
+        </h1>
+      </section>
+      <!----------- блок cards-slider ----------->
+      <section class="cards-slider content__cards-slider">
+        <div class="cards-slider_scroll-wrapper">
           <h2 class="cards-slider__title title_h2">Что будете делать</h2>
           <div class="cards-slider__gallery">
             <ul class="cards-slider__cards">
               <li>
-                <article
-                  class="cards-slider__card cards-slider__card_color_black"
-                >
+                <article class="cards-slider__card cards-slider__card_color_black cards-slider__card_6">
                   <div class="cards-slider__card-description">
                     <h3 class="cards-slider__card-title text_large">
                       Развиваться внутри вашей роли
@@ -104,24 +82,17 @@
                     <p class="cards-slider__subtitle text_regular">
                       вы сможете стать старшим наставником или сеньор-ревьювером
                     </p>
-                    <div class="cards-slider__card-blur"></div>
+                    <div class="cards-slider__card-blur cards-slider__card-blur_card_6"></div>
                   </div>
                   <div class="cards-slider__card-image-wrapper">
-                    <img
-                      src="<%=require('./images/card_slider_6.jpg')%>"
-                      alt="card photo"
-                      class="cards-slider__card-image"
-                    />
-                    <div
-                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
-                    ></div>
+                    <img src="<%=require('./images/card_slider_6.jpg')%>" alt="card photo"
+                      class="cards-slider__card-image" />
+                    <div class="cards-slider__card-blur cards-slider__card-blur_place_image cards-slider__card-blur_card_6"></div>
                   </div>
                 </article>
               </li>
               <li>
-                <article
-                  class="cards-slider__card cards-slider__card_color_purple"
-                >
+                <article class="cards-slider__card cards-slider__card_color_purple cards-slider__card_5">
                   <div class="cards-slider__card-description">
                     <h3 class="cards-slider__card-title text_large">
                       Общаться с людьми из EdTech
@@ -130,24 +101,17 @@
                       станете частью сообщества экспертов и посмотрите на мир
                       онлайн-образования изнутри
                     </p>
-                    <div class="cards-slider__card-blur"></div>
+                    <div class="cards-slider__card-blur cards-slider__card-blur_card_5"></div>
                   </div>
                   <div class="cards-slider__card-image-wrapper">
-                    <img
-                      src="<%=require('./images/card_slider_5.jpg')%>"
-                      alt="card photo"
-                      class="cards-slider__card-image"
-                    />
-                    <div
-                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
-                    ></div>
+                    <img src="<%=require('./images/card_slider_5.jpg')%>" alt="card photo"
+                      class="cards-slider__card-image" />
+                    <div class="cards-slider__card-blur cards-slider__card-blur_place_image cards-slider__card-blur_card_5"></div>
                   </div>
                 </article>
               </li>
               <li>
-                <article
-                  class="cards-slider__card cards-slider__card_color_blue"
-                >
+                <article class="cards-slider__card cards-slider__card_color_blue cards-slider__card_4">
                   <div class="cards-slider__card-description">
                     <h3 class="cards-slider__card-title text_large">
                       Развивать личный бренд
@@ -156,24 +120,17 @@
                       публикуйте статьи в нашем блоге и выступайте
                       на мероприятиях, чтобы о вас узнали как об эксперте
                     </p>
-                    <div class="cards-slider__card-blur"></div>
+                    <div class="cards-slider__card-blur cards-slider__card-blur_card_4"></div>
                   </div>
                   <div class="cards-slider__card-image-wrapper">
-                    <img
-                      src="<%=require('./images/card_slider_4.jpg')%>"
-                      alt="card photo"
-                      class="cards-slider__card-image"
-                    />
-                    <div
-                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
-                    ></div>
+                    <img src="<%=require('./images/card_slider_4.jpg')%>" alt="card photo"
+                      class="cards-slider__card-image" />
+                    <div class="cards-slider__card-blur cards-slider__card-blur_place_image cards-slider__card-blur_card_4"></div>
                   </div>
                 </article>
               </li>
               <li>
-                <article
-                  class="cards-slider__card cards-slider__card_color_black"
-                >
+                <article class="cards-slider__card cards-slider__card_color_black cards-slider__card_3">
                   <div class="cards-slider__card-description">
                     <h3 class="cards-slider__card-title text_large">
                       Менять жизнь людей к лучшему
@@ -182,24 +139,17 @@
                       тысячи наших студентов нуждаются в ваших знаниях и опыте —
                       не бойтесь ими делиться
                     </p>
-                    <div class="cards-slider__card-blur"></div>
+                    <div class="cards-slider__card-blur cards-slider__card-blur_card_3"></div>
                   </div>
                   <div class="cards-slider__card-image-wrapper">
-                    <img
-                      src="<%=require('./images/card_slider_3.jpg')%>"
-                      alt="card photo"
-                      class="cards-slider__card-image"
-                    />
-                    <div
-                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
-                    ></div>
+                    <img src="<%=require('./images/card_slider_3.jpg')%>" alt="card photo"
+                      class="cards-slider__card-image" />
+                    <div class="cards-slider__card-blur cards-slider__card-blur_place_image cards-slider__card-blur_card_3"></div>
                   </div>
                 </article>
               </li>
               <li>
-                <article
-                  class="cards-slider__card cards-slider__card_color_pink"
-                >
+                <article class="cards-slider__card cards-slider__card_color_pink cards-slider__card_2">
                   <div class="cards-slider__card-description">
                     <h3 class="cards-slider__card-title text_large">
                       Учиться новому
@@ -208,24 +158,18 @@
                       вы узнаете, как давать обратную связь, выступать
                       на публике и мотивировать людей
                     </p>
-                    <div class="cards-slider__card-blur"></div>
+                    <div class="cards-slider__card-blur cards-slider__card-blur_card_2"></div>
                   </div>
                   <div class="cards-slider__card-image-wrapper">
-                    <img
-                      src="<%=require('./images/card_slider_2.jpg')%>"
-                      alt="card photo"
-                      class="cards-slider__card-image"
-                    />
-                    <div
-                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
-                    ></div>
+                    <img src="<%=require('./images/card_slider_2.jpg')%>" alt="card photo"
+                      class="cards-slider__card-image" />
+                    <div class="cards-slider__card-blur cards-slider__card-blur_place_image cards-slider__card-blur_card_2"></div>
                   </div>
                 </article>
               </li>
               <li>
                 <article
-                  class="cards-slider__card cards-slider__card_color_blue cards-slider__card_active"
-                >
+                  class="cards-slider__card cards-slider__card_color_blue cards-slider__card_active  cards-slider__card_unblur cards-slider__card_1">
                   <div class="cards-slider__card-description">
                     <h3 class="cards-slider__card-title text_large">
                       Иметь доход от 35 до 50 тысяч ₽ в месяц
@@ -234,17 +178,12 @@
                       работайте по 2-3 часа в день, в группе ≈50 человек, график
                       выбираете сами
                     </p>
-                    <div class="cards-slider__card-blur"></div>
+                    <div class="cards-slider__card-blur cards-slider__card-blur_card_1"></div>
                   </div>
                   <div class="cards-slider__card-image-wrapper">
-                    <img
-                      src="<%=require('./images/card_slider_1.jpg')%>"
-                      alt="card photo"
-                      class="cards-slider__card-image"
-                    />
-                    <div
-                      class="cards-slider__card-blur cards-slider__card-blur_place_image"
-                    ></div>
+                    <img src="<%=require('./images/card_slider_1.jpg')%>" alt="card photo"
+                      class="cards-slider__card-image" />
+                    <div class="cards-slider__card-blur cards-slider__card-blur_place_image cards-slider__card-blur_card_1"></div>
                   </div>
                 </article>
               </li>
@@ -1077,29 +1016,13 @@
               <span class="form__error email-input-error"></span>
             </div>
 
-            <div class="form__contact-items">
-              <input
-                type="radio"
-                id="contactChoice1"
-                name="tel"
-                value="tel"
-                class="form__contact-radio"
-              />
-              <label for="contactChoice1" class="form__contact-item"
-                >Телефон</label
-              >
+          <div class="form__contact-items">
+            <input type="radio" id="contactChoice1" name="tel" value="tel" class="form__contact-radio" />
+            <label for="contactChoice1" class="form__contact-item">Телефон</label>
 
-              <input
-                type="radio"
-                id="contactChoice2"
-                name="tel"
-                value="tg"
-                class="form__contact-radio"
-              />
-              <label for="contactChoice2" class="form__contact-item"
-                >Телеграм</label
-              >
-            </div>
+            <input type="radio" id="contactChoice2" name="tel" value="tg" class="form__contact-radio" />
+            <label for="contactChoice2" class="form__contact-item">Телеграм</label>
+          </div>
 
             <div class="form__input-container">
               <input
@@ -1253,4 +1176,6 @@
       </div>
     </div>
   </body>
+</html>
+
 </html>
