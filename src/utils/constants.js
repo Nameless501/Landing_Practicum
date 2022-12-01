@@ -15,7 +15,6 @@ export const formBig = document.querySelector(".big-form");
 // ---------------  popup
 
 export const popupVideoSelector = ".popup_type_open-video";
-export const popupBtn = document.querySelector(".main-button");
 export const closeBtn = document.querySelector(".popup__close");
 
 // --------------- faq and accordion selectors

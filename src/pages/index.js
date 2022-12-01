@@ -7,6 +7,7 @@ import PopupWithVideo from "../components/PopupWithVideo";
 import Carousel from "../components/Carousel.js";
 import SetFAQEventListeners from "../components/FAQ.js";
 import CardsSlider from "../components/CardsSlider.js";
+import { handleHeaderToggle } from '../utils/utils.js';
 import {
   validationConfig,
   vacanciesConfig,
@@ -20,7 +21,6 @@ import {
   formBig,
   errorInput,
   formInput,
-  headerElement,
   cardsSliderProps
 } from "../utils/constants.js";
 
@@ -43,9 +43,9 @@ checkError();
 
 const formPopup = new Popup(".popup__form");
 formPopup.setEventListeners();
-popupBtn.addEventListener("click", () => {
-  formPopup.open();
-});
+// popupBtn.addEventListener("click", () => {
+//   formPopup.open();
+// });
 
 /*const bigPopup = new Popup(".popup__second-form");
 bigPopup.setEventListeners();
@@ -77,15 +77,9 @@ carousel.setListeners();
 
 SetFAQEventListeners(faqCardsList);
 
-// ------------- header
+// ------------- header event listeners
 
-window.addEventListener('mousemove', (evt) => {
-  if(evt.y < 130) {
-    headerElement.style.top = 0;
-  } else {
-    headerElement.style.top = '-130px';
-  }
-});
+window.addEventListener('mousemove', handleHeaderToggle);
 
 // ------------- cards slider
 

@@ -32,6 +32,10 @@
 
 @import url(../blocks/text/_type/text_radio.css);
 
+/* ------------- block link ------------- */
+
+@import url(../blocks/link/_place/link_place_header.css);
+
 /* ------------- block window ------------- */
 
 @import url(../blocks/window/window.css);
@@ -265,8 +269,6 @@
 
 @import url(../blocks/info/__link/info__link.css);
 
-@import url(../blocks/links/link.css);
-
 /* ------------- block form ------------- */
 
 @import url(../blocks/form/form.css);
@@ -312,8 +314,6 @@
 @import url(../blocks/popup/__container/popup__container.css);
 
 @import url(../blocks/popup/_opened/popup_opened.css);
-
-@import url(../blocks/link/link.css);
 
 @import url(../blocks/popup/__close/popup__close.css);
 
