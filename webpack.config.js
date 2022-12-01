@@ -9,7 +9,7 @@ const config = {
     entry: { main: './src/pages/index.js' },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
+        filename:'[name].js',
         publicPath: ''
     },
     mode: 'development',
@@ -20,7 +20,12 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: './src/index.html',
+        }),
+        new HtmlWebpackPlugin({
+          filename: 'vacancies.html',
+          template: './src/vacancies.html',
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),

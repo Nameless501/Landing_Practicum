@@ -324,7 +324,7 @@
                   <h3 class="grid__item-title_type_fact title_h3">
                     Яндекс Практикум&nbsp;— это сервис digital образования.
                     <span class="title_h3 grid__item-title_hidden"
-                      >Мы помогаем людям расти — на работе и в жизни.</span
+                      >Мы помогаем людям расти&mdash;на работе и в жизни.</span
                     >
                   </h3>
                 </div>
@@ -343,13 +343,13 @@
                     alt=""
                   />
                 </div>
-                <a href="https://practicum.yandex.ru/catalog/data-analysis/" class="grid__link_type_mob"></a>
+                <a href="https://practicum.yandex.ru/catalog/data-analysis/" class="grid__link_type_mob" target="_ blank"></a>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Анализ данных</h3>
                   <p class="grid__item-description text_regular">
                     Учим анализировать данные
                   </p>
-                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/data-analysis/"> Узнать больше </a>
+                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/data-analysis/" target="_ blank"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_3">
@@ -361,14 +361,14 @@
                     alt=""
                   />
                 </div>
-                <a href="https://practicum.yandex.ru/catalog/marketing/" class="grid__link_type_mob"></a>
+                <a href="https://practicum.yandex.ru/catalog/marketing/" class="grid__link_type_mob" target="_ blank"></a>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Маркетинг</h3>
                   <p class="grid__item-description text_regular">
                     Учим запускать рекламу и&nbsp;управлять рекламными кампаниями.
                     Отчеты, рассылки, PR, бренд и&nbsp;вот это все
                   </p>
-                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/marketing/"> Узнать больше </a>
+                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/marketing/" target="_ blank"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_4">
@@ -380,13 +380,13 @@
                     alt=""
                   />
                 </div>
-                <a href="https://practicum.yandex.ru/catalog/management/" class="grid__link_type_mob"></a>
+                <a href="https://practicum.yandex.ru/catalog/management/" class="grid__link_type_mob" target="_ blank"></a>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Менеджмент</h3>
                   <p class="grid__item-description text_regular">
                     Учим эффективно управлять проектами и&nbsp;продуктами
                   </p>
-                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/management/"> Узнать больше </a>
+                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/management/" target="_ blank"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_5">
@@ -398,14 +398,14 @@
                     alt=""
                   />
                 </div>
-                <a href="https://practicum.yandex.ru/catalog/programming/" class="grid__link_type_mob"></a>
+                <a href="https://practicum.yandex.ru/catalog/programming/" class="grid__link_type_mob" target="_ blank"></a>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Программирование</h3>
                   <p class="grid__item-description text_regular">
                     Учим разработке и&nbsp;тестированию в&nbsp;условиях, которые имитируют
                     реальную работу: с&nbsp;проектами, спринтами и&nbsp;дедлайнами
                   </p>
-                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/programming/"> Узнать больше </a>
+                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/programming/" target="_ blank"> Узнать больше </a>
                 </div>
               </div>
               <div class="grid__item grid__item_position_6">
@@ -417,13 +417,13 @@
                     alt=""
                   />
                 </div>
-                <a href="https://practicum.yandex.ru/catalog/design/" class="grid__link_type_mob"></a>
+                <a href="https://practicum.yandex.ru/catalog/design/" class="grid__link_type_mob" target="_ blank"></a>
                 <div class="grid__item-back">
                   <h3 class="grid__item-title text_large">Дизайн</h3>
                   <p class="grid__item-description text_regular">
                     Учим делать удобный и&nbsp;эстетичный дизайн
                   </p>
-                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/design/"> Узнать больше </a>
+                  <a class="grid__link" href="https://practicum.yandex.ru/catalog/design/" target="_ blank"> Узнать больше </a>
                 </div>
               </div>
             </div>
@@ -609,7 +609,8 @@
                 <button
                   type="button"
                   class="text_small main-button main-button_place_vacancies main-button_type_secondary"
-                >
+                  onclick="window.location.href = './vacancies.html'";
+                  >
                   Откликнуться
                 </button>
               </article>
@@ -671,6 +672,7 @@
                 <button
                   type="button"
                   class="text_small main-button main-button_place_vacancies main-button_type_secondary"
+                  onclick="window.location.href = './vacancies.html'";
                 >
                   Откликнуться
                 </button>
@@ -691,6 +693,7 @@
             <div
               class="videos__grid-item videos__item_position_1"
               data-url="776189882?h=cc548d8c61"
+              tabindex="0"
             >
               <img
                 src="<%=require('./images/Alisa.jpg')%>"
@@ -702,6 +705,7 @@
             <div
               class="videos__grid-item videos__item_position_2"
               data-url="776163954?h=1eedac0347"
+              tabindex="0"
             >
               <img
                 src="<%=require('./images/Tina.jpg')%>"
@@ -713,6 +717,7 @@
             <div
               class="videos__grid-item videos__item_position_3"
               data-url="776122242?h=855cdd6f5d"
+              tabindex="0"
             >
               <img
                 src="<%=require('./images/Sasha.jpg')%>"
@@ -724,6 +729,7 @@
             <div
               class="videos__grid-item videos__item_position_4"
               data-url="776102940?h=be2fe601c6"
+              tabindex="0"
             >
               <img
                 src="<%=require('./images/Vova.jpg')%>"
@@ -735,6 +741,7 @@
             <div
               class="videos__grid-item videos__item_position_5"
               data-url="775791631?h=76194b89b5"
+              tabindex="0"
             >
               <img
                 src="<%=require('./images/Rita.jpg')%>"
@@ -746,6 +753,7 @@
             <div
               class="videos__grid-item videos__item_position_6"
               data-url="776185296?h=e7b202cd48"
+              tabindex="0"
             >
               <img
                 src="<%=require('./images/Polina.jpg')%>"
@@ -855,119 +863,124 @@
               <img class="contacts__vector" src="<%=require('./images/Vector 145.svg')%>" alt="vector"/>
             </span>
             <div class="contacts__container">
-              <a href="https://t.me/yandex" class="contacts__link" target="_blank">
-                <button class="contacts__btn contacts__btn_type_tg" type="button"></button>
-                <p class="contacts__text text_large">
-                  Telegram
-                </p>
-              </a>
+              <a href="https://t.me/yandex" target="_blank"
+                ><button
+                  class="contacts__btn contacts__btn_type_tg"
+                  type="button"
+                  tabindex="-1"
+                ></button
+              ></a>
+              <p class="contacts__text text_large">Telegram</p>
             </div>
             <div class="contacts__container">
-              <a href="https://vk.com/yandex" class="contacts__link" target="_blank">
-                <button class="contacts__btn contacts__btn_type_vk" type="button"></button>
-                <p class="contacts__text text_large">
-                  ВКонтакте
-                </p>
-              </a>
+              <a href="https://vk.com/yandex" target="_blank"
+                ><button
+                  class="contacts__btn contacts__btn_type_vk"
+                  type="button"
+                  tabindex="-1"
+                ></button
+              ></a>
+              <p class="contacts__text text_large">ВКонтакте</p>
             </div>
             <div class="contacts__container">
-              <a href="https://www.linkedin.com/company/practicum-russia/" class="contacts__link">
-                <button class="contacts__btn contacts__btn_type_ld" type="button"></button>
-                <p class="contacts__text text_large">
-                  LinkedIn
-                </p>
-              </a>
+              <a href="#"
+                ><button
+                  class="contacts__btn contacts__btn_type_ld"
+                  type="button"
+                  tabindex="-1"
+                ></button
+              ></a>
+              <p class="contacts__text text_large">LinkedIn</p>
             </div>
             <span class="contacts__span">
               <img class="contacts__vector" src="<%=require('./images/Vector 135.svg')%>" alt="vector"/>
             </span>
           </div>
         </section>
-      </main>
-      <!----------- блок footer ----------->
-      <footer class="footer page__footer">
-        <div class="footer__grid">
-          <div class="footer__connection">
-            <div class="call">
-              <p class="call__num text_large">8-800-700-93-29</p>
-              <p class="call__text text_regular">Звонок&nbsp;по&nbsp;России&nbsp;бесплатный</p>
-            </div>
-            <div class="footer__journal">
-              <a
-                class="text_regular footer__journal-text"
-                href="https://thecode.media/"
-                target="_blank"
-              >
-                Журнал
-                </a>
-              <a
-                href="https://vk.com/yandex"
-                target="_blank"
-                class="footer__journal-img"
-                ><img src="<%=require('./images/vk_f.svg')%>" alt="vk" /></a
-              ><a
-                href="https://t.me/yandex"
-                target="_blank"
-                class="footer__journal-img"
-                ><img src="<%=require('./images/telegram.svg')%>" alt="telegram"
-              /></a>
-            </div>
+    </main>
+    <!----------- блок footer ----------->
+    <footer class="footer page__footer">
+      <div class="footer__grid">
+        <div class="footer__connection">
+          <div class="call">
+            <p class="call__num text_large">8-800-700-93-29</p>
+            <p class="call__text text_regular">Звонок&nbsp;по&nbsp;России&nbsp;бесплатный</p>
           </div>
-          <div class="footer__links">
-            <div class="add">
-              <a class="add__text text_regular" href="#">Помощь</a>
-              <a class="add__text text_regular" href="#">Вакансии</a>
-              <a
-                class="add__text text_regular"
-                href="https://code.s3.yandex.net/License%20YSDA.pdf"
-                target="_blank"
-                >Лицензия</a>
-            </div>
-            <div class="about">
-              <a class="about__text text_regular" href="#">Правовая информация</a>
-              <a class="about__text text_regular" href="#">Для работодателей</a>
-              <a class="about__text text_regular" href="#">Отзывы</a>
-            </div>
-          </div>
-          <div class="footer__copyright">
-            <p class="text_regular info__text">
-              &copy;&nbsp;2022&nbsp;АНО&nbsp;ДПО&nbsp;«ШАД», ООО&nbsp;«Яндекс»&nbsp;
-            </p>
-          </div>
-          <div class="info">
-            <div class="info__text-container">
-              <p class="text_regular info__text-agree">
-                Информация на данной странице описывает возможные варианты
-                получения дополнительного дохода в месяц (т.н. подработка). Не
-                является предложением о работе. Размещенные объявления о
-                потребности в тех или иных услугах не являются вакансиями.
-              </p>
-              <p class="text_regular info__text-agree info__text-none">
-                Образовательные услуги оказываются АНО ДПО «ШАД». ШАД —
-                <a
-                  class="info__link"
-                  href="https://academy.yandex.ru/dataschool/"
-                  target="_blank"
-                  >это Школа анализа данных</a
-                >, основанная Яндексом и оказывающая образовательные услуги на
-                основании
-                <a
-                  class="info__link"
-                  href="https://code.s3.yandex.net/License%20YSDA.pdf"
-                  target="_blank"
-                  >Лицензии № 036031</a
-                >
-                от 24 марта 2015 года.
-              </p>
-              <p class="text_regular info__text-agree info__text-none">
-                Сертификат о прохождении обучения по программе дополнительного
-                профессионального образования также выдается АНО ДПО «ШАД».
-              </p>
-            </div>
+          <div class="footer__journal">
+            <a
+              class="text_regular footer__journal-text"
+              href="https://thecode.media/"
+              target="_blank"
+              >Журнал</a
+            >
+            <a
+              href="https://vk.com/yandex"
+              target="_blank"
+              class="footer__journal-img"
+              ><img src="<%=require('./images/vk_f.svg')%>" alt="vk" /></a
+            ><a
+              href="https://t.me/yandex"
+              target="_blank"
+              class="footer__journal-img"
+              ><img src="<%=require('./images/telegram.svg')%>" alt="telegram"
+            /></a>
           </div>
         </div>
-      </footer>
-      <!----------- блок video popup ----------->
+        <div class="footer__links">
+          <div class="add">
+            <a class="add__text text_regular" href="#">Помощь</a>
+            <a class="add__text text_regular" href="#">Вакансии</a>
+            <a
+              class="add__text text_regular"
+              href="https://code.s3.yandex.net/License%20YSDA.pdf"
+              target="_blank"
+              >Лицензия</a>
+          </div>
+          <div class="about">
+            <a class="about__text text_regular" href="#">Правовая информация</a>
+            <a class="about__text text_regular" href="#">Для работодателей</a>
+            <a class="about__text text_regular" href="#">Отзывы</a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p class="text_regular info__text">
+            &copy;&nbsp;2022&nbsp;АНО&nbsp;ДПО&nbsp;«ШАД», ООО&nbsp;«Яндекс»&nbsp;
+          </p>
+        </div>
+        <div class="info">
+          <div class="info__text-container">
+            <p class="text_regular info__text-agree">
+              Информация на данной странице описывает возможные варианты
+              получения дополнительного дохода в месяц (т.н. подработка). Не
+              является предложением о работе. Размещенные объявления о
+              потребности в тех или иных услугах не являются вакансиями.
+            </p>
+            <p class="text_regular info__text-agree info__text-none">
+              Образовательные услуги оказываются АНО ДПО «ШАД». ШАД —
+              <a
+                class="info__link"
+                href="https://academy.yandex.ru/dataschool/"
+                target="_blank"
+                >это Школа анализа данных</a
+              >, основанная Яндексом и оказывающая образовательные услуги на
+              основании
+              <a
+                class="info__link"
+                href="https://code.s3.yandex.net/License%20YSDA.pdf"
+                target="_blank"
+                >Лицензии № 036031</a
+              >
+              от 24 марта 2015 года.
+            </p>
+            <p class="text_regular info__text-agree info__text-none">
+              Сертификат о прохождении обучения по программе дополнительного
+              профессионального образования также выдается АНО ДПО «ШАД».
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!----------- блок video popup ----------->
       <div class="popup popup_type_open-video">
         <div class="popup__video-wrapper">
           <div id="player"></div>
