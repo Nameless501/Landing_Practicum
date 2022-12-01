@@ -11,3 +11,9 @@
   z-index: 5;
   transition: top .3s linear;
 }
+
+@media screen and (max-width: 1260px) {
+  .header {
+    padding: 30px;
+  }
+}

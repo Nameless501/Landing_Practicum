@@ -135,6 +135,8 @@
 
 @import url(../blocks/main-button/_place/main-button_place_job.css);
 
+@import url(../blocks/main-button/_place/main-button_place_header.css);
+
 /* ------------- block content ------------- */
 
 @import url(../blocks/content/content.css);
@@ -400,3 +402,7 @@
 @import url(../blocks/job/__description-text-span/job__description-text-span.css);
 
 @import url(../blocks/job/__description-text/_type/job__description-text_type_list.css);
+
+/* ------------- jobs ------------- */
+
+@import url(../blocks/menu/menu.css);
