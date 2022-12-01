@@ -2,9 +2,8 @@
   padding-right: 30px;
   background: url(./../../../images/arrow-right.svg) no-repeat right center;
   margin-top: auto;
-  text-align: end;
+  align-self: end;
   color: #fff;
-  transition: all 0.2s ease-in-out;
   text-decoration: none;
 }
 
