@@ -5,6 +5,7 @@
   text-align: end;
   color: #fff;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
 }
 
 .grid__link:hover {
