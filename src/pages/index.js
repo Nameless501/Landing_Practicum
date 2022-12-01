@@ -47,13 +47,13 @@ const formPopup = new Popup(".popup__form");
 
 formPopup.setEventListeners();
 
-const popupTellUs = new Popup(popupTellUsSelector);
+// const popupTellUs = new Popup(popupTellUsSelector);
 
-popupTellUs.setEventListeners();
+// popupTellUs.setEventListeners();
 
-buttonNoVacanciesElement.addEventListener('click', () => {
-  popupTellUs.open();
-});
+// buttonNoVacanciesElement.addEventListener('click', () => {
+//   popupTellUs.open();
+// });
 
 // popupBtn.addEventListener("click", () => {
 //   formPopup.open();

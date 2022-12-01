@@ -18,9 +18,9 @@ export default function CardsSlider(props) {
       trigger: triggerSelector,
       start: 'top 200px',
       end: 'bottom',
-      scrub: 1,
+      scrub: 0.5,
       smoothChildTiming: true,
-      toggleActions: "play pause none reset",
+      toggleActions: "play play none reset",
     }
   })
 
