@@ -8,40 +8,44 @@
 </head>
 
 <body class="window">
-  <div class="page">
+  <div id="page" class="page">
     <!----------- блок header ----------->
     <header class="header page__header">
-      <img src="<%=require('./images/logo-short.svg')%>" alt="yandex logo" class="header__logo" />
+      <a href="#page" class="header__navigation-link">
+        <img src="<%=require('./images/logo-short.svg')%>" alt="yandex logo" class="header__logo" />
+      </a>
       <nav class="header__navigation-bar">
         <ul class="header__navigation-links">
           <li>
             <a
-                href="#departments"
-                class="header__navigation-link text_regular"
+                href="#choose"
+                class="header__navigation-link link_place_header text_regular"
               >
               Направления
             </a>
           </li>
           <li>
-            <a href="#vacancies" class="header__navigation-link text_regular">
+            <a href="#vacancies" class="header__navigation-link link_place_header text_regular">
               Предложения
             </a>
           </li>
           <li>
-            <a href="#reviews" class="header__navigation-link text_regular">
+            <a href="#reviews" class="header__navigation-link link_place_header text_regular">
               Отзывы
             </a>
           </li>
           <li>
-            <a href="#faq" class="header__navigation-link text_regular">
+            <a href="#faq" class="header__navigation-link link_place_header text_regular">
                 FAQ
               </a>
           </li>
         </ul>
       </nav>
-      <button type="button" class="text_small main-button main-button_type_ghost main-button_place_header">
-        Хочу делиться знаниями
-      </button>
+      <a href="#vacancies" class="header__navigation-link">
+        <button type="button" class="main-button main-button_type_ghost main-button_place_header text_small">
+          Хочу делиться знаниями
+        </button>
+      </a>
     </header>
     <main class="content page__content">
       <!----------- блок lead ----------->
@@ -227,7 +231,7 @@
           </ul>
         </section>
         <!----------- блок выбора профессии ----------->
-        <section class="choose content__choose">
+        <section id="choose" class="choose content__choose">
           <h2 class="choose__title title_h2">Выберите роль по душе</h2>
           <div class="choose__cards">
             <div class="choose__card">
@@ -309,7 +313,7 @@
           </div>
         </section>
         <!----------- блок departments ----------->
-        <section id="departments" class="departments content__departments">
+        <section class="departments content__departments">
           <h2 class="departments__title title_h2">О нашем проекте</h2>
           <div class="grid">
             <div class="grid__wrapper">
