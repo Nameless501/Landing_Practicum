@@ -98,12 +98,7 @@ window.addEventListener('mousemove', handleHeaderToggle);
 
 // ------------- cards slider
 
-const setCardsSliderListeners = CardsSlider(
-  sliderCardsNodeList,
-  cardsSliderConfig
-);
-
-setCardsSliderListeners();
+let timeLine = CardsSlider(cardsSliderProps);
 
 // --------------- form
 /*function checkError() {
@@ -130,11 +125,5 @@ radioBtnTel.addEventListener("click", function changePlaceholder() {
 });
 
 // -------------------- window
-const headerElement = document.querySelector(".header");
-window.addEventListener("mousemove", (evt) => {
-  if (evt.y < 130) {
-    headerElement.style.top = 0;
-  } else {
-    headerElement.style.top = "-130px";
-  }
-});
+
+window.addEventListener("mousemove", handleHeaderToggle);
