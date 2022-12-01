@@ -12,58 +12,34 @@ import {
   validationConfig,
   vacanciesConfig,
   vacanciesFormElement,
-  formFeedback,
-  popupBtn,
-  closeBtn,
+  tellUsFormElement,
+  closeButtonSelector,
   popupVideoSelector,
   popupTellUsSelector,
   buttonNoVacanciesElement,
   faqCardsList,
   bigPopupBtn,
   formBig,
-  errorInput,
-  formInput,
+  errorInputSelector,
+  formInputSelector,
   cardsSliderProps
 } from "../utils/constants.js";
 
 // ------------- валидация формы
 
-const formValidation = new FormValidator(validationConfig, formFeedback);
-formValidation.enableValidation();
-
-//const bigFormValidation = new FormValidator(validationConfig, formBig);
-//bigFormValidation.enableValidation();
-
-function checkError() {
-  if (formInput.classList.contains("form__input_type_error")) {
-    errorInput.classList.add("form__input-container_type_error");
-  }
-}
-checkError();
+const tellUsFormValidation = new FormValidator(validationConfig, tellUsFormElement);
+tellUsFormValidation.enableValidation();
 
 // ------------- попап формы
 
-const formPopup = new Popup(".popup__form");
+const popupTellUs = new Popup(popupTellUsSelector);
 
-formPopup.setEventListeners();
+popupTellUs.setEventListeners();
 
-// const popupTellUs = new Popup(popupTellUsSelector);
+buttonNoVacanciesElement.addEventListener('click', () => {
+  popupTellUs.open();
+});
 
-// popupTellUs.setEventListeners();
-
-// buttonNoVacanciesElement.addEventListener('click', () => {
-//   popupTellUs.open();
-// });
-
-// popupBtn.addEventListener("click", () => {
-//   formPopup.open();
-// });
-
-/*const bigPopup = new Popup(".popup__second-form");
-bigPopup.setEventListeners();
-popupBtn.addEventListener("click", () => {
-  bigPopup.open();
-});*/
 
 // ------------- попап видео
 

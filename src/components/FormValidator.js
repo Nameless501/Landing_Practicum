@@ -15,23 +15,32 @@ export default class FormValidator {
   // показывает ошибку
   _showInputError = (inputSelector, errorMessage) => {
     const errorItem = this._form.querySelector(`.${inputSelector.id}-error`);
-    inputSelector.classList.add(this._validationConfig.inputErrorClass);
-    errorItem.classList.add(this._validationConfig.errorClass);
+    inputSelector.parentNode.classList.add(this._validationConfig.errorClass);
     errorItem.textContent = errorMessage;
   };
   //скрывает ошибку
   _hideInputError = (inputSelector) => {
     const errorItem = this._form.querySelector(`.${inputSelector.id}-error`);
-    inputSelector.classList.remove(this._validationConfig.inputErrorClass);
-    errorItem.classList.remove(this._validationConfig.errorClass);
+    inputSelector.parentNode.classList.remove(this._validationConfig.errorClass);
     errorItem.textContent = '';
   };
+
+  _showSuccessMessage = (inputSelector) => {
+    inputSelector.parentNode.classList.add(this._validationConfig.successClass);
+  };
+
+  _hideSuccessMessage = (inputSelector) => {
+    inputSelector.parentNode.classList.remove(this._validationConfig.successClass);
+  };
+
   //проверяет есть ли ошибка
   _isValid = (inputSelector) => {
     if (!inputSelector.validity.valid) {
       this._showInputError(inputSelector, inputSelector.validationMessage);
+      this._hideSuccessMessage(inputSelector)
     } else {
       this._hideInputError(inputSelector);
+      this._showSuccessMessage(inputSelector);
     }
   };
   //кнопка
@@ -42,7 +51,7 @@ export default class FormValidator {
       this._submitButtonElement.classList.remove(
         this._validationConfig.inactiveButtonClass
       );
-      this._submitButtonElement.removeAttribute('disabled', 'disabled');
+      this._submitButtonElement.removeAttribute('disabled');
     }
   };
   _hasInvalidInput = () => {
@@ -50,6 +59,32 @@ export default class FormValidator {
       return !inputSelector.validity.valid;
     });
   };
+
+  _showTelegramInput() {
+    this._telegramInput.classList.remove(this._validationConfig.hideInputSelector);
+    this._phoneInput.classList.add(this._validationConfig.hideInputSelector);
+  }
+
+  _showPhoneInput() {
+    this._phoneInput.classList.remove(this._validationConfig.hideInputSelector);
+    this._telegramInput.classList.add(this._validationConfig.hideInputSelector);
+  }
+
+  _setContactsSectionListeners() {
+    this._phoneRadio = this._form.querySelector(this._validationConfig.phoneRadio);
+    this._telegramRadio = this._form.querySelector(this._validationConfig.telegramRadio);
+
+    this._phoneInput = this._form.querySelector(this._validationConfig.phoneInput);
+    this._telegramInput = this._form.querySelector(this._validationConfig.telegramInput);
+
+    this._phoneRadio.addEventListener('change', () => {
+      this._showPhoneInput();
+    })
+    this._telegramRadio.addEventListener('change', () => {
+      this._showTelegramInput();
+    })
+  }
+
   //слушатель
   _setEventListener = () => {
     this._toggleButtonState(); //button
@@ -59,6 +94,10 @@ export default class FormValidator {
         this._toggleButtonState(); //button
       });
     });
+
+    if(this._form.classList.contains(this._validationConfig.tellUsFormSelector)) {
+      this._setContactsSectionListeners();
+    }
   };
   enableValidation = () => {
     this._setEventListener();
@@ -74,7 +113,8 @@ export default class FormValidator {
     this._toggleButtonState();
     this._inputCollection.forEach((inputSelector) => {
       this._hideInputError(inputSelector);
+      this._hideSuccessMessage(inputSelector);
     });
   };
-  
+
 }

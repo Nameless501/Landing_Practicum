@@ -433,18 +433,18 @@
         <section id="vacancies" class="vacancies content__vacancies">
           <h2 class="vacancies__title title_h2">Открытые предложения</h2>
           <form class="vacancies__form">
-            <fieldset class="vacancies__role-selection">
+            <fieldset class="select__role-selection">
               <input
                 type="radio"
                 name="role"
                 id="role-mentor"
                 value="mentor"
-                class="vacancies__role-radio"
+                class="select__role-radio"
                 checked
               />
               <label
                 for="role-mentor"
-                class="vacancies__role-button text_radio"
+                class="select__role-button text_radio"
               >
                 Наставник
               </label>
@@ -453,27 +453,27 @@
                 name="role"
                 id="role-reviewer"
                 value="reviewer"
-                class="vacancies__role-radio"
+                class="select__role-radio"
               />
               <label
                 for="role-reviewer"
-                class="vacancies__role-button text_radio"
+                class="select__role-button text_radio"
               >
                 Ревьюер
               </label>
             </fieldset>
-            <fieldset class="vacancies__course-selection">
+            <fieldset class="select__course-selection">
               <input
                 type="radio"
                 name="course"
                 id="course-programming"
                 value="programming"
-                class="vacancies__course-radio"
+                class="select__course-radio"
                 checked
               />
               <label
                 for="course-programming"
-                class="vacancies__course-button text_radio"
+                class="select__course-button text_radio"
               >
                 Программирование
               </label>
@@ -482,11 +482,11 @@
                 name="course"
                 id="course-analytics"
                 value="analytics"
-                class="vacancies__course-radio"
+                class="select__course-radio"
               />
               <label
                 for="course-analytics"
-                class="vacancies__course-button text_radio"
+                class="select__course-button text_radio"
               >
                 Аналитика
               </label>
@@ -495,11 +495,11 @@
                 name="course"
                 id="course-design"
                 value="design"
-                class="vacancies__course-radio"
+                class="select__course-radio"
               />
               <label
                 for="course-design"
-                class="vacancies__course-button text_radio"
+                class="select__course-button text_radio"
               >
                 Дизайн
               </label>
@@ -508,11 +508,11 @@
                 name="course"
                 id="course-marketing"
                 value="marketing"
-                class="vacancies__course-radio"
+                class="select__course-radio"
               />
               <label
                 for="course-marketing"
-                class="vacancies__course-button text_radio"
+                class="select__course-button text_radio"
               >
                 Маркетинг
               </label>
@@ -521,11 +521,11 @@
                 name="course"
                 id="course-management"
                 value="management"
-                class="vacancies__course-radio"
+                class="select__course-radio"
               />
               <label
                 for="course-management"
-                class="vacancies__course-button text_radio"
+                class="select__course-button text_radio"
               >
                 Менеджмент
               </label>
@@ -981,203 +981,95 @@
         </div>
       </div>
       <!----------- блок form popup ----------->
-      <div class="popup popup__form">
-        <div class="popup__container">
-          <form class="form feedback-form" novalidate>
-            <h2 class="form__title text_regular">
-              Хочу стать наставником на курсе «Мидл фронтенд-разработчик»
-            </h2>
-            <div class="form__input-container">
-              <input
-                class="form__input"
-                type="text"
-                id="name-input"
-                name="name"
-                placeholder="Имя"
-                autocomplete="off"
-                minlength="2"
-                maxlength="40"
-                required
-              />
-              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
-              <span class="form__error name-input-error"></span>
-            </div>
-            <div class="form__input-container">
-              <input
-                class="form__input"
-                type="text"
-                name="email"
-                id="email-input"
-                placeholder="Email"
-                autocomplete="off"
-                minlength="2"
-                maxlength="40"
-                required
-              />
-              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
-              <span class="form__error email-input-error"></span>
-            </div>
 
-          <div class="form__contact-items">
-            <input type="radio" id="contactChoice1" name="tel" value="tel" class="form__contact-radio" />
-            <label for="contactChoice1" class="form__contact-item">Телефон</label>
-
-            <input type="radio" id="contactChoice2" name="tel" value="tg" class="form__contact-radio" />
-            <label for="contactChoice2" class="form__contact-item">Телеграм</label>
-          </div>
-
-            <div class="form__input-container">
-              <input
-                class="form__input"
-                type="tel"
-                id="tel-input"
-                name="tel"
-                placeholder="+7"
-                autocomplete="off"
-                minlength="2"
-                maxlength="40"
-                required
-              />
-              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
-              <span class="form__error tel-input-error"></span>
-            </div>
-
-            <!--<select name="roles" id="roles" class="form__select">
-              <option value="1"></option>
-              <option value="2">Наставник</option>
-              <option value="3">Ревьюер</option>
-            </select>
-            <select name="direction" id="direction" class="form__select">
-              <option value="1"></option>
-              <option value="2">Программирование</option>
-              <option value="3">Анализ данных</option>
-              <option value="4">Менеджмент</option>
-              <option value="5">Дизайн</option>
-              <option value="6">Маркетинг</option>
-            </select>
-            <textarea
-                  name="about"
-                  id="about"
-                  cols="30"
-                  rows="10"
-                  placeholder="Перечислите набор технологий, которыми вы владеете и уровень владения каждой"
-                  class="form__textarea"
-                ></textarea>-->
-
-            <div class="form__input-container">
-              <input
-                class="form__input"
-                type="url"
-                id="github-input"
-                name="github"
-                placeholder="Ссылка на резюме"
-                autocomplete="off"
-                minlength="2"
-                maxlength="30"
-                required
-              />
-              <img src="<%=require('./images/Infra/16/Union.svg')%>" alt="" />
-              <span class="form__error github-input-error"></span>
-            </div>
-
-            <div class="form__checkbox">
-              <input
-                type="checkbox"
-                id="checkbox"
-                class="form__checkbox-input"
-              />
-              <label for="checkbox" class="form__checkbox-text"
-                >Даю согласие на обработку персональных данных</label
-              >
-            </div>
-            <button
-              type="submit"
-              class="form__btn form__btn_type_submit text_small"
-            >
-              Отправить
-            </button>
-          </form>
-          <button type="button" class="popup__close">
-            <img
-              src="<%=require('./images/Close.png')%>"
-              alt="закрывающий крестик"
-              class="popup__close-image"
-            />
-          </button>
-        </div>
-      </div>
-      <!----------- блок form popup2 ----------->
-      <div class="popup popup__second-form">
-        <div class="popup__container popup__container_type_big">
-          <form action="#" class="form big-form">
-            <h2 class="form__title text_regular">
+      <!----------- блок form tell-us ----------->
+      <section class="popup popup_type_tell-us">
+        <form name="tell-us" class="popup__form popup__form_type_tel-us" novalidate>
+          <fieldset class="popup__fieldset">
+            <legend class="popup__title text_regular-bold">
               Расскажите нам о себе и мы сохраним ваши данные
-            </h2>
-            <input
-              class="form__input"
-              type="text"
-              id="name-big-input"
-              name="nameBig"
-              placeholder="Имя"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-            <span class="form__error name-big-input-error"></span>
-            <input
-              class="form__input"
-              type="text"
-              name="emailBig"
-              id="email-big-input"
-              placeholder="Email"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-            <span class="form__error email-big-input-error"></span>
-            <div class="form__contact-items">
-              <input
-                type="radio"
-                id="contactChoice3"
-                name="tel"
-                value="tel"
-                class="form__contact-radio"
-              />
-              <label for="contactChoice3" class="form__contact-item"
-                >Телефон</label
-              >
-
-              <input
-                type="radio"
-                id="contactChoice4"
-                name="tel"
-                value="tg"
-                class="form__contact-radio"
-              />
-              <label for="contactChoice4" class="form__contact-item"
-                >Телеграм</label
-              >
+            </legend>
+            <div class="popup__input-wrapper popup__input-wrapper_type_name">
+              <input type="text" name="name" placeholder="Имя" id="name-input" class="popup__input popup__input_type_name text_radio" required minlength="2" maxlength="30">
+              <span class="popup__error-message name-input-error"></span>
             </div>
-
-            <input
-              class="form__input"
-              type="tel"
-              id="tel-big-input"
-              name="telBig"
-              placeholder="+7"
-              autocomplete="off"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-            <span class="form__error tel-big-input-error"></span>
-          </form>
-        </div>
-      </div>
+            <div class="popup__input-wrapper">
+              <input type="email" name="email" placeholder="Email" id="email-input" class="popup__input popup__input_type_email text_radio" required>
+              <span class="popup__error-message email-input-error"></span>
+            </div>
+            <div class="popup__contacts-wrapper">
+              <input type="radio" name="contact" id="contact-telephone" value="telephone" class="popup__contact-radio popup__contact-radio_type_phone" checked/>
+              <label for="contact-telephone" class="popup__contacts-radio-label text_radio">
+                Телефон
+              </label>
+              <input type="radio" name="contact" id="contact-telegram" value="telegram" class="popup__contact-radio popup__contact-radio_type_telegram"/>
+              <label for="contact-telegram" class="popup__contacts-radio-label text_radio">
+                Телеграм
+              </label>
+            </div>
+            <div class="popup__input-wrapper popup__input-wrapper_type_phone">
+              <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" placeholder="+7" id="phone-input" class="popup__input popup__input_type_phone text_radio" required>
+              <span class="popup__error-message phone-input-error"></span>
+            </div>
+            <div class="popup__input-wrapper popup__input-wrapper_type_telegram popup__input-wrapper_hidden">
+              <input type="text" name="telegram" placeholder="@" id="telefram-input" class="popup__input popup__input_type_telegram text_radio" required>
+              <span class="popup__error-message telegram-input-error"></span>
+            </div>
+            <h3 class="popup__fieldset-title text_radio">
+              Выберите роль
+            </h3>
+            <fieldset class="select__role-selection select__role-selection_place_popup">
+              <input type="radio" name="role-popup" id="role-mentor-popup" value="mentor" class="select__role-radio select__role-redio_place_popup" checked/>
+              <label for="role-mentor-popup" class="select__role-button select__role-button_place_popup text_radio-small">
+                Наставник
+              </label>
+              <input type="radio" name="role-popup" id="role-reviewer-popup" value="reviewer" class="select__role-radio select__role-redio_place_popup"/>
+              <label for="role-reviewer-popup" class="select__role-button select__role-button_place_popup text_radio-small">
+                Ревьюер
+              </label>
+            </fieldset>
+            <h3 class="popup__fieldset-title text_radio">
+              Выберите направление
+            </h3>
+            <fieldset class="select__course-selection select__course-selection_place_popup">
+              <input type="radio" name="course-popup" id="course-programming-popup" value="programming" class="select__course-radio select__course-radio_place_popup" checked/>
+              <label for="course-programming-popup" class="select__course-button select__course-button_place_popup text_radio-small">
+                Программирование
+              </label>
+              <input type="radio" name="course-popup" id="course-analytics-popup" value="analytics" class="select__course-radio select__course-radio_place_popup"/>
+              <label for="course-analytics-popup" class="select__course-button select__course-button_place_popup text_radio-small">
+                Аналитика
+              </label>
+              <input type="radio" name="course-popup" id="course-design-popup" value="design" class="select__course-radio select__course-radio_place_popup"/>
+              <label for="course-design-popup" class="select__course-button select__course-button_place_popup text_radio-small">
+                Дизайн
+              </label>
+              <input type="radio" name="course-popup" id="course-marketing-popup" value="marketing" class="select__course-radio select__course-radio_place_popup"/>
+              <label for="course-marketing-popup" class="select__course-button select__course-button_place_popup text_radio-small">
+                Маркетинг
+              </label>
+              <input type="radio" name="course-popup" id="course-management-popup" value="management" class="select__course-radio select__course-radio_place_popup"/>
+              <label for="course-management-popup" class="select__course-button select__course-button_place_popup text_radio-small">
+                Менеджмент
+              </label>
+            </fieldset>
+            <div class="popup__input-wrapper popup__input-wrapper_type_url">
+              <input type="url" name="url" placeholder="Ссылка на резюме" id="url-input" class="popup__input popup__input_type_url text_radio" required>
+              <span class="popup__error-message url-input-error"></span>
+            </div>
+            <div class="popup__contacts-wrapper popup__contacts-wrapper_place_permission">
+              <input type="checkbox" name="contact-checkbox" id="contact-checkbox" value="agree" class="popup__contact-checkbox"/>
+              <label for="contact-checkbox" class="popup__contacts-checkbox-label text_radio">
+                Даю согласие на обработку персональных данных
+              </label>
+            </div>
+          </fieldset>
+          <button type=submit class="main-button main-button_type_primary main-button_type_primary-disabled main-button_place_popup text_small">
+            Отправить
+          </button>
+          <button type=reset class="popup__close popup__close_place_form"></button>
+        </form>
+      </section>
     </div>
   </body>
-</html>
-
 </html>

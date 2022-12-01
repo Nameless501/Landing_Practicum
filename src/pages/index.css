@@ -32,6 +32,8 @@
 
 @import url(../blocks/text/_type/text_radio.css);
 
+@import url(../blocks/text/_type/text_radio-small.css);
+
 /* ------------- block link ------------- */
 
 @import url(../blocks/link/_place/link_place_header.css);
@@ -125,11 +127,15 @@
 
 @import url(../blocks/main-button/_type/main-button_type_primary.css);
 
+@import url(../blocks/main-button/_type/main-button_type_primary-disabled.css);
+
 @import url(../blocks/main-button/_type/main-button_type_secondary.css);
 
 @import url(../blocks/main-button/_type/main-button_type_ghost.css);
 
 @import url(../blocks/main-button/_place/main-button_place_show-more.css);
+
+@import url(../blocks/main-button/_place/main-button_place_popup.css);
 
 /* ------------- block content ------------- */
 
@@ -209,6 +215,22 @@
 
 @import url(../blocks/vacancies/vacancies.css);
 
+@import url(../blocks/vacancies/__title/vacancies__title.css);
+
+@import url(../blocks/vacancies/__form/vacancies__form.css);
+
+@import url(../blocks/vacancies/__cards/vacancies__cards.css);
+
+@import url(../blocks/vacancies/__empty/vacancies__empty.css);
+
+@import url(../blocks/vacancies/__empty/_visible/vacancies__empty_visible.css);
+
+@import url(../blocks/vacancies/__empty-description/vacancies__empty-description.css);
+
+@import url(../blocks/vacancies/__empty-title/vacancies__empty-title.css);
+
+@import url(../blocks/vacancies/__empty-text/vacancies__empty-text.css);
+
 /* ------------- block faq ------------- */
 
 @import url(../blocks/faq/faq.css);
@@ -281,44 +303,6 @@
 
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
-/* ------------- block form ------------- */
-
-@import url(../blocks/form/form.css);
-
-@import url(../blocks/form/__input/form__input.css);
-
-@import url(../blocks/form/__input/_type_error/form__input_type_error.css);
-
-@import url(../blocks/form/__input/_type_error-active/form__input_type_error-active.css);
-
-@import url(../blocks/form/__btn/form__btn.css);
-
-@import url(../blocks/form/__btn/_disabled/form__button_disabled.css);
-
-@import url(../blocks/form/__textarea/form__textarea.css);
-
-@import url(../blocks/form/__select/form__select.css);
-
-@import url(../blocks/form/__checkbox/form__checkbox.css);
-
-@import url(../blocks/form/__checkbox-input/form__checkbox-input.css);
-
-@import url(../blocks/form/__checkbox-text/form__checkbox-text.css);
-
-@import url(../blocks/form/__contact-items/form__contact-items.css);
-
-@import url(../blocks/form/__contact-radio/form__contact-radio.css);
-
-@import url(../blocks/form/__input-container/form__input-container.css);
-
-
-@import url(../blocks/email-input-error/email-input-error.css);
-@import url(../blocks/tel-input-error/tel-input-error.css);
-@import url(../blocks/github-input-error/github-input-error.css);
-@import url(../blocks/name-input-error/name-input-error.css);
-
-@import url(../blocks/form/__input-container/_type_error/form__input-container_type_error.css);
-
 /* ------------- block popup ------------- */
 
 @import url(../blocks/popup/popup.css);
@@ -333,9 +317,69 @@
 
 @import url(../blocks/popup/__video-wrapper/popup__video-wrapper.css);
 
-@import url(../blocks/form/__title/form__title.css);
-
 @import url(../blocks/popup/__close/_type/popup__close_type_video.css);
+
+@import url(../blocks/popup/__form/popup__form.css);
+
+@import url(../blocks/popup/__form/popup__form.css);
+
+@import url(../blocks/popup/__fieldset/popup__fieldset.css);
+
+@import url(../blocks/popup/__title/popup__title.css);
+
+@import url(../blocks/popup/__input-wrapper/_type/popup__input-wrapper_hidden.css);
+
+@import url(../blocks/popup/__input-wrapper/popup__input-wrapper.css);
+
+@import url(../blocks/popup/__input-wrapper/_type/popup__input-wrapper_success.css);
+
+@import url(../blocks/popup/__input-wrapper/_type/popup__input-wrapper_error.css);
+
+@import url(../blocks/popup/__input-wrapper/_type/popup__input-wrapper_type_url.css);
+
+@import url(../blocks/popup/__input-wrapper/_type/popup__input-wrapper_type_name.css);
+
+@import url(../blocks/popup/__error-message/popup__error-message.css);
+
+@import url(../blocks/popup/__input/popup__input.css);
+
+@import url(../blocks/popup/__contacts-wrapper/popup__contacts-wrapper.css);
+
+@import url(../blocks/popup/__contacts-wrapper/_place/popup__contacts-wrapper_place_permission.css);
+
+@import url(../blocks/popup/__contacts-radio-label/popup__contacts-radio-label.css);
+
+@import url(../blocks/popup/__contact-radio/popup__contact-radio.css);
+
+@import url(../blocks/popup/__fieldset-title/popup__fieldset-title.css);
+
+@import url(../blocks/popup/__contact-checkbox/popup__contact-checkbox.css);
+
+@import url(../blocks/popup/__close/_place/popup__close_place_form.css);
+
+/* ------------- block select ------------- */
+
+@import url(../blocks/select/__role-selection/select__role-selection.css);
+
+@import url(../blocks/select/__role-radio/select__role-radio.css);
+
+@import url(../blocks/select/__course-selection/select__course-selection.css);
+
+@import url(../blocks/select/__course-radio/select__course-radio.css);
+
+@import url(../blocks/select/__course-button/select__course-button.css);
+
+@import url(../blocks/select/__role-button/select__role-button.css);
+
+@import url(../blocks/select/__role-selection/_place/select__role-selection_place_popup.css);
+
+@import url(../blocks/select/__role-button/_place/select__role-button_place_popup.css);
+
+@import url(../blocks/select/__role-button/_place/select__role-button_place_popup.css);
+
+@import url(../blocks/select/__course-selection/_place/select__course-selection_place_popup.css);
+
+@import url(../blocks/select/__course-button/_place/select__course-button_place_popup.css);
 
 /* ------------- block video ------------- */
 
