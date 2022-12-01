@@ -102,7 +102,6 @@ let timeline = gsap.timeline({
     start: 'top 200px',
     end: 'bottom',
     scrub: 1,
-    markers: true,
     smoothChildTiming: true,
     toggleActions: "play pause none reset",
   }
