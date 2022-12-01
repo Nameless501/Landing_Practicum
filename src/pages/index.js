@@ -21,6 +21,9 @@ import {
   formBig,
   errorInput,
   formInput,
+  radioBtn,
+  telInput,
+  radioBtnTel,
   cardsSliderProps
 } from "../utils/constants.js";
 
@@ -83,4 +86,43 @@ window.addEventListener('mousemove', handleHeaderToggle);
 
 // ------------- cards slider
 
-let timeLine = CardsSlider(cardsSliderProps);
+const setCardsSliderListeners = CardsSlider(
+  sliderCardsNodeList,
+  cardsSliderConfig
+);
+
+setCardsSliderListeners();
+
+// --------------- form
+/*function checkError() {
+  formInput.forEach((el) => {
+    if (el.classList.contains("form__input_type_error")) {
+      errorInput.classList.add("form__input-container_type_error");
+    }
+  });
+}
+errorInput.addEventListener("keydown", checkError);*/
+
+//
+
+radioBtn.addEventListener("click", function changePlaceholder() {
+  if (radioBtn.style.backgroundImage = "../../../images/Radio.svg") {
+    telInput.placeholder = "@";
+  }
+});
+
+radioBtnTel.addEventListener("click", function changePlaceholder() {
+  if (radioBtnTel.style.backgroundImage = "../../../images/Radio.svg") {
+    telInput.placeholder = '+7'
+  }
+});
+
+// -------------------- window
+const headerElement = document.querySelector(".header");
+window.addEventListener("mousemove", (evt) => {
+  if (evt.y < 130) {
+    headerElement.style.top = 0;
+  } else {
+    headerElement.style.top = "-130px";
+  }
+});

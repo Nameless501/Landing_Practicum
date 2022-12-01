@@ -5,7 +5,6 @@
 }
 .contacts__btn_type_vk:hover {
   background-image: url(../../../../images/VK_h.svg);
-  transition: 0.3s ease-in-out;
 }
 .contacts__btn_type_vk:visited {
   background-image: url(../../../../images/VK_p.svg);
