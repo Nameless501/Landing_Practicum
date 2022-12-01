@@ -98,7 +98,12 @@ window.addEventListener('mousemove', handleHeaderToggle);
 
 // ------------- cards slider
 
-let timeLine = CardsSlider(cardsSliderProps);
+const setCardsSliderListeners = CardsSlider(
+  sliderCardsNodeList,
+  cardsSliderConfig
+);
+
+setCardsSliderListeners();
 
 // --------------- form
 /*function checkError() {
@@ -125,5 +130,11 @@ radioBtnTel.addEventListener("click", function changePlaceholder() {
 });
 
 // -------------------- window
-
-window.addEventListener("mousemove", handleHeaderToggle);
+const headerElement = document.querySelector(".header");
+window.addEventListener("mousemove", (evt) => {
+  if (evt.y < 130) {
+    headerElement.style.top = 0;
+  } else {
+    headerElement.style.top = "-130px";
+  }
+});
