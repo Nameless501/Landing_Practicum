@@ -273,11 +273,15 @@
 
 @import url(../blocks/info/__link/info__link.css);
 
-@import url(../blocks/footer/__grid/footer__grid.css);
 
 @import url(../blocks/footer/__links/footer__links.css);
 
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+
+@import url(../blocks/footer/__journal-img/footer__journal-img.css);
+
+@import url(../blocks/links/link.css);
+
 
 /* ------------- block form ------------- */
 

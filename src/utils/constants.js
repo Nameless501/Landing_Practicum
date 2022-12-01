@@ -21,10 +21,6 @@ export const popupVideoSelector = ".popup_type_open-video";
 
 export const closeBtn = document.querySelector(".popup__close");
 
-export const errorInput = document.querySelector(".form__input-container");
-
-export const formInput = document.querySelector(".form__input");
-
 export const buttonNoVacanciesElement = document.querySelector('.main-button_place_empty-vacancies');
 
 // --------------- faq and accordion selectors
@@ -85,3 +81,11 @@ export const cardsSliderProps = {
 // --------------- header
 
 export const headerElement = document.querySelector('.header');
+
+// --------------- form
+
+export const errorInput = document.querySelectorAll(".form__input-container");
+export const formInput = document.querySelectorAll(".form__input");
+export const radioBtn = document.getElementById('contactChoice2');
+export const radioBtnTel = document.getElementById('contactChoice1')
+export const telInput = document.getElementById('tel-input')
