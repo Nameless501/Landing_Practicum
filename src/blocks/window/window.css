@@ -13,3 +13,7 @@
   -moz-text-size-adjust: 100%;
   font-smooth: never;
 }
+
+html {
+  scroll-behavior: smooth;
+}
