@@ -109,6 +109,8 @@
 
 @import url(../blocks/grid/__icon/grid__icon.css);
 
+@import url(../blocks/grid/__link/_type/grid__link_type_mob.css);
+
 /* ------------- main button ------------- */
 
 @import url(../blocks/main-button/main-button.css);
@@ -271,6 +273,12 @@
 
 @import url(../blocks/info/__link/info__link.css);
 
+@import url(../blocks/footer/__grid/footer__grid.css);
+
+@import url(../blocks/footer/__links/footer__links.css);
+
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
 /* ------------- block form ------------- */
 
 @import url(../blocks/form/form.css);
@@ -324,6 +332,8 @@
 @import url(../blocks/popup/__video-wrapper/popup__video-wrapper.css);
 
 @import url(../blocks/form/__title/form__title.css);
+
+@import url(../blocks/popup/__close/_type/popup__close_type_video.css);
 
 /* ------------- block video ------------- */
 
