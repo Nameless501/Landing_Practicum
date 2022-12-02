@@ -1,31 +1,37 @@
 // --------------- feedback form validation
 
 export const validationConfig = {
-  formSelector: ".form", //формы
-  inputSelector: ".form__input", //поля ввода
-  submitButtonSelector: ".form__btn", //кнопка сохранить
-  inactiveButtonClass: "form__button_disabled", //неактивная кнопка сохранить
-  inputErrorClass: "form__input_type_error", //поле ввода с ошибкой
-  errorClass: "form__input_type_error-active", //span
+  formSelector: '.popup__form',
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.main-button_place_popup',
+  inactiveButtonClass: 'main-button_type_primary-disabled',
+  inputErrorClass: '.popup__error-message',
+  errorClass: 'popup__input-wrapper_error',
+  successClass: 'popup__input-wrapper_success',
+  inputWrapper: '.popup__input-wrapper',
+  phoneRadio: '.popup__contact-radio_type_phone',
+  phoneInput: '.popup__input-wrapper_type_phone',
+  telegramInput: '.popup__input-wrapper_type_telegram',
+  telegramRadio: '.popup__contact-radio_type_telegram',
+  hideInputSelector: 'popup__input-wrapper_hidden',
+  tellUsFormSelector: 'popup__form_type_tel-us',
 };
-
-export const formFeedback = document.querySelector(".feedback-form");
-
-export const formBig = document.querySelector(".big-form");
 
 // ---------------  popup
 
-export const popupTellUsSelector = '.popup__second-form';
+export const popupTellUsSelector = '.popup_type_tell-us';
 
-export const popupVideoSelector = ".popup_type_open-video";
+export const popupVideoSelector = '.popup_type_open-video';
 
-export const closeBtn = document.querySelector(".popup__close");
+export const closeButtonSelector = document.querySelector('.popup__close');
 
-export const errorInput = document.querySelector(".form__input-container");
+export const errorInputSelector = '.popup__error-message';
 
-export const formInput = document.querySelector(".form__input");
+export const formInputSelector = '.popup__input';
 
 export const buttonNoVacanciesElement = document.querySelector('.main-button_place_empty-vacancies');
+
+export const tellUsFormElement = document.querySelector('.popup__form_type_tel-us');
 
 // --------------- faq and accordion selectors
 
@@ -57,6 +63,7 @@ export const vacanciesConfig = {
   containerSelector: ".vacancies__cards",
   cardHeaderSelector: ".accordion__card-header",
   showMoreButtonSelector: "main-button_place_show-more",
+  submitButtonSelector: '.main-button_place_vacancies',
 };
 
 export const vacanciesFormElement = document.querySelector(".vacancies__form");
@@ -85,3 +92,7 @@ export const cardsSliderProps = {
 // --------------- header
 
 export const headerElement = document.querySelector('.header');
+
+export const menuIcon = document.querySelector('.menu__icon');
+
+export const navigationBar = document.querySelector('.header__navigation-bar');

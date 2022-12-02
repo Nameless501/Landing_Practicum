@@ -2,12 +2,11 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  width: 769px;
-  padding: 60px 168px 60px 168px;
+  padding: 60px 0;
   background: #ffffff;
   border-radius: 60px;
   color: #000;
-  z-index: 110;
+  z-index: 11;
   opacity: 1;
   position: relative;
   box-sizing: border-box;

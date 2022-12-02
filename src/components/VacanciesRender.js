@@ -25,6 +25,7 @@ export default function VacanciesRender(vacanciesConfig, vacanciesData) {
       requirementsListSelector,
       salarySelector,
       courseLengthSelector,
+      submitButtonSelector,
     } = vacanciesConfig;
 
     function getCardTemplate(role) {
@@ -77,6 +78,7 @@ export default function VacanciesRender(vacanciesConfig, vacanciesData) {
     const title = currentCard.querySelector(cardTitleSelector);
     const requirementsList = currentCard.querySelector(requirementsListSelector);
     const salaryElement = currentCard.querySelector(salarySelector);
+    const submitButtonElement = currentCard.querySelector(submitButtonSelector);
 
     setListeners(currentCard);
 
@@ -85,6 +87,7 @@ export default function VacanciesRender(vacanciesConfig, vacanciesData) {
       requirementsList.append(createParagraph(paragraph, currentCard));
     });
     salaryElement.textContent = data.salary;
+    submitButtonElement.value = data.name;
 
     if(data.courseLength) {
       const courseLengthElement = currentCard.querySelector(courseLengthSelector);

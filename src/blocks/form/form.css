@@ -1,9 +1,0 @@
-.form {
-  display: flex;
-  margin: 0 auto;
-  max-width: 433px;
-  justify-content: space-between;
-  position: relative;
-  flex-direction: column;
-  text-align: left;
-}

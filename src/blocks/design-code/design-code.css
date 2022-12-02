@@ -25,6 +25,7 @@
 --font_size_small: 20px;
 --font_size_extra_small: 18px;
 --font_size_radio: 16px;
+--font_size_radio-small: 14px;
 
 
 /* размеры шрифтов для мобильных экранов */
@@ -48,6 +49,7 @@
 --font_font_small: 'YS Display', sans-serif;
 --font_font_extra_small: 'YS Display', sans-serif;
 --font_font_radio: 'YS Display', sans-serif;
+--font_font_radio-small: 'YS Display', sans-serif;
 
 /* размер line-height */
 
@@ -60,6 +62,7 @@
 --font_line_height_small: 23px;
 --font_line_height_extra_small: 21px;
 --font_line_height_radio: 20px;
+--font_line_height_radio-small: 18px;
 
 /* размер line-height для мобильных экранов   */
 
@@ -82,4 +85,5 @@
 --font_font_weight_small: 500;
 --font_font_weight_extra_small: 500;
 --font_font_weight_radio: 500;
+--font_font_weight_radio-small: 500;
 }
