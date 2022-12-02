@@ -6,7 +6,10 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const config = {
-    entry: { main: './src/pages/index.js' },
+    entry: {
+      main: './src/pages/index.js',
+      vacancies: './src/pages/vacancies.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename:'[name].js',

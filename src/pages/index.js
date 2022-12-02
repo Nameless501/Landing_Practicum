@@ -19,15 +19,10 @@ import {
   popupTellUsSelector,
   buttonNoVacanciesElement,
   faqCardsList,
-  bigPopupBtn,
-  formBig,
-  errorInputSelector,
-  formInputSelector,
   cardsSliderProps,
   menuIcon,
   navigationBar,
   headerElement,
-  popupShortFormSelector,
 } from "../utils/constants.js";
 
 // ------------- валидация формы
@@ -40,10 +35,6 @@ tellUsFormValidation.enableValidation();
 const popupTellUs = new Popup(popupTellUsSelector);
 
 popupTellUs.setEventListeners();
-
-const popupShortForm = new Popup(popupShortFormSelector);
-
-popupShortForm.setEventListeners();
 
 buttonNoVacanciesElement.addEventListener('click', () => {
   popupTellUs.open();

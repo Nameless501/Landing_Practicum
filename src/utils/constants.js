@@ -33,6 +33,8 @@ export const tellUsFormElement = document.querySelector('.popup__form_type_tel-u
 
 export const shortFormElement = document.querySelector('.popup__form_type_short-form');
 
+export const shortFormButtonNodes = [...document.querySelectorAll('.main-button_place_vacancies')];
+
 // --------------- faq and accordion selectors
 
 export const faqCardsList = document.querySelectorAll(
