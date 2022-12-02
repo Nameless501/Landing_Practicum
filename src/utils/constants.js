@@ -21,17 +21,17 @@ export const validationConfig = {
 
 export const popupTellUsSelector = '.popup_type_tell-us';
 
+export const popupShortFormSelector = '.popup_type_short-form';
+
 export const popupVideoSelector = '.popup_type_open-video';
 
 export const closeButtonSelector = document.querySelector('.popup__close');
 
-export const errorInputSelector = '.popup__error-message';
-
-export const formInputSelector = '.popup__input';
-
 export const buttonNoVacanciesElement = document.querySelector('.main-button_place_empty-vacancies');
 
 export const tellUsFormElement = document.querySelector('.popup__form_type_tel-us');
+
+export const shortFormElement = document.querySelector('.popup__form_type_short-form');
 
 // --------------- faq and accordion selectors
 

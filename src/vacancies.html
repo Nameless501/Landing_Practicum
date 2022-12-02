@@ -249,6 +249,56 @@
         </div>
       </div>
     </footer>
+    <!----------- блок popup form с обратной связью ----------->
+    <section class="popup popup_type_short-form">
+      <form name="tell-us" class="popup__form popup__form_type_short-form" novalidate>
+        <fieldset class="popup__fieldset">
+          <legend class="popup__title text_regular-bold">
+            Расскажите нам о себе и мы сохраним ваши данные
+          </legend>
+          <div class="popup__input-wrapper popup__input-wrapper_type_name">
+            <input type="text" name="name" placeholder="Имя" id="name-input" class="popup__input popup__input_type_name text_radio" required minlength="2" maxlength="30">
+            <span class="popup__error-message name-input-error"></span>
+          </div>
+          <div class="popup__input-wrapper">
+            <input type="email" name="email" placeholder="Email" id="email-input" class="popup__input popup__input_type_email text_radio" required>
+            <span class="popup__error-message email-input-error"></span>
+          </div>
+          <div class="popup__contacts-wrapper">
+            <input type="radio" name="contact" id="contact-telephone" value="telephone" class="popup__contact-radio popup__contact-radio_type_phone" checked/>
+            <label for="contact-telephone" class="popup__contacts-radio-label text_radio">
+              Телефон
+            </label>
+            <input type="radio" name="contact" id="contact-telegram" value="telegram" class="popup__contact-radio popup__contact-radio_type_telegram"/>
+            <label for="contact-telegram" class="popup__contacts-radio-label text_radio">
+              Телеграм
+            </label>
+          </div>
+          <div class="popup__input-wrapper popup__input-wrapper_type_phone">
+            <input type="tel" name="phone" placeholder="+7" id="phone-input" class="popup__input popup__input_type_phone text_radio" required>
+            <span class="popup__error-message phone-input-error"></span>
+          </div>
+          <div class="popup__input-wrapper popup__input-wrapper_type_telegram popup__input-wrapper_hidden">
+            <input type="text" name="telegram" placeholder="@" id="telefram-input" class="popup__input popup__input_type_telegram text_radio">
+            <span class="popup__error-message telegram-input-error"></span>
+          </div>
+          <div class="popup__input-wrapper popup__input-wrapper_type_url">
+            <input type="url" name="url" placeholder="Ссылка на резюме" id="url-input" class="popup__input popup__input_type_url text_radio" required>
+            <span class="popup__error-message url-input-error"></span>
+          </div>
+          <div class="popup__contacts-wrapper popup__contacts-wrapper_place_permission">
+            <input type="checkbox" name="contact-checkbox" id="contact-checkbox" value="agree" class="popup__contact-checkbox"/>
+            <label for="contact-checkbox" class="popup__contacts-checkbox-label text_radio">
+              Даю согласие на обработку персональных данных
+            </label>
+          </div>
+        </fieldset>
+        <button type=submit class="main-button main-button_type_primary main-button_type_primary-disabled main-button_place_popup text_small">
+          Отправить
+        </button>
+        <button type=reset class="popup__close popup__close_place_form"></button>
+      </form>
+    </section>
   </div>
 </body>
 

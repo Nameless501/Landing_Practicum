@@ -26,7 +26,8 @@ import {
   cardsSliderProps,
   menuIcon,
   navigationBar,
-  headerElement
+  headerElement,
+  popupShortFormSelector,
 } from "../utils/constants.js";
 
 // ------------- валидация формы
@@ -39,6 +40,10 @@ tellUsFormValidation.enableValidation();
 const popupTellUs = new Popup(popupTellUsSelector);
 
 popupTellUs.setEventListeners();
+
+const popupShortForm = new Popup(popupShortFormSelector);
+
+popupShortForm.setEventListeners();
 
 buttonNoVacanciesElement.addEventListener('click', () => {
   popupTellUs.open();
