@@ -161,6 +161,8 @@
 
 @import url(../blocks/content/__videos/content__videos.css);
 
+@import url(../blocks/content/__how-to/content__how-to.css);
+
 /* ------------- block lead ------------- */
 
 @import url(../blocks/lead/lead.css);
@@ -187,9 +189,53 @@
 
 @import url(../blocks/cards-slider/cards-slider.css);
 
+@import url(../blocks/cards-slider/__scroll-wrapper/cards-slider__scroll-wrapper.css);
+
+@import url(../blocks/cards-slider/__title/cards-slider__title.css);
+
+@import url(../blocks/cards-slider/__gallery/cards-slider__gallery.css);
+
+@import url(../blocks/cards-slider/__cards/cards-slider__cards.css);
+
+@import url(../blocks/cards-slider/__card/cards-slider__card.css);
+
+@import url(../blocks/cards-slider/__card-blur/cards-slider__card-blur.css);
+
+@import url(../blocks/cards-slider/__card-blur/_place/cards-slider__card-blur_place_image.css);
+
+@import url(../blocks/cards-slider/__card/_active/cards-slider__card_active.css);
+
+@import url(../blocks/cards-slider/__card/_color/cards-slider__card_color_black.css);
+
+@import url(../blocks/cards-slider/__card/_color/cards-slider__card_color_blue.css);
+
+@import url(../blocks/cards-slider/__card/_color/cards-slider__card_color_pink.css);
+
+@import url(../blocks/cards-slider/__card/_color/cards-slider__card_color_purple.css);
+
+@import url(../blocks/cards-slider/__card-description/cards-slider__card-description.css);
+
+@import url(../blocks/cards-slider/__card-title/cards-slider__card-title.css);
+
+@import url(../blocks/cards-slider/__subtitle/cards-slider__subtitle.css);
+
+@import url(../blocks/cards-slider/__card-image-wrapper/cards-slider__card-image-wrapper.css);
+
+@import url(../blocks/cards-slider/__card-image/cards-slider__card-image.css);
+
 /* ------------- block how-to ------------- */
 
 @import url(../blocks/how-to/how-to.css);
+
+@import url(../blocks/how-to/__title/how-to__title.css);
+
+@import url(../blocks/how-to/__recommendation-list/how-to__recommendation-list.css);
+
+@import url(../blocks/how-to/__recommendation-list-item/how-to__recommendation-list-item.css);
+
+@import url(../blocks/how-to/__recommendation-list_bullet/how-to__recommendation-list_bullet.css);
+
+@import url(../blocks/how-to/__recommendation/how-to__recommendation.css);
 
 /* ------------- block choose ------------- */
 
@@ -238,6 +284,10 @@
 /* ------------- block faq ------------- */
 
 @import url(../blocks/faq/faq.css);
+
+@import url(../blocks/faq/__title/faq__title.css);
+
+@import url(../blocks/faq/__questions/faq__questions.css);
 
 /* ------------- block contacts ------------- */
 
@@ -333,7 +383,6 @@
 
 @import url(../blocks/popup/__title/popup__title.css);
 
-
 @import url(../blocks/popup/__input-wrapper/popup__input-wrapper.css);
 
 @import url(../blocks/popup/__input-wrapper/_type/popup__input-wrapper_success.css);
@@ -417,6 +466,38 @@
 /* ------------- block accordion ------------- */
 
 @import url(../blocks/accordion/accordion.css);
+
+@import url(../blocks/accordion/__card/accordion__card.css);
+
+@import url(../blocks/accordion/__card-header/accordion__card-header.css);
+
+@import url(../blocks/accordion/__card-header-title/accordion__card-header-title.css);
+
+@import url(../blocks/accordion/__card-header-button/accordion__card-header-button.css);
+
+@import url(../blocks/accordion/__card-header-button/_active/accordion__card-header-button_active.css);
+
+@import url(../blocks/accordion/__card-description/accordion__card-description.css);
+
+@import url(../blocks/accordion/__card-description/_visible/accordion__card-description_visible.css);
+
+@import url(../blocks/accordion/__card-description-title/accordion__card-description-title.css);
+
+@import url(../blocks/accordion/__card-description-textarea/accordion__card-description-textarea.css);
+
+@import url(../blocks/accordion/__card-description-textarea/_place/accordion__card-description-textarea_place_faq.css);
+
+@import url(../blocks/accordion/__card-description-text/accordion__card-description-text.css);
+
+@import url(../blocks/accordion/__card-description-requirements/accordion__card-description-requirements.css);
+
+@import url(../blocks/accordion/__card-description-text/_type/accordion__card-description-text_type_list.css);
+
+@import url(../blocks/accordion/__card-description-requirements-list/accordion__card-description-requirements-list.css);
+
+@import url(../blocks/accordion/__card-description-text-span/accordion__card-description-text-span.css);
+
+@import url(../blocks/accordion/__card-description-inserted-text/accordion__card-description-inserted-text.css);
 
 /* ------------- plugin swiper ------------- */
 
