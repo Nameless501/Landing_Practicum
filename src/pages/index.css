@@ -187,6 +187,8 @@
 
 @import url(../blocks/lead/__image/_number/lead__image_3.css);
 
+@import url(../blocks/lead/__title-span/_hidden/lead__title-span_hidden.css);
+
 /* ------------- block cards slider ------------- */
 
 @import url(../blocks/cards-slider/cards-slider.css);
