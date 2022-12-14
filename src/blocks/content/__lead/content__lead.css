@@ -1,0 +1,15 @@
+.content__lead {
+  margin: var(--margin_L) auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .content__lead {
+    margin: 145px auto 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content__lead {
+    margin: 75px auto 0;
+  }
+}

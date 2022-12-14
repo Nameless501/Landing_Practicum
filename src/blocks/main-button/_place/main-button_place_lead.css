@@ -1,0 +1,9 @@
+.main-button_place_lead {
+  margin: 0 0 0 25px;
+}
+
+@media screen and (max-width: 754px) {
+  .main-button_place_lead {
+    margin: 40px auto 0 auto;
+  }
+}

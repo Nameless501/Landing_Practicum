@@ -1,0 +1,14 @@
+.lead__title-span_mob {
+  display: none;
+}
+
+@media screen and (max-width: 754px){
+  .lead__title-span_mob {
+    display: inline-block;
+  }
+
+  .lead__title-span_hidden {
+    display: none;
+  }
+}
+
