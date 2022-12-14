@@ -14,7 +14,6 @@ import {
   vacanciesConfig,
   vacanciesFormElement,
   tellUsFormElement,
-  closeButtonSelector,
   popupVideoSelector,
   popupTellUsSelector,
   buttonNoVacanciesElement,

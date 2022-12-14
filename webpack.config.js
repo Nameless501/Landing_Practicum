@@ -3,11 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader';
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
     entry: {
-      main: './src/pages/index.js',
+      index: './src/pages/index.js',
       vacancies: './src/pages/vacancies.js',
     },
     output: {
@@ -15,7 +15,6 @@ const config = {
         filename:'[name].js',
         publicPath: ''
     },
-    mode: 'development',
     devServer: {
         static: path.resolve(__dirname, './dist'),
         open: true,
@@ -23,12 +22,16 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            inject: true,
             filename: 'index.html',
             template: './src/index.html',
+            chunks: ['index'],
         }),
         new HtmlWebpackPlugin({
+          inject: true,
           filename: 'vacancies.html',
           template: './src/vacancies.html',
+          chunks: ['vacancies'],
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
@@ -45,7 +48,9 @@ const config = {
                 use: [
                     MiniCssExtractPlugin.loader, {
                         loader: 'css-loader',
-                        options: { importLoaders: 1 }
+                        options: {
+                          importLoaders: 1
+                        }
                     },
                     'postcss-loader'
                 ],

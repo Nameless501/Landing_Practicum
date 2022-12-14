@@ -17,6 +17,7 @@
     "css-loader": "^6.7.2",
     "cssnano": "^5.1.14",
     "gh-pages": "^4.0.0",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.0",
     "postcss": "^8.4.19",
@@ -28,8 +29,8 @@
   },
   "dependencies": {
     "core-js": "^3.24.1",
-		"gsap": "^3.11.0",
-		"scroll-lock": "^2.1.5",
+    "gsap": "^3.11.0",
+    "scroll-lock": "^2.1.5",
     "swiper": "^8.4.5"
   }
 }

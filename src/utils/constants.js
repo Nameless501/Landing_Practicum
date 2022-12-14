@@ -31,7 +31,7 @@ export const buttonNoVacanciesElement = document.querySelector('.main-button_pla
 
 export const tellUsFormElement = document.querySelector('.popup__form_type_tel-us');
 
-export const shortFormElement = document.querySelector('.popup__form_type_short-form');
+export const shortFormElement = document.querySelector(popupShortFormSelector);
 
 export const shortFormButtonNodes = [...document.querySelectorAll('.main-button_place_vacancies')];
 
